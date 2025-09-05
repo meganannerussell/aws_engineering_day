@@ -13,13 +13,13 @@ $text-muted: #9ca3af;
 $border-color: #e5e7eb;
 
 // Dark theme variables
-$dark-bg-primary: #0f172a;
-$dark-bg-secondary: #1e293b;
-$dark-bg-card: #334155;
-$dark-text-primary: #f1f5f9;
-$dark-text-secondary: #cbd5e1;
-$dark-text-muted: #94a3b8;
-$dark-border-color: #475569;
+$dark-bg-primary: #000000;
+$dark-bg-secondary: #111111;
+$dark-bg-card: #1a1a1a;
+$dark-text-primary: #ffffff;
+$dark-text-secondary: #e5e5e5;
+$dark-text-muted: #a3a3a3;
+$dark-border-color: #333333;
 
 // Bright colors for dark mode icons
 $bright-blue: #60a5fa;
@@ -168,6 +168,17 @@ body {
   background-color: $background-color;
   color: $text-primary;
   line-height: 1.6;
+}
+
+// Results page
+.results-page {
+  min-height: 100vh;
+  background-color: $background-color;
+}
+
+.results-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 // Utility classes
@@ -583,7 +594,7 @@ body {
       font-weight: 500;
       padding: 0.25rem 0.5rem;
       border-radius: 12px;
-      
+
       &--positive {
         background: rgba($success-color, 0.1);
         color: $success-color;
@@ -1157,8 +1168,12 @@ body {
 // Dark Theme Styles
 [data-theme="dark"] {
   body {
-    background: linear-gradient(135deg, $dark-bg-primary 0%, $dark-bg-secondary 100%);
+    background: $dark-bg-primary;
     color: $dark-text-primary;
+  }
+
+  .results-page {
+    background-color: $dark-bg-primary;
   }
 
   .container {
@@ -1166,16 +1181,29 @@ body {
   }
 
   .header {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid $dark-border-color;
+    background: $dark-bg-card;
+    border: 1px solid $dark-border-color;
+    border-radius: $border-radius-lg;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+
+    &__title {
+      color: $dark-text-primary;
+    }
+
+    &__subtitle {
+      color: $dark-text-secondary;
+    }
+
+    &__meta {
+      color: $dark-text-muted;
+    }
   }
 
   .metric-card {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
     color: $dark-text-primary;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 
     &__title {
       color: $dark-text-secondary;
@@ -1213,9 +1241,9 @@ body {
   }
 
   .chart-card {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 
     &__title {
       color: $dark-text-primary;
@@ -1226,17 +1254,25 @@ body {
     }
 
     &__toggle {
-      background: rgba($dark-bg-secondary, 0.8);
+      background: $dark-bg-secondary;
       color: $dark-text-secondary;
+      border: 1px solid $dark-border-color;
 
       &:hover {
-        background: rgba($dark-bg-secondary, 1);
-        color: $dark-text-primary;
+        background: $bright-blue;
+        color: white;
+        border-color: $bright-blue;
       }
     }
   }
 
   .topic-details {
+    background: $dark-bg-card;
+    border: 1px solid $dark-border-color;
+    border-radius: $border-radius-lg;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+
     &__title {
       color: $dark-text-primary;
     }
@@ -1247,9 +1283,9 @@ body {
   }
 
   .topic-item {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     &__label {
       color: $dark-text-primary;
@@ -1260,17 +1296,17 @@ body {
     }
 
     &__example {
-      background: rgba($dark-bg-secondary, 0.5);
+      background: $dark-bg-secondary;
       color: $dark-text-primary;
       border: 1px solid $dark-border-color;
     }
   }
 
   .summary-narrative {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
     border-left: 4px solid $bright-blue;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 
     &__text {
       color: $dark-text-primary;
@@ -1278,9 +1314,9 @@ body {
   }
 
   .strategic-implications {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 
     &__title {
       color: $dark-text-primary;
@@ -1292,9 +1328,9 @@ body {
   }
 
   .executive-summary {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 2px solid $bright-blue;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 
     &__title {
       color: $dark-text-primary;
@@ -1314,9 +1350,9 @@ body {
   }
 
   .stat-item {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     &__value {
       color: $dark-text-primary;
@@ -1328,9 +1364,9 @@ body {
   }
 
   .theme-item {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     &:hover {
       border-color: $bright-blue;
@@ -1346,15 +1382,49 @@ body {
   }
 
   .dark-mode-toggle {
-    background: rgba($dark-bg-card, 0.8);
-    backdrop-filter: blur(10px);
+    background: $dark-bg-card;
     border: 1px solid $dark-border-color;
     color: $dark-text-primary;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     &:hover {
       background: $bright-blue;
       color: white;
       border-color: $bright-blue;
+    }
+  }
+
+  .themes-summary {
+    background: $dark-bg-card;
+    border: 1px solid $dark-border-color;
+    border-radius: $border-radius-lg;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+
+    &__title {
+      color: $dark-text-primary;
+    }
+  }
+
+  .theme-summary-card {
+    background: $dark-bg-secondary;
+    border: 1px solid $dark-border-color;
+    color: $dark-text-primary;
+
+    &:hover {
+      border-color: $bright-blue;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    }
+
+    &__title {
+      color: $dark-text-primary;
+    }
+
+    &__count {
+      color: $dark-text-secondary;
+    }
+
+    &__percentage {
+      color: $bright-blue;
     }
   }
 }
