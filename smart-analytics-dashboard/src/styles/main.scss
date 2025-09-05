@@ -1533,6 +1533,10 @@ body {
     border: 1px solid $dark-border-color;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
+    &__title {
+      color: $dark-text-primary;
+    }
+
     &__label {
       color: $dark-text-primary;
     }
