@@ -23,32 +23,28 @@ const MetricsHeader: React.FC<MetricsHeaderProps> = ({ data }) => {
       value: topics.length,
       description: "Distinct themes identified",
       icon: BarChart3,
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
+      iconClass: "metric-card__icon--blue",
     },
     {
       title: "Total Responses",
       value: formatNumber(project_metadata.total_responses),
       description: "Survey responses analyzed",
       icon: Users,
-      color: "text-green-600",
-      bgColor: "bg-green-50",
+      iconClass: "metric-card__icon--green",
     },
     {
       title: "Avg. Confidence",
       value: formatConfidence(avgConfidence),
       description: "Average sentiment confidence",
       icon: Target,
-      color: "text-purple-600",
-      bgColor: "bg-purple-50",
+      iconClass: "metric-card__icon--purple",
     },
     {
       title: "Processing Time",
       value: formatTime(project_metadata.processing_time_seconds),
       description: "Analysis completion time",
       icon: Clock,
-      color: "text-orange-600",
-      bgColor: "bg-orange-50",
+      iconClass: "metric-card__icon--orange",
     },
   ];
 
@@ -71,11 +67,7 @@ const MetricsHeader: React.FC<MetricsHeaderProps> = ({ data }) => {
                 <p className="metric-card__value">{metric.value}</p>
                 <p className="metric-card__description">{metric.description}</p>
               </div>
-              <div
-                className={`metric-card__icon ${metric.bgColor
-                  .replace("bg-", "")
-                  .replace("-50", "")}`}
-              >
+              <div className={`metric-card__icon ${metric.iconClass}`}>
                 <Icon style={{ width: "1.5rem", height: "1.5rem" }} />
               </div>
             </div>
