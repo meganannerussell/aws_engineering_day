@@ -374,22 +374,9 @@ const Results: React.FC = () => {
                     </div>
                   </div>
                   <h4 className="theme-summary-card__title">{topic.label}</h4>
-                  <p className="theme-summary-card__count">
-                    {topic.count.toLocaleString()} responses
-                  </p>
-                  <div className="theme-summary-card__sentiment">
-                    <div className="sentiment-indicators">
-                      <span className="sentiment-indicator sentiment-indicator--positive">
-                        {topic.sentiment_distribution.positive} pos
-                      </span>
-                      <span className="sentiment-indicator sentiment-indicator--negative">
-                        {topic.sentiment_distribution.negative} neg
-                      </span>
-                      <span className="sentiment-indicator sentiment-indicator--neutral">
-                        {topic.sentiment_distribution.neutral} neu
-                      </span>
-                    </div>
-                  </div>
+                                     <p className="theme-summary-card__count">
+                     {topic.count.toLocaleString()} responses
+                   </p>
                 </motion.div>
               ));
             })()}

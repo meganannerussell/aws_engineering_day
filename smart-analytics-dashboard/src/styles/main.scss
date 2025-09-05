@@ -752,35 +752,6 @@ body {
     margin-bottom: 0.75rem;
   }
 
-  &__sentiment {
-    .sentiment-indicators {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .sentiment-indicator {
-      font-size: 0.75rem;
-      font-weight: 500;
-      padding: 0.25rem 0.5rem;
-      border-radius: 12px;
-
-      &--positive {
-        background: rgba($success-color, 0.1);
-        color: $success-color;
-      }
-
-      &--negative {
-        background: rgba($error-color, 0.1);
-        color: $error-color;
-      }
-
-      &--neutral {
-        background: rgba($warning-color, 0.1);
-        color: $warning-color;
-      }
-    }
-  }
 }
 
 .metrics-grid {
@@ -861,6 +832,11 @@ body {
 .chart-card {
   @include card;
   @include animation-slide-up;
+  
+  // CSS custom properties for chart theming
+  --tooltip-bg: white;
+  --tooltip-border: #e5e7eb;
+  --tooltip-text: #374151;
 
   &__header {
     display: flex;
@@ -882,6 +858,7 @@ body {
     font-size: 0.875rem;
     color: $text-secondary;
   }
+  
 
   &__toggle {
     width: 2.5rem;
@@ -1414,6 +1391,11 @@ body {
     background: $dark-bg-card;
     border: 1px solid $dark-border-color;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    
+    // Update CSS custom properties for dark mode
+    --tooltip-bg: #1a1a1a;
+    --tooltip-border: #333333;
+    --tooltip-text: #ffffff;
 
     &__title {
       color: $dark-text-primary;
@@ -1434,6 +1416,7 @@ body {
         border-color: $bright-blue;
       }
     }
+    
   }
 
   .topic-details {
