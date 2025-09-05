@@ -500,6 +500,13 @@ body {
     margin-top: 1rem;
   }
 
+  &__gif {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media (max-width: 1024px) {
     width: 280px;
   }
@@ -510,6 +517,19 @@ body {
     position: relative;
     border-right: none;
     border-bottom: 1px solid $border-color;
+  }
+}
+
+// This is Fine GIF styling
+.this-is-fine-gif {
+  max-width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+  box-shadow: $shadow-sm;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -1380,9 +1400,15 @@ body {
 }
 
 // Dark Theme Styles
-[data-theme="dark"] {
+[data-theme="dark"],
+body[data-theme="dark"] {
   * {
     background-color: transparent;
+  }
+
+  html {
+    background: $dark-bg-primary !important;
+    color: $dark-text-primary;
   }
 
   html[lang="en"] {
@@ -1401,9 +1427,30 @@ body {
     color: $dark-text-primary;
   }
 
+  #root {
+    background: $dark-bg-primary !important;
+    min-height: 100vh;
+  }
+
   .results-page {
     background-color: $dark-bg-primary;
     min-height: 100vh;
+  }
+
+  // Ensure the entire viewport is dark
+  html, body, #root, .results-page {
+    background: $dark-bg-primary !important;
+  }
+
+  // Override any potential white backgrounds
+  *, *::before, *::after {
+    background-color: transparent;
+  }
+
+  // Ensure body specifically has dark background
+  body {
+    background: $dark-bg-primary !important;
+    background-color: $dark-bg-primary !important;
   }
 
   .container {
@@ -1780,4 +1827,32 @@ body {
       border: 1px solid rgba($bright-blue, 0.4);
     }
   }
+}
+
+// Additional dark mode fixes to ensure no white areas
+body[data-theme="dark"] {
+  background: $dark-bg-primary !important;
+  background-color: $dark-bg-primary !important;
+}
+
+html[data-theme="dark"] {
+  background: $dark-bg-primary !important;
+  background-color: $dark-bg-primary !important;
+}
+
+#root[data-theme="dark"] {
+  background: $dark-bg-primary !important;
+  background-color: $dark-bg-primary !important;
+  min-height: 100vh;
+}
+
+// Force dark background on all elements when dark theme is active
+body[data-theme="dark"] * {
+  background-color: transparent !important;
+}
+
+body[data-theme="dark"] {
+  background: $dark-bg-primary !important;
+  background-color: $dark-bg-primary !important;
+  color: $dark-text-primary !important;
 }

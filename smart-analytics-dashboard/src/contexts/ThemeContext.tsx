@@ -29,7 +29,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   });
 
   useEffect(() => {
-    // Apply theme to document body
+    // Apply theme to document html and body
+    document.documentElement.setAttribute("data-theme", theme);
     document.body.setAttribute("data-theme", theme);
     // Save theme preference to localStorage
     localStorage.setItem("theme", theme);

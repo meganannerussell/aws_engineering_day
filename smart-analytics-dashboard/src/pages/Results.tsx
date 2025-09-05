@@ -142,6 +142,15 @@ const Results: React.FC = () => {
               </div>
             </div>
           )}
+
+          {/* This is Fine GIF */}
+          <div className="dataset-sidebar__gif">
+            <img
+              src="/src/assets/fire-fine.gif"
+              alt="This is fine"
+              className="this-is-fine-gif"
+            />
+          </div>
         </div>
       </motion.div>
 
