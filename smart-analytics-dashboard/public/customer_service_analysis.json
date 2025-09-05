@@ -1,0 +1,321 @@
+{
+  "project_metadata": {
+    "project_title": "Customer Service Experience Survey",
+    "question_text": "What aspect of our customer service do you think needs the most improvement?",
+    "total_responses": 1247,
+    "processing_time_seconds": 432.18,
+    "timestamp": "2025-01-15T14:22:31.847291",
+    "services_used": {
+      "comprehend_pii": false,
+      "comprehend_sentiment": true,
+      "bedrock_embeddings": true,
+      "bedrock_llm": true
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "topic_0",
+      "label": "Response Time Issues",
+      "count": 487,
+      "sentiment_mean": 0.15,
+      "sentiment_distribution": {
+        "positive": 12,
+        "negative": 298,
+        "neutral": 177,
+        "mixed": 0
+      },
+      "examples": [
+        "Takes forever to get a response from support",
+        "Waited 3 hours for a simple question to be answered",
+        "The response time is absolutely terrible, I needed help urgently but had to wait days",
+        "Why does it take so long to hear back from anyone?",
+        "Response times need serious improvement"
+      ]
+    },
+    {
+      "topic_id": "topic_1",
+      "label": "Staff Knowledge and Training",
+      "count": 324,
+      "sentiment_mean": 0.22,
+      "sentiment_distribution": {
+        "positive": 23,
+        "negative": 187,
+        "neutral": 114,
+        "mixed": 0
+      },
+      "examples": [
+        "Customer service reps don't seem to know the products well enough",
+        "I had to explain my issue multiple times because they didn't understand",
+        "Staff needs better training on technical issues",
+        "The representative couldn't answer basic questions about billing",
+        "Feels like I know more about your services than your own staff"
+      ]
+    },
+    {
+      "topic_id": "topic_2",
+      "label": "Communication and Clarity",
+      "count": 198,
+      "sentiment_mean": 0.28,
+      "sentiment_distribution": {
+        "positive": 31,
+        "negative": 89,
+        "neutral": 78,
+        "mixed": 0
+      },
+      "examples": [
+        "Agents don't explain things clearly",
+        "I got conflicting information from different representatives",
+        "Communication could be much clearer and more professional",
+        "Need better explanations of policies and procedures",
+        "Sometimes feel like we're speaking different languages"
+      ]
+    },
+    {
+      "topic_id": "topic_3",
+      "label": "Follow-up and Resolution",
+      "count": 156,
+      "sentiment_mean": 0.18,
+      "sentiment_distribution": {
+        "positive": 8,
+        "negative": 98,
+        "neutral": 50,
+        "mixed": 0
+      },
+      "examples": [
+        "Issues rarely get resolved on first contact",
+        "No follow-up after my case was supposedly 'resolved'",
+        "Had to call back multiple times for the same issue",
+        "Better follow-through on commitments made during calls",
+        "Resolution process is too complicated and takes too long"
+      ]
+    },
+    {
+      "topic_id": "topic_4",
+      "label": "Availability and Hours",
+      "count": 82,
+      "sentiment_mean": 0.31,
+      "sentiment_distribution": {
+        "positive": 18,
+        "negative": 35,
+        "neutral": 29,
+        "mixed": 0
+      },
+      "examples": [
+        "Need extended customer service hours",
+        "Would be great to have 24/7 support",
+        "Weekend availability would be helpful",
+        "Hard to reach support during business hours due to work",
+        "More availability during evenings and weekends"
+      ]
+    },
+    {
+      "topic_id": "topic_5",
+      "label": "Overall Satisfaction",
+      "count": 67,
+      "sentiment_mean": 0.45,
+      "sentiment_distribution": {
+        "positive": 24,
+        "negative": 21,
+        "neutral": 22,
+        "mixed": 0
+      },
+      "examples": [
+        "Generally satisfied but there's room for improvement",
+        "Customer service is okay but could be better",
+        "Some agents are great, others not so much",
+        "Mixed experiences depending on who I talk to",
+        "Service quality varies too much between different representatives"
+      ]
+    },
+    {
+      "topic_id": "topic_6",
+      "label": "Phone System and Wait Times",
+      "count": 54,
+      "sentiment_mean": 0.12,
+      "sentiment_distribution": {
+        "positive": 2,
+        "negative": 41,
+        "neutral": 11,
+        "mixed": 0
+      },
+      "examples": [
+        "Phone system is confusing and hard to navigate",
+        "Too many menu options before reaching a human",
+        "Long hold times are frustrating",
+        "Phone system hangs up on me frequently",
+        "Automated system doesn't understand my requests"
+      ]
+    },
+    {
+      "topic_id": "topic_7",
+      "label": "Online Support and Chat",
+      "count": 41,
+      "sentiment_mean": 0.38,
+      "sentiment_distribution": {
+        "positive": 12,
+        "negative": 15,
+        "neutral": 14,
+        "mixed": 0
+      },
+      "examples": [
+        "Live chat feature is helpful when it works",
+        "Online support portal could be more user-friendly",
+        "Chat agents are more responsive than phone support",
+        "Website FAQ section needs more detailed answers",
+        "Online ticket system is convenient but slow"
+      ]
+    },
+    {
+      "topic_id": "topic_8",
+      "label": "Billing and Account Issues",
+      "count": 38,
+      "sentiment_mean": 0.19,
+      "sentiment_distribution": {
+        "positive": 4,
+        "negative": 26,
+        "neutral": 8,
+        "mixed": 0
+      },
+      "examples": [
+        "Billing department needs better communication",
+        "Account issues take too long to resolve",
+        "Difficulty understanding charges on my bill",
+        "Billing errors happen too frequently",
+        "Need clearer billing statements and explanations"
+      ]
+    },
+    {
+      "topic_id": "topic_9",
+      "label": "Positive Experiences",
+      "count": 29,
+      "sentiment_mean": 0.78,
+      "sentiment_distribution": {
+        "positive": 21,
+        "negative": 1,
+        "neutral": 7,
+        "mixed": 0
+      },
+      "examples": [
+        "Some representatives are extremely helpful and knowledgeable",
+        "When I reach the right person, issues get resolved quickly",
+        "Appreciate the patience of certain customer service agents",
+        "Recent improvements in service quality are noticeable",
+        "Had a great experience with the technical support team"
+      ]
+    },
+    {
+      "topic_id": "topic_10",
+      "label": "Technical Support Specific",
+      "count": 23,
+      "sentiment_mean": 0.34,
+      "sentiment_distribution": {
+        "positive": 6,
+        "negative": 11,
+        "neutral": 6,
+        "mixed": 0
+      },
+      "examples": [
+        "Technical support needs more specialized knowledge",
+        "Tech issues require multiple escalations to resolve",
+        "Better tools for technical troubleshooting needed",
+        "Technical support team is helpful but needs more resources",
+        "Complex technical issues take too long to diagnose"
+      ]
+    },
+    {
+      "topic_id": "topic_11",
+      "label": "Escalation Process",
+      "count": 18,
+      "sentiment_mean": 0.21,
+      "sentiment_distribution": {
+        "positive": 2,
+        "negative": 12,
+        "neutral": 4,
+        "mixed": 0
+      },
+      "examples": [
+        "Escalation process is unclear and confusing",
+        "Takes too long to reach a supervisor when needed",
+        "Need clearer escalation procedures for complex issues",
+        "Supervisors are more helpful but hard to reach",
+        "Escalation should happen sooner for urgent issues"
+      ]
+    },
+    {
+      "topic_id": "topic_12",
+      "label": "Self-Service Options",
+      "count": 15,
+      "sentiment_mean": 0.42,
+      "sentiment_distribution": {
+        "positive": 5,
+        "negative": 4,
+        "neutral": 6,
+        "mixed": 0
+      },
+      "examples": [
+        "More self-service options would be helpful",
+        "Online portal is useful but could be expanded",
+        "Better documentation for common issues",
+        "Self-service tools work well for basic tasks",
+        "Video tutorials would be a great addition"
+      ]
+    },
+    {
+      "topic_id": "topic_13",
+      "label": "Multilingual Support",
+      "count": 12,
+      "sentiment_mean": 0.29,
+      "sentiment_distribution": {
+        "positive": 2,
+        "negative": 6,
+        "neutral": 4,
+        "mixed": 0
+      },
+      "examples": [
+        "Need better language support options",
+        "Translation quality could be improved",
+        "More languages available would be helpful",
+        "Language barrier makes issues harder to resolve",
+        "Appreciate the multilingual options but need expansion"
+      ]
+    },
+    {
+      "topic_id": "topic_14",
+      "label": "Proactive Communication",
+      "count": 9,
+      "sentiment_mean": 0.33,
+      "sentiment_distribution": {
+        "positive": 2,
+        "negative": 4,
+        "neutral": 3,
+        "mixed": 0
+      },
+      "examples": [
+        "Would appreciate proactive updates on service issues",
+        "Better notification of outages and maintenance",
+        "Proactive follow-up after issue resolution",
+        "More communication about account changes",
+        "Early warning about policy changes would be helpful"
+      ]
+    },
+    {
+      "topic_id": "topic_15",
+      "label": "Mobile App Support",
+      "count": 6,
+      "sentiment_mean": 0.35,
+      "sentiment_distribution": {
+        "positive": 1,
+        "negative": 3,
+        "neutral": 2,
+        "mixed": 0
+      },
+      "examples": [
+        "Mobile app support features need improvement",
+        "In-app chat function doesn't work well",
+        "Mobile support is limited compared to web",
+        "App interface for support requests could be better",
+        "Mobile experience for customer service is lacking"
+      ]
+    }
+  ]
+}

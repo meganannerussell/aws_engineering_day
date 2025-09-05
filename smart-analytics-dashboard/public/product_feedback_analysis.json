@@ -1,0 +1,378 @@
+{
+  "project_metadata": {
+    "project_title": "Mobile App User Experience Survey",
+    "question_text": "What feature or aspect of our mobile app would you most like to see improved?",
+    "total_responses": 856,
+    "processing_time_seconds": 298.67,
+    "timestamp": "2025-01-15T16:45:22.192847",
+    "services_used": {
+      "comprehend_pii": true,
+      "comprehend_sentiment": true,
+      "bedrock_embeddings": true,
+      "bedrock_llm": false
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "topic_0",
+      "label": "Performance and Speed",
+      "count": 267,
+      "sentiment_mean": 0.18,
+      "sentiment_distribution": {
+        "positive": 15,
+        "negative": 189,
+        "neutral": 63,
+        "mixed": 0
+      },
+      "examples": [
+        "App is too slow and crashes frequently",
+        "Loading times are unbearable, especially for images",
+        "Performance needs major improvement - very laggy",
+        "App freezes constantly, very frustrating experience",
+        "Speed optimization should be the top priority"
+      ]
+    },
+    {
+      "topic_id": "topic_1",
+      "label": "User Interface and Design",
+      "count": 203,
+      "sentiment_mean": 0.31,
+      "sentiment_distribution": {
+        "positive": 42,
+        "negative": 98,
+        "neutral": 63,
+        "mixed": 0
+      },
+      "examples": [
+        "Interface is confusing and not intuitive",
+        "Design looks outdated compared to competitors",
+        "Navigation could be much simpler and cleaner",
+        "Too many buttons and options cluttering the screen",
+        "Modern redesign would greatly improve user experience"
+      ]
+    },
+    {
+      "topic_id": "topic_2",
+      "label": "Search and Discovery",
+      "count": 148,
+      "sentiment_mean": 0.24,
+      "sentiment_distribution": {
+        "positive": 18,
+        "negative": 87,
+        "neutral": 43,
+        "mixed": 0
+      },
+      "examples": [
+        "Search function doesn't work properly",
+        "Can't find what I'm looking for easily",
+        "Search results are often irrelevant or incomplete",
+        "Need better filtering and sorting options",
+        "Discovery features are poorly implemented"
+      ]
+    },
+    {
+      "topic_id": "topic_3",
+      "label": "Notifications and Alerts",
+      "count": 89,
+      "sentiment_mean": 0.35,
+      "sentiment_distribution": {
+        "positive": 23,
+        "negative": 41,
+        "neutral": 25,
+        "mixed": 0
+      },
+      "examples": [
+        "Too many unnecessary notifications",
+        "Notification settings are hard to customize",
+        "Important alerts get buried in spam notifications",
+        "Better control over what notifications I receive",
+        "Notification timing could be improved"
+      ]
+    },
+    {
+      "topic_id": "topic_4",
+      "label": "Account and Profile Management",
+      "count": 76,
+      "sentiment_mean": 0.41,
+      "sentiment_distribution": {
+        "positive": 28,
+        "negative": 32,
+        "neutral": 16,
+        "mixed": 0
+      },
+      "examples": [
+        "Profile editing is limited and clunky",
+        "Account settings are buried too deep in menus",
+        "More customization options for user profiles",
+        "Easier way to manage account preferences",
+        "Profile sync across devices needs improvement"
+      ]
+    },
+    {
+      "topic_id": "topic_5",
+      "label": "Offline Functionality",
+      "count": 62,
+      "sentiment_mean": 0.28,
+      "sentiment_distribution": {
+        "positive": 12,
+        "negative": 35,
+        "neutral": 15,
+        "mixed": 0
+      },
+      "examples": [
+        "Need better offline mode capabilities",
+        "App doesn't work at all without internet connection",
+        "Offline content should be accessible",
+        "Download feature for offline use would be great",
+        "Basic functionality should work without data connection"
+      ]
+    },
+    {
+      "topic_id": "topic_6",
+      "label": "Security and Privacy",
+      "count": 51,
+      "sentiment_mean": 0.52,
+      "sentiment_distribution": {
+        "positive": 22,
+        "negative": 16,
+        "neutral": 13,
+        "mixed": 0
+      },
+      "examples": [
+        "More transparency about data usage",
+        "Better privacy controls and settings",
+        "Two-factor authentication would be appreciated",
+        "Security features are good but could be enhanced",
+        "Clear data deletion options needed"
+      ]
+    },
+    {
+      "topic_id": "topic_7",
+      "label": "Integration with Other Apps",
+      "count": 44,
+      "sentiment_mean": 0.46,
+      "sentiment_distribution": {
+        "positive": 16,
+        "negative": 18,
+        "neutral": 10,
+        "mixed": 0
+      },
+      "examples": [
+        "Better integration with social media platforms",
+        "Calendar sync would be very useful",
+        "More third-party app connections",
+        "Integration features work well but need expansion",
+        "Cross-platform compatibility improvements"
+      ]
+    },
+    {
+      "topic_id": "topic_8",
+      "label": "Content Management",
+      "count": 38,
+      "sentiment_mean": 0.33,
+      "sentiment_distribution": {
+        "positive": 8,
+        "negative": 21,
+        "neutral": 9,
+        "mixed": 0
+      },
+      "examples": [
+        "Better organization tools for saved content",
+        "Content categorization needs improvement",
+        "Easier content sharing and export options",
+        "More storage space for user content",
+        "Content backup and restore functionality"
+      ]
+    },
+    {
+      "topic_id": "topic_9",
+      "label": "Customer Support Integration",
+      "count": 34,
+      "sentiment_mean": 0.29,
+      "sentiment_distribution": {
+        "positive": 6,
+        "negative": 19,
+        "neutral": 9,
+        "mixed": 0
+      },
+      "examples": [
+        "In-app help and support is hard to find",
+        "Need better customer service chat integration",
+        "Help documentation within the app is limited",
+        "Easier way to report bugs and issues",
+        "FAQ section could be more comprehensive"
+      ]
+    },
+    {
+      "topic_id": "topic_10",
+      "label": "Accessibility Features",
+      "count": 29,
+      "sentiment_mean": 0.58,
+      "sentiment_distribution": {
+        "positive": 14,
+        "negative": 8,
+        "neutral": 7,
+        "mixed": 0
+      },
+      "examples": [
+        "Better support for screen readers",
+        "Font size options are appreciated but need expansion",
+        "High contrast mode would be helpful",
+        "Voice control features would be great",
+        "Accessibility features are good but could be enhanced"
+      ]
+    },
+    {
+      "topic_id": "topic_11",
+      "label": "Battery and Resource Usage",
+      "count": 27,
+      "sentiment_mean": 0.22,
+      "sentiment_distribution": {
+        "positive": 3,
+        "negative": 18,
+        "neutral": 6,
+        "mixed": 0
+      },
+      "examples": [
+        "App drains battery too quickly",
+        "High memory usage causes phone to slow down",
+        "Background activity should be more efficient",
+        "Resource optimization needs major work",
+        "App makes my phone overheat during use"
+      ]
+    },
+    {
+      "topic_id": "topic_12",
+      "label": "Customization Options",
+      "count": 25,
+      "sentiment_mean": 0.48,
+      "sentiment_distribution": {
+        "positive": 9,
+        "negative": 8,
+        "neutral": 8,
+        "mixed": 0
+      },
+      "examples": [
+        "More theme and color options",
+        "Customizable dashboard layout",
+        "Personalization features are limited",
+        "Widget customization would be great",
+        "Let users choose their preferred layout"
+      ]
+    },
+    {
+      "topic_id": "topic_13",
+      "label": "Updates and New Features",
+      "count": 21,
+      "sentiment_mean": 0.43,
+      "sentiment_distribution": {
+        "positive": 7,
+        "negative": 8,
+        "neutral": 6,
+        "mixed": 0
+      },
+      "examples": [
+        "Updates are too frequent and disruptive",
+        "New features often break existing functionality",
+        "More communication about upcoming changes",
+        "Feature updates are generally positive",
+        "Beta testing program for new features would be nice"
+      ]
+    },
+    {
+      "topic_id": "topic_14",
+      "label": "Cross-Platform Sync",
+      "count": 18,
+      "sentiment_mean": 0.39,
+      "sentiment_distribution": {
+        "positive": 5,
+        "negative": 8,
+        "neutral": 5,
+        "mixed": 0
+      },
+      "examples": [
+        "Sync between phone and tablet doesn't work well",
+        "Cross-device functionality needs improvement",
+        "Settings don't carry over between platforms",
+        "Web version and mobile app should sync better",
+        "Cloud sync is unreliable"
+      ]
+    },
+    {
+      "topic_id": "topic_15",
+      "label": "Positive Feedback",
+      "count": 16,
+      "sentiment_mean": 0.81,
+      "sentiment_distribution": {
+        "positive": 12,
+        "negative": 1,
+        "neutral": 3,
+        "mixed": 0
+      },
+      "examples": [
+        "App works great overall, just minor improvements needed",
+        "Love the recent updates and new features",
+        "User experience has improved significantly",
+        "App is reliable and easy to use",
+        "Great job on the latest version"
+      ]
+    },
+    {
+      "topic_id": "topic_16",
+      "label": "Tutorial and Onboarding",
+      "count": 14,
+      "sentiment_mean": 0.36,
+      "sentiment_distribution": {
+        "positive": 3,
+        "negative": 7,
+        "neutral": 4,
+        "mixed": 0
+      },
+      "examples": [
+        "Onboarding process is confusing for new users",
+        "Need better tutorials for advanced features",
+        "Help guides are outdated and incomplete",
+        "Interactive tutorials would be helpful",
+        "First-time user experience needs improvement"
+      ]
+    },
+    {
+      "topic_id": "topic_17",
+      "label": "Data Management",
+      "count": 11,
+      "sentiment_mean": 0.27,
+      "sentiment_distribution": {
+        "positive": 2,
+        "negative": 6,
+        "neutral": 3,
+        "mixed": 0
+      },
+      "examples": [
+        "Better data export options needed",
+        "Data usage tracking would be useful",
+        "Easier way to clear app data and cache",
+        "Data compression for storage efficiency",
+        "More control over data retention policies"
+      ]
+    },
+    {
+      "topic_id": "topic_18",
+      "label": "Social Features",
+      "count": 8,
+      "sentiment_mean": 0.44,
+      "sentiment_distribution": {
+        "positive": 3,
+        "negative": 2,
+        "neutral": 3,
+        "mixed": 0
+      },
+      "examples": [
+        "Social sharing features could be expanded",
+        "Community features would add value",
+        "Better friend finding and connection tools",
+        "Social integration works well",
+        "Group functionality would be appreciated"
+      ]
+    }
+  ]
+}
