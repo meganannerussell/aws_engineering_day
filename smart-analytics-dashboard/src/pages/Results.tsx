@@ -84,6 +84,101 @@ const Results: React.FC = () => {
           </div>
         </motion.div>
 
+        {/* Summary Text */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="summary-narrative"
+        >
+          {(() => {
+            const totalResponses = data.topics.reduce((sum, topic) => sum + topic.count, 0);
+            const topTopics = [...data.topics].sort((a, b) => b.count - a.count).slice(0, 3);
+            
+            const totalSentimentAnalyzed = data.topics.reduce((sum, topic) => 
+              sum + topic.sentiment_distribution.positive + 
+              topic.sentiment_distribution.negative + 
+              topic.sentiment_distribution.neutral + 
+              topic.sentiment_distribution.mixed, 0
+            );
+            
+            const totalPositive = data.topics.reduce((sum, topic) => sum + topic.sentiment_distribution.positive, 0);
+            const totalNegative = data.topics.reduce((sum, topic) => sum + topic.sentiment_distribution.negative, 0);
+            
+            const positivePercentage = ((totalPositive / totalSentimentAnalyzed) * 100);
+            const negativePercentage = ((totalNegative / totalSentimentAnalyzed) * 100);
+            
+            return (
+              <p className="summary-narrative__text">
+                The most frequently cited aspects that respondents mentioned were{" "}
+                <strong>{topTopics[0]?.label.toLowerCase()}</strong> ({Math.round((topTopics[0]?.count || 0) / totalResponses * 100)}%)
+                {topTopics[1] && (
+                  <>
+                    , <strong>{topTopics[1].label.toLowerCase()}</strong> ({Math.round(topTopics[1].count / totalResponses * 100)}%)
+                  </>
+                )}
+                {topTopics[2] && (
+                  <>
+                    , and <strong>{topTopics[2].label.toLowerCase()}</strong> ({Math.round(topTopics[2].count / totalResponses * 100)}%)
+                  </>
+                )}
+                . Sentiment analysis reveals positive feedback ({Math.round(positivePercentage)}% positive vs {Math.round(negativePercentage)}% negative).
+              </p>
+            );
+          })()}
+        </motion.div>
+
+        {/* Strategic Implications */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="strategic-implications"
+        >
+          <h3 className="strategic-implications__title">Strategic Implications</h3>
+          <ul className="strategic-implications__list">
+            {(() => {
+              const totalResponses = data.topics.reduce((sum, topic) => sum + topic.count, 0);
+              const topTopicPercentage = ((data.topics[0]?.count || 0) / totalResponses) * 100;
+              
+              const insights = [];
+              
+              // Mixed sentiment insight
+              insights.push("Mixed sentiment suggests diverse customer experiences");
+              
+              // Topic concentration insight
+              if (topTopicPercentage > 50) {
+                insights.push("Responses concentrated around one main theme");
+              } else if (topTopicPercentage < 25) {
+                insights.push("Highly diverse responses across multiple themes");
+              } else {
+                insights.push("Balanced distribution of themes");
+              }
+              
+              // Sample size insight
+              if (totalResponses >= 500) {
+                insights.push("Large sample size provides high statistical confidence");
+              } else if (totalResponses >= 100) {
+                insights.push("Adequate sample size for reliable insights");
+              } else {
+                insights.push("Small sample size - findings should be validated");
+              }
+              
+              return insights.map((insight, index) => (
+                <motion.li
+                  key={index}
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2 + (index * 0.1) }}
+                  className="strategic-implications__item"
+                >
+                  {insight}
+                </motion.li>
+              ));
+            })()}
+          </ul>
+        </motion.div>
+
         {/* Metrics Header */}
         <MetricsHeader data={data} />
 
@@ -130,7 +225,7 @@ const Results: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Topic Details Section */}
+        {/* Top Themes Identified Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -138,9 +233,9 @@ const Results: React.FC = () => {
           className="topic-details"
         >
           <div className="topic-details__header">
-            <h3 className="topic-details__title">Topic Details</h3>
+            <h3 className="topic-details__title">Top Themes Identified</h3>
             <p className="topic-details__description">
-              Detailed breakdown of each identified topic with example responses
+              Most frequently mentioned themes with example responses and sentiment breakdown
             </p>
           </div>
           <div className="topic-details__list">
