@@ -29,6 +29,8 @@ const TopicFrequencyChart: React.FC<TopicFrequencyChartProps> = ({
     .sort((a, b) => b.count - a.count)
     .slice(0, 10);
 
+  console.log('TopicFrequencyChart - topics:', topics.length, 'sortedTopics:', sortedTopics.length, 'chartType:', chartType);
+
   const colors = getChartColors(sortedTopics.length);
 
   const renderChart = () => {
@@ -153,13 +155,13 @@ const TopicFrequencyChart: React.FC<TopicFrequencyChartProps> = ({
 
   if (sortedTopics.length === 0) {
     return (
-      <div className="flex items-center justify-center h-96 text-gray-500">
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '400px', color: '#6b7280' }}>
         <p>No topic data available</p>
       </div>
     );
   }
 
-  return <div className="w-full">{renderChart()}</div>;
+  return <div style={{ width: '100%', height: '400px' }}>{renderChart()}</div>;
 };
 
 export default TopicFrequencyChart;

@@ -35,6 +35,8 @@ const SentimentDistributionChart: React.FC<SentimentDistributionChartProps> = ({
     { positive: 0, negative: 0, neutral: 0, mixed: 0 }
   );
 
+  console.log('SentimentDistributionChart - topics:', topics.length, 'sentimentData:', sentimentData, 'chartType:', chartType);
+
   const total = Object.values(sentimentData).reduce(
     (sum, count) => sum + count,
     0
@@ -152,13 +154,13 @@ const SentimentDistributionChart: React.FC<SentimentDistributionChartProps> = ({
 
   if (chartData.length === 0) {
     return (
-      <div className="flex items-center justify-center h-96 text-gray-500">
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '400px', color: '#6b7280' }}>
         <p>No sentiment data available</p>
       </div>
     );
   }
 
-  return <div className="w-full">{renderChart()}</div>;
+  return <div style={{ width: '100%', height: '400px' }}>{renderChart()}</div>;
 };
 
 export default SentimentDistributionChart;
