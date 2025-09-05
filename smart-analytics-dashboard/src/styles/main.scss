@@ -402,6 +402,7 @@ body {
   background: $card-background;
   border-bottom: 1px solid $border-color;
   padding: 1rem 0;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 
   &__content {
@@ -409,6 +410,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
+    padding: 1rem 15px;
   }
 
   &__text {
@@ -460,7 +462,11 @@ body {
   left: 0;
   width: 300px;
   height: 100vh;
-  background: linear-gradient(180deg, $card-background 0%, rgba($card-background, 0.95) 100%);
+  background: linear-gradient(
+    180deg,
+    $card-background 0%,
+    rgba($card-background, 0.95) 100%
+  );
   backdrop-filter: blur(10px);
   border-right: 1px solid $border-color;
   z-index: 1000;
@@ -569,7 +575,11 @@ body {
 
 // Dataset Info Card
 .dataset-info-card {
-  background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 10%) 100%);
+  background: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    darken($primary-color, 10%) 100%
+  );
   color: white;
   padding: 1.5rem;
   border-radius: $border-radius-lg;
@@ -933,6 +943,20 @@ body {
     margin-bottom: 0.75rem;
   }
 
+  &__number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary-color;
+    background: rgba($primary-color, 0.1);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
   &__title {
     font-weight: 500;
     color: $text-primary;
@@ -1279,6 +1303,49 @@ body {
   &__count {
     color: $text-muted;
   }
+
+  &__sentiment-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+}
+
+// Sentiment Tags
+.sentiment-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+
+  &--positive {
+    background: rgba($success-color, 0.15);
+    color: $success-color;
+    border: 1px solid rgba($success-color, 0.3);
+  }
+
+  &--negative {
+    background: rgba($error-color, 0.15);
+    color: $error-color;
+    border: 1px solid rgba($error-color, 0.3);
+  }
+
+  &--neutral {
+    background: rgba($warning-color, 0.15);
+    color: $warning-color;
+    border: 1px solid rgba($warning-color, 0.3);
+  }
+
+  &--mixed {
+    background: rgba($primary-color, 0.15);
+    color: $primary-color;
+    border: 1px solid rgba($primary-color, 0.3);
+  }
 }
 
 // Dark Mode Toggle Styles
@@ -1314,17 +1381,41 @@ body {
 
 // Dark Theme Styles
 [data-theme="dark"] {
+  * {
+    background-color: transparent;
+  }
+
+  html[lang="en"] {
+    background: $dark-bg-primary !important;
+    color: $dark-text-primary;
+  }
+
+  html,
   body {
-    background: $dark-bg-primary;
+    background: $dark-bg-primary !important;
+    color: $dark-text-primary;
+  }
+
+  body {
+    background: $dark-bg-primary !important;
     color: $dark-text-primary;
   }
 
   .results-page {
     background-color: $dark-bg-primary;
+    min-height: 100vh;
   }
 
   .container {
     background: transparent;
+  }
+
+  .results-container {
+    background: transparent;
+  }
+
+  #root {
+    background: $dark-bg-primary;
   }
 
   .header {
@@ -1332,6 +1423,8 @@ body {
     border: 1px solid $dark-border-color;
     border-radius: $border-radius-lg;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     &__title {
       color: $dark-text-primary;
@@ -1444,6 +1537,11 @@ body {
       color: $dark-text-primary;
     }
 
+    &__number {
+      color: $bright-blue;
+      background: rgba($bright-blue, 0.2);
+    }
+
     &__stats {
       color: $dark-text-secondary;
     }
@@ -1548,7 +1646,11 @@ body {
   }
 
   .dataset-sidebar {
-    background: linear-gradient(180deg, rgba($dark-bg-card, 0.95) 0%, rgba($dark-bg-secondary, 0.9) 100%);
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     backdrop-filter: blur(10px);
     border-right: 1px solid $dark-border-color;
 
@@ -1556,6 +1658,19 @@ body {
       color: $dark-text-primary;
       border-bottom-color: $bright-blue;
     }
+
+    &__content {
+      background: transparent;
+    }
+  }
+
+  .main-content {
+    background: $dark-bg-primary;
+    min-height: 100vh;
+  }
+
+  .results-container {
+    background: transparent;
   }
 
   .dataset-selector-enhanced {
@@ -1586,7 +1701,11 @@ body {
   }
 
   .dataset-info-card {
-    background: linear-gradient(135deg, $bright-blue 0%, darken($bright-blue, 15%) 100%);
+    background: linear-gradient(
+      135deg,
+      $bright-blue 0%,
+      darken($bright-blue, 15%) 100%
+    );
   }
 
   .themes-summary {
@@ -1620,6 +1739,41 @@ body {
 
     &__percentage {
       color: $bright-blue;
+    }
+  }
+
+  .topic-item {
+    &__sentiment-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+  }
+
+  .sentiment-tag {
+    &--positive {
+      background: rgba($bright-green, 0.2);
+      color: $bright-green;
+      border: 1px solid rgba($bright-green, 0.4);
+    }
+
+    &--negative {
+      background: rgba($error-color, 0.2);
+      color: $error-color;
+      border: 1px solid rgba($error-color, 0.4);
+    }
+
+    &--neutral {
+      background: rgba($bright-yellow, 0.2);
+      color: $bright-yellow;
+      border: 1px solid rgba($bright-yellow, 0.4);
+    }
+
+    &--mixed {
+      background: rgba($bright-blue, 0.2);
+      color: $bright-blue;
+      border: 1px solid rgba($bright-blue, 0.4);
     }
   }
 }

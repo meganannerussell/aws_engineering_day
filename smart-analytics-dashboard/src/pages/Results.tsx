@@ -14,21 +14,23 @@ const Results: React.FC = () => {
   const [topicChartType, setTopicChartType] = useState<ChartType>("bar");
   const [sentimentChartType, setSentimentChartType] =
     useState<ChartType>("pie");
-  const [selectedDataset, setSelectedDataset] = useState<string>("hackathon_demo_results.json");
+  const [selectedDataset, setSelectedDataset] = useState<string>(
+    "hackathon_demo_results.json"
+  );
 
   const datasets = [
-    { 
-      value: "hackathon_demo_results.json", 
-      label: "Beauty Products Survey" 
+    {
+      value: "hackathon_demo_results.json",
+      label: "Beauty Products Survey",
     },
-    { 
-      value: "customer_service_analysis.json", 
-      label: "Customer Service Experience" 
+    {
+      value: "customer_service_analysis.json",
+      label: "Customer Service Experience",
     },
-    { 
-      value: "product_feedback_analysis.json", 
-      label: "Mobile App User Experience" 
-    }
+    {
+      value: "product_feedback_analysis.json",
+      label: "Mobile App User Experience",
+    },
   ];
 
   const loadData = async (filename: string) => {
@@ -97,7 +99,10 @@ const Results: React.FC = () => {
             Analytics Datasets
           </h3>
           <div className="dataset-selector-enhanced">
-            <label htmlFor="dataset-select" className="dataset-selector-enhanced__label">
+            <label
+              htmlFor="dataset-select"
+              className="dataset-selector-enhanced__label"
+            >
               Select Dataset:
             </label>
             <select
@@ -117,14 +122,20 @@ const Results: React.FC = () => {
             <div className="dataset-sidebar__info">
               <div className="dataset-info-card">
                 <h4 className="dataset-info-card__title">Current Dataset</h4>
-                <p className="dataset-info-card__project">{data.project_metadata.project_title}</p>
+                <p className="dataset-info-card__project">
+                  {data.project_metadata.project_title}
+                </p>
                 <div className="dataset-info-card__stats">
                   <div className="stat-mini">
-                    <span className="stat-mini__value">{data.project_metadata.total_responses.toLocaleString()}</span>
+                    <span className="stat-mini__value">
+                      {data.project_metadata.total_responses.toLocaleString()}
+                    </span>
                     <span className="stat-mini__label">Responses</span>
                   </div>
                   <div className="stat-mini">
-                    <span className="stat-mini__value">{data.topics.length}</span>
+                    <span className="stat-mini__value">
+                      {data.topics.length}
+                    </span>
                     <span className="stat-mini__label">Topics</span>
                   </div>
                 </div>
@@ -136,220 +147,38 @@ const Results: React.FC = () => {
 
       <div className="main-content">
         <div className="container results-container">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="header"
-        >
-          <div className="header__content">
-            <div className="header__text">
-              <h1 className="header__title">
-                {data.project_metadata.project_title}
-              </h1>
-              <p className="header__subtitle">
-                {data.project_metadata.question_text}
-              </p>
-              <div className="header__meta">
-                Analysis completed on{" "}
-                {new Date(data.project_metadata.timestamp).toLocaleString()}
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="header"
+          >
+            <div className="header__content">
+              <div className="header__text">
+                <h1 className="header__title">
+                  {data.project_metadata.project_title}
+                </h1>
+                <p className="header__subtitle">
+                  {data.project_metadata.question_text}
+                </p>
+                <div className="header__meta">
+                  Analysis completed on{" "}
+                  {new Date(data.project_metadata.timestamp).toLocaleString()}
+                </div>
+              </div>
+              <div className="header__actions">
+                <DarkModeToggle />
               </div>
             </div>
-                         <div className="header__actions">
-               <DarkModeToggle />
-             </div>
-          </div>
-        </motion.div>
-
-        {/* Summary Text */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="summary-narrative"
-        >
-          {(() => {
-            const totalResponses = data.topics.reduce(
-              (sum, topic) => sum + topic.count,
-              0
-            );
-            const topTopics = [...data.topics]
-              .sort((a, b) => b.count - a.count)
-              .slice(0, 3);
-
-            const totalSentimentAnalyzed = data.topics.reduce(
-              (sum, topic) =>
-                sum +
-                topic.sentiment_distribution.positive +
-                topic.sentiment_distribution.negative +
-                topic.sentiment_distribution.neutral +
-                topic.sentiment_distribution.mixed,
-              0
-            );
-
-            const totalPositive = data.topics.reduce(
-              (sum, topic) => sum + topic.sentiment_distribution.positive,
-              0
-            );
-            const totalNegative = data.topics.reduce(
-              (sum, topic) => sum + topic.sentiment_distribution.negative,
-              0
-            );
-
-            const positivePercentage =
-              (totalPositive / totalSentimentAnalyzed) * 100;
-            const negativePercentage =
-              (totalNegative / totalSentimentAnalyzed) * 100;
-
-            return (
-              <p className="summary-narrative__text">
-                The most frequently cited aspects that respondents mentioned
-                were <strong>{topTopics[0]?.label.toLowerCase()}</strong> (
-                {Math.round(
-                  ((topTopics[0]?.count || 0) / totalResponses) * 100
-                )}
-                %)
-                {topTopics[1] && (
-                  <>
-                    , <strong>{topTopics[1].label.toLowerCase()}</strong> (
-                    {Math.round((topTopics[1].count / totalResponses) * 100)}%)
-                  </>
-                )}
-                {topTopics[2] && (
-                  <>
-                    , and <strong>{topTopics[2].label.toLowerCase()}</strong> (
-                    {Math.round((topTopics[2].count / totalResponses) * 100)}%)
-                  </>
-                )}
-                . Sentiment analysis reveals positive feedback (
-                {Math.round(positivePercentage)}% positive vs{" "}
-                {Math.round(negativePercentage)}% negative).
-              </p>
-            );
-          })()}
-        </motion.div>
-
-        {/* Strategic Implications */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-          className="strategic-implications"
-        >
-          <h3 className="strategic-implications__title">
-            Strategic Implications
-          </h3>
-          <ul className="strategic-implications__list">
-            {(() => {
-              const totalResponses = data.topics.reduce(
-                (sum, topic) => sum + topic.count,
-                0
-              );
-              const topTopicPercentage =
-                ((data.topics[0]?.count || 0) / totalResponses) * 100;
-
-              const insights = [];
-
-              // Mixed sentiment insight
-              insights.push(
-                "Mixed sentiment suggests diverse customer experiences"
-              );
-
-              // Topic concentration insight
-              if (topTopicPercentage > 50) {
-                insights.push("Responses concentrated around one main theme");
-              } else if (topTopicPercentage < 25) {
-                insights.push(
-                  "Highly diverse responses across multiple themes"
-                );
-              } else {
-                insights.push("Balanced distribution of themes");
-              }
-
-              // Sample size insight
-              if (totalResponses >= 500) {
-                insights.push(
-                  "Large sample size provides high statistical confidence"
-                );
-              } else if (totalResponses >= 100) {
-                insights.push("Adequate sample size for reliable insights");
-              } else {
-                insights.push(
-                  "Small sample size - findings should be validated"
-                );
-              }
-
-              return insights.map((insight, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.2 + index * 0.1 }}
-                  className="strategic-implications__item"
-                >
-                  {insight}
-                </motion.li>
-              ));
-            })()}
-          </ul>
-        </motion.div>
-
-        {/* Metrics Header */}
-        <MetricsHeader data={data} />
-
-        {/* Charts Section */}
-        <div className="charts-grid">
-          {/* Topic Frequency Chart */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <ChartCard
-              title="Topic Frequency"
-              description="Distribution of responses across identified themes"
-              chartType={topicChartType}
-              onChartTypeChange={setTopicChartType}
-              availableTypes={["bar", "pie", "line"]}
-            >
-              <TopicFrequencyChart
-                topics={data.topics}
-                chartType={topicChartType}
-              />
-            </ChartCard>
           </motion.div>
-
-          {/* Sentiment Distribution Chart */}
+          {/* Summary Text */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="summary-narrative"
           >
-            <ChartCard
-              title="Sentiment Distribution"
-              description="Overall sentiment analysis of responses"
-              chartType={sentimentChartType}
-              onChartTypeChange={setSentimentChartType}
-              availableTypes={["pie", "donut", "bar"]}
-            >
-              <SentimentDistributionChart
-                topics={data.topics}
-                chartType={sentimentChartType}
-              />
-            </ChartCard>
-          </motion.div>
-        </div>
-
-        {/* Themes Summary */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="themes-summary"
-        >
-          <h3 className="themes-summary__title">Summary of Themes</h3>
-          <div className="themes-summary__grid">
             {(() => {
               const totalResponses = data.topics.reduce(
                 (sum, topic) => sum + topic.count,
@@ -357,95 +186,186 @@ const Results: React.FC = () => {
               );
               const topTopics = [...data.topics]
                 .sort((a, b) => b.count - a.count)
-                .slice(0, 5);
+                .slice(0, 3);
 
-              return topTopics.map((topic, index) => (
-                <motion.div
-                  key={topic.topic_id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.45 + index * 0.05 }}
-                  className="theme-summary-card"
-                >
-                  <div className="theme-summary-card__header">
-                    <div className="theme-summary-card__rank">#{index + 1}</div>
-                    <div className="theme-summary-card__percentage">
-                      {Math.round((topic.count / totalResponses) * 100)}%
-                    </div>
-                  </div>
-                  <h4 className="theme-summary-card__title">{topic.label}</h4>
-                                     <p className="theme-summary-card__count">
-                     {topic.count.toLocaleString()} responses
-                   </p>
-                </motion.div>
-              ));
+              const totalSentimentAnalyzed = data.topics.reduce(
+                (sum, topic) =>
+                  sum +
+                  topic.sentiment_distribution.positive +
+                  topic.sentiment_distribution.negative +
+                  topic.sentiment_distribution.neutral +
+                  topic.sentiment_distribution.mixed,
+                0
+              );
+
+              const totalPositive = data.topics.reduce(
+                (sum, topic) => sum + topic.sentiment_distribution.positive,
+                0
+              );
+              const totalNegative = data.topics.reduce(
+                (sum, topic) => sum + topic.sentiment_distribution.negative,
+                0
+              );
+
+              const positivePercentage =
+                (totalPositive / totalSentimentAnalyzed) * 100;
+              const negativePercentage =
+                (totalNegative / totalSentimentAnalyzed) * 100;
+
+              return (
+                <p className="summary-narrative__text">
+                  The most frequently cited aspects that respondents mentioned
+                  were <strong>{topTopics[0]?.label.toLowerCase()}</strong> (
+                  {Math.round(
+                    ((topTopics[0]?.count || 0) / totalResponses) * 100
+                  )}
+                  %)
+                  {topTopics[1] && (
+                    <>
+                      , <strong>{topTopics[1].label.toLowerCase()}</strong> (
+                      {Math.round((topTopics[1].count / totalResponses) * 100)}
+                      %)
+                    </>
+                  )}
+                  {topTopics[2] && (
+                    <>
+                      , and <strong>{topTopics[2].label.toLowerCase()}</strong>{" "}
+                      ({Math.round((topTopics[2].count / totalResponses) * 100)}
+                      %)
+                    </>
+                  )}
+                  . Sentiment analysis reveals positive feedback (
+                  {Math.round(positivePercentage)}% positive vs{" "}
+                  {Math.round(negativePercentage)}% negative).
+                </p>
+              );
             })()}
-          </div>
-        </motion.div>
+          </motion.div>
+          {/* Metrics Header */}
+          <MetricsHeader data={data} />
+          {/* Charts Section */}
+          <div className="charts-grid">
+            {/* Topic Frequency Chart */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <ChartCard
+                title="Topic Frequency"
+                description="Distribution of responses across identified themes"
+                chartType={topicChartType}
+                onChartTypeChange={setTopicChartType}
+                availableTypes={["bar", "pie", "line"]}
+              >
+                <TopicFrequencyChart
+                  topics={data.topics}
+                  chartType={topicChartType}
+                />
+              </ChartCard>
+            </motion.div>
 
-        {/* Top Themes Identified Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="topic-details"
-        >
-          <div className="topic-details__header">
-            <h3 className="topic-details__title">Top Themes Identified</h3>
-            <p className="topic-details__description">
-              Most frequently mentioned themes with example responses and
-              sentiment breakdown
-            </p>
+            {/* Sentiment Distribution Chart */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <ChartCard
+                title="Sentiment Distribution"
+                description="Overall sentiment analysis of responses"
+                chartType={sentimentChartType}
+                onChartTypeChange={setSentimentChartType}
+                availableTypes={["pie", "donut", "bar"]}
+              >
+                <SentimentDistributionChart
+                  topics={data.topics}
+                  chartType={sentimentChartType}
+                />
+              </ChartCard>
+            </motion.div>
           </div>
-          <div className="topic-details__list">
-            {data.topics
-              .sort((a, b) => b.count - a.count)
-              .slice(0, 5)
-              .map((topic, index) => (
-                <motion.div
-                  key={topic.topic_id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="topic-item"
-                  style={{ "--index": index } as React.CSSProperties}
-                >
-                  <div className="topic-item__header">
-                    <div style={{ flex: 1 }}>
-                      <h4 className="topic-item__title">{topic.label}</h4>
-                      <div className="topic-item__stats">
-                        <span>{topic.count.toLocaleString()} responses</span>
-                        <span>•</span>
-                        <span>
-                          {(topic.sentiment_mean * 100).toFixed(1)}% avg
-                          confidence
-                        </span>
+
+          {/* Top Themes Identified Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="topic-details"
+          >
+            <div className="topic-details__header">
+              <h3 className="topic-details__title">Top Themes Identified</h3>
+              <p className="topic-details__description">
+                Most frequently mentioned themes with example responses and
+                sentiment breakdown
+              </p>
+            </div>
+            <div className="topic-details__list">
+              {data.topics
+                .sort((a, b) => b.count - a.count)
+                .slice(0, 5)
+                .map((topic, index) => (
+                  <motion.div
+                    key={topic.topic_id}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    className="topic-item"
+                    style={{ "--index": index } as React.CSSProperties}
+                  >
+                    <div className="topic-item__header">
+                      <div style={{ flex: 1 }}>
+                        <h4 className="topic-item__title">{topic.label}</h4>
+                        <div className="topic-item__stats">
+                          <span>{topic.count.toLocaleString()} responses</span>
+                        </div>
+                        <div className="topic-item__sentiment-tags">
+                          {topic.sentiment_distribution.positive > 0 && (
+                            <span className="sentiment-tag sentiment-tag--positive">
+                              {topic.sentiment_distribution.positive} positive
+                            </span>
+                          )}
+                          {topic.sentiment_distribution.negative > 0 && (
+                            <span className="sentiment-tag sentiment-tag--negative">
+                              {topic.sentiment_distribution.negative} negative
+                            </span>
+                          )}
+                          {topic.sentiment_distribution.neutral > 0 && (
+                            <span className="sentiment-tag sentiment-tag--neutral">
+                              {topic.sentiment_distribution.neutral} neutral
+                            </span>
+                          )}
+                          {topic.sentiment_distribution.mixed > 0 && (
+                            <span className="sentiment-tag sentiment-tag--mixed">
+                              {topic.sentiment_distribution.mixed} mixed
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="topic-item__number">#{index + 1}</div>
+                    </div>
+
+                    <div className="topic-item__examples">
+                      <p className="topic-item__examples-title">
+                        Example responses:
+                      </p>
+                      <div>
+                        {topic.examples
+                          .slice(0, 2)
+                          .map((example, exampleIndex) => (
+                            <div
+                              key={exampleIndex}
+                              className="topic-item__example"
+                            >
+                              "{example}"
+                            </div>
+                          ))}
                       </div>
                     </div>
-                    <div className="topic-item__rank">#{index + 1}</div>
-                  </div>
-
-                  <div className="topic-item__examples">
-                    <p className="topic-item__examples-title">
-                      Example responses:
-                    </p>
-                    <div>
-                      {topic.examples
-                        .slice(0, 2)
-                        .map((example, exampleIndex) => (
-                          <div
-                            key={exampleIndex}
-                            className="topic-item__example"
-                          >
-                            "{example}"
-                          </div>
-                        ))}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-          </div>
-        </motion.div>
+                  </motion.div>
+                ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
