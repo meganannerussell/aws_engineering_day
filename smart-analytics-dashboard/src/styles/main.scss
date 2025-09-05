@@ -499,6 +499,109 @@ body {
   }
 }
 
+// Themes Summary Styles
+.themes-summary {
+  @include card;
+  margin-bottom: 2rem;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 1.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+}
+
+.theme-summary-card {
+  background: white;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 1rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $primary-color;
+    box-shadow: $shadow-sm;
+    transform: translateY(-2px);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  &__rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: $primary-color;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  &__percentage {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  &__count {
+    font-size: 0.875rem;
+    color: $text-secondary;
+    margin-bottom: 0.75rem;
+  }
+
+  &__sentiment {
+    .sentiment-indicators {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .sentiment-indicator {
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      
+      &--positive {
+        background: rgba($success-color, 0.1);
+        color: $success-color;
+      }
+
+      &--negative {
+        background: rgba($error-color, 0.1);
+        color: $error-color;
+      }
+
+      &--neutral {
+        background: rgba($warning-color, 0.1);
+        color: $warning-color;
+      }
+    }
+  }
+}
+
 .metrics-grid {
   @include grid-responsive(250px);
   margin-bottom: 2rem;
@@ -528,6 +631,9 @@ body {
     font-weight: 700;
     color: $text-primary;
     margin-bottom: 0.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.2;
   }
 
   &__description {

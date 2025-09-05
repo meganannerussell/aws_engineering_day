@@ -225,6 +225,56 @@ const Results: React.FC = () => {
           </ul>
         </motion.div>
 
+        {/* Themes Summary */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="themes-summary"
+        >
+          <h3 className="themes-summary__title">Summary of Themes</h3>
+          <div className="themes-summary__grid">
+            {(() => {
+              const totalResponses = data.topics.reduce((sum, topic) => sum + topic.count, 0);
+              const topTopics = [...data.topics].sort((a, b) => b.count - a.count).slice(0, 5);
+              
+              return topTopics.map((topic, index) => (
+                <motion.div
+                  key={topic.topic_id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.25 + (index * 0.05) }}
+                  className="theme-summary-card"
+                >
+                  <div className="theme-summary-card__header">
+                    <div className="theme-summary-card__rank">#{index + 1}</div>
+                    <div className="theme-summary-card__percentage">
+                      {Math.round((topic.count / totalResponses) * 100)}%
+                    </div>
+                  </div>
+                  <h4 className="theme-summary-card__title">{topic.label}</h4>
+                  <p className="theme-summary-card__count">
+                    {topic.count.toLocaleString()} responses
+                  </p>
+                  <div className="theme-summary-card__sentiment">
+                    <div className="sentiment-indicators">
+                      <span className="sentiment-indicator sentiment-indicator--positive">
+                        {topic.sentiment_distribution.positive} pos
+                      </span>
+                      <span className="sentiment-indicator sentiment-indicator--negative">
+                        {topic.sentiment_distribution.negative} neg
+                      </span>
+                      <span className="sentiment-indicator sentiment-indicator--neutral">
+                        {topic.sentiment_distribution.neutral} neu
+                      </span>
+                    </div>
+                  </div>
+                </motion.div>
+              ));
+            })()}
+          </div>
+        </motion.div>
+
         {/* Metrics Header */}
         <MetricsHeader data={data} />
 
