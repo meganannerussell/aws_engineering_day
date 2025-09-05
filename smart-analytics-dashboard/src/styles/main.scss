@@ -417,6 +417,9 @@ body {
 
   &__actions {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   &__title {
@@ -447,6 +450,173 @@ body {
     &__text {
       text-align: center;
     }
+  }
+}
+
+// Dataset Sidebar Styles
+.dataset-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(180deg, $card-background 0%, rgba($card-background, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid $border-color;
+  z-index: 1000;
+  box-shadow: $shadow-lg;
+  overflow-y: auto;
+
+  &__content {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 0.75rem;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+  }
+
+  &__info {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    width: 280px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+// Main content adjustment for sidebar
+.main-content {
+  margin-left: 300px;
+  min-height: 100vh;
+
+  @media (max-width: 1024px) {
+    margin-left: 280px;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+// Enhanced Dataset Selector
+.dataset-selector-enhanced {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &__label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $text-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  &__select {
+    padding: 1rem;
+    border: 2px solid $border-color;
+    border-radius: $border-radius-lg;
+    background: $card-background;
+    color: $text-primary;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+      border-color: $primary-color;
+      box-shadow: $shadow-md;
+      transform: translateY(-1px);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 4px rgba($primary-color, 0.15);
+    }
+
+    option {
+      padding: 0.75rem;
+      background: $card-background;
+      color: $text-primary;
+    }
+  }
+}
+
+// Dataset Info Card
+.dataset-info-card {
+  background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 10%) 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+
+  &__title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+  }
+
+  &__project {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    line-height: 1.3;
+  }
+
+  &__stats {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+// Mini Stats
+.stat-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  &__label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -1392,6 +1562,48 @@ body {
       color: white;
       border-color: $bright-blue;
     }
+  }
+
+  .dataset-sidebar {
+    background: linear-gradient(180deg, rgba($dark-bg-card, 0.95) 0%, rgba($dark-bg-secondary, 0.9) 100%);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid $dark-border-color;
+
+    &__title {
+      color: $dark-text-primary;
+      border-bottom-color: $bright-blue;
+    }
+  }
+
+  .dataset-selector-enhanced {
+    &__label {
+      color: $dark-text-primary;
+    }
+
+    &__select {
+      background: rgba($dark-bg-card, 0.8);
+      backdrop-filter: blur(10px);
+      border: 2px solid $dark-border-color;
+      color: $dark-text-primary;
+
+      &:hover {
+        border-color: $bright-blue;
+      }
+
+      &:focus {
+        border-color: $bright-blue;
+        box-shadow: 0 0 0 4px rgba($bright-blue, 0.15);
+      }
+
+      option {
+        background: $dark-bg-card;
+        color: $dark-text-primary;
+      }
+    }
+  }
+
+  .dataset-info-card {
+    background: linear-gradient(135deg, $bright-blue 0%, darken($bright-blue, 15%) 100%);
   }
 
   .themes-summary {

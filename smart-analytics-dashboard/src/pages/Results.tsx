@@ -14,26 +14,48 @@ const Results: React.FC = () => {
   const [topicChartType, setTopicChartType] = useState<ChartType>("bar");
   const [sentimentChartType, setSentimentChartType] =
     useState<ChartType>("pie");
+  const [selectedDataset, setSelectedDataset] = useState<string>("hackathon_demo_results.json");
+
+  const datasets = [
+    { 
+      value: "hackathon_demo_results.json", 
+      label: "Beauty Products Survey" 
+    },
+    { 
+      value: "customer_service_analysis.json", 
+      label: "Customer Service Experience" 
+    },
+    { 
+      value: "product_feedback_analysis.json", 
+      label: "Mobile App User Experience" 
+    }
+  ];
+
+  const loadData = async (filename: string) => {
+    try {
+      setLoading(true);
+      setError(null);
+      const response = await fetch(`/${filename}`);
+      if (!response.ok) {
+        throw new Error(`Failed to load data from ${filename}`);
+      }
+      const analyticsData: AnalyticsData = await response.json();
+      setData(analyticsData);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred");
+      setData(null);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch("/hackathon_demo_results.json");
-        if (!response.ok) {
-          throw new Error("Failed to load data");
-        }
-        const analyticsData: AnalyticsData = await response.json();
-        setData(analyticsData);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : "An error occurred");
-      } finally {
-        setLoading(false);
-      }
-    };
+    loadData(selectedDataset);
+  }, [selectedDataset]);
 
-    loadData();
-  }, []);
+  const handleDatasetChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedDataset(event.target.value);
+  };
 
   if (loading) {
     return (
@@ -62,7 +84,58 @@ const Results: React.FC = () => {
 
   return (
     <div className="results-page">
-      <div className="container results-container">
+      {/* Dataset Sidebar */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className="dataset-sidebar"
+      >
+        <div className="dataset-sidebar__content">
+          <h3 className="dataset-sidebar__title">
+            <span className="dataset-sidebar__icon">📊</span>
+            Analytics Datasets
+          </h3>
+          <div className="dataset-selector-enhanced">
+            <label htmlFor="dataset-select" className="dataset-selector-enhanced__label">
+              Select Dataset:
+            </label>
+            <select
+              id="dataset-select"
+              value={selectedDataset}
+              onChange={handleDatasetChange}
+              className="dataset-selector-enhanced__select"
+            >
+              {datasets.map((dataset) => (
+                <option key={dataset.value} value={dataset.value}>
+                  {dataset.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          {data && (
+            <div className="dataset-sidebar__info">
+              <div className="dataset-info-card">
+                <h4 className="dataset-info-card__title">Current Dataset</h4>
+                <p className="dataset-info-card__project">{data.project_metadata.project_title}</p>
+                <div className="dataset-info-card__stats">
+                  <div className="stat-mini">
+                    <span className="stat-mini__value">{data.project_metadata.total_responses.toLocaleString()}</span>
+                    <span className="stat-mini__label">Responses</span>
+                  </div>
+                  <div className="stat-mini">
+                    <span className="stat-mini__value">{data.topics.length}</span>
+                    <span className="stat-mini__label">Topics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </motion.div>
+
+      <div className="main-content">
+        <div className="container results-container">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -83,9 +156,9 @@ const Results: React.FC = () => {
                 {new Date(data.project_metadata.timestamp).toLocaleString()}
               </div>
             </div>
-            <div className="header__actions">
-              <DarkModeToggle />
-            </div>
+                         <div className="header__actions">
+               <DarkModeToggle />
+             </div>
           </div>
         </motion.div>
 
@@ -386,6 +459,7 @@ const Results: React.FC = () => {
               ))}
           </div>
         </motion.div>
+        </div>
       </div>
     </div>
   );
