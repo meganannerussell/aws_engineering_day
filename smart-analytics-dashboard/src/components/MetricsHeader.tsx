@@ -33,9 +33,9 @@ const MetricsHeader: React.FC<MetricsHeaderProps> = ({ data }) => {
       iconClass: "metric-card__icon--green",
     },
     {
-      title: "Avg. Confidence",
+      title: "Avg. Sentiment",
       value: formatConfidence(avgConfidence),
-      description: "Average sentiment confidence",
+      description: "Average sentiment",
       icon: Target,
       iconClass: "metric-card__icon--purple",
     },
