@@ -1,6 +1,6 @@
 # Smart Text Analytics Pipeline
 
-**AWS Engineering Day Hackathon 2024**
+**AWS Engineering Day GenAI Hackathon 2025**
 
 Transform unstructured survey responses into actionable business insights using AWS AI services, DBSCAN clustering, and intelligent caching.
 
@@ -566,5 +566,5 @@ aws_engineering_day/
 
 ---
 
-**Built for AWS Engineering Day Hackathon 2024** 🚀  
+**Built for AWS Engineering Day Hackathon 2025** 🚀  
 *Ready to transform your unstructured text data into business intelligence!*
