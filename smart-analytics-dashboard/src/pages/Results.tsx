@@ -6,6 +6,7 @@ import ChartCard from "../components/ChartCard";
 import TopicFrequencyChart from "../components/charts/TopicFrequencyChart";
 import SentimentDistributionChart from "../components/charts/SentimentDistributionChart";
 import DarkModeToggle from "../components/DarkModeToggle";
+import ExportButton from "../components/ExportButton";
 
 const Results: React.FC = () => {
   const [data, setData] = useState<AnalyticsData | null>(null);
@@ -181,6 +182,7 @@ const Results: React.FC = () => {
                 </div>
               </div>
               <div className="header__actions">
+                <ExportButton />
                 <DarkModeToggle />
               </div>
             </div>
@@ -265,7 +267,7 @@ const Results: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <ChartCard
-                title="Topic Frequency"
+                title="Topic Distribution"
                 description="Distribution of responses across identified themes"
                 chartType={topicChartType}
                 onChartTypeChange={setTopicChartType}

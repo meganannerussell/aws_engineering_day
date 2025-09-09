@@ -869,12 +869,20 @@ body {
   --tooltip-text: #374151;
 
   &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid $border-color;
+  }
+
+  &__header-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__text {
+    flex: 1;
   }
 
   &__title {
@@ -900,10 +908,17 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     color: $text-secondary;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
 
     &:hover {
       background: #e5e7eb;
       color: $text-primary;
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
     }
   }
 
@@ -1368,6 +1383,37 @@ body {
   }
 }
 
+// Export Button Styles
+.export-button {
+  @include flex-center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: $card-background;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $text-primary;
+  box-shadow: $shadow-sm;
+
+  &:hover {
+    background: $success-color;
+    color: white;
+    border-color: $success-color;
+    box-shadow: $shadow-md;
+  }
+
+  &__icon {
+    @include flex-center;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+}
+
 // Dark Mode Toggle Styles
 .dark-mode-toggle {
   @include flex-center;
@@ -1466,7 +1512,11 @@ body[data-theme="dark"] {
   }
 
   .header {
-    background: $dark-bg-card;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     border-radius: $border-radius-lg;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
@@ -1487,7 +1537,11 @@ body[data-theme="dark"] {
   }
 
   .metric-card {
-    background: $dark-bg-card;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     color: $dark-text-primary;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
@@ -1528,7 +1582,11 @@ body[data-theme="dark"] {
   }
 
   .chart-card {
-    background: $dark-bg-card;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
     
@@ -1546,7 +1604,7 @@ body[data-theme="dark"] {
     }
 
     &__toggle {
-      background: $dark-bg-secondary;
+      background: $dark-bg-card;
       color: $dark-text-secondary;
       border: 1px solid $dark-border-color;
 
@@ -1560,7 +1618,11 @@ body[data-theme="dark"] {
   }
 
   .topic-details {
-    background: $dark-bg-card;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     border-radius: $border-radius-lg;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
@@ -1598,14 +1660,18 @@ body[data-theme="dark"] {
     }
 
     &__example {
-      background: $dark-bg-secondary;
+      background: $dark-bg-card;
       color: $dark-text-primary;
       border: 1px solid $dark-border-color;
     }
   }
 
   .summary-narrative {
-    background: $dark-bg-card;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     border-left: 4px solid $bright-blue;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
@@ -1683,8 +1749,29 @@ body[data-theme="dark"] {
     }
   }
 
+  .export-button {
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
+    border: 1px solid $dark-border-color;
+    color: $dark-text-primary;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background: $success-color;
+      color: white;
+      border-color: $success-color;
+    }
+  }
+
   .dark-mode-toggle {
-    background: $dark-bg-card;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     color: $dark-text-primary;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1760,7 +1847,11 @@ body[data-theme="dark"] {
   }
 
   .themes-summary {
-    background: $dark-bg-card;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     border-radius: $border-radius-lg;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
@@ -1771,7 +1862,11 @@ body[data-theme="dark"] {
   }
 
   .theme-summary-card {
-    background: $dark-bg-secondary;
+    background: linear-gradient(
+      180deg,
+      $dark-bg-card 0%,
+      $dark-bg-secondary 100%
+    );
     border: 1px solid $dark-border-color;
     color: $dark-text-primary;
 

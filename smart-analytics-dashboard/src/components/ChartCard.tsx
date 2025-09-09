@@ -52,8 +52,8 @@ const ChartCard: React.FC<ChartCardProps> = ({
       className={`chart-card ${className}`}
     >
       <div className="chart-card__header">
-        <div className="flex--between">
-          <div style={{ flex: 1 }}>
+        <div className="chart-card__header-content">
+          <div className="chart-card__text">
             <h3 className="chart-card__title">{title}</h3>
             <p className="chart-card__description">{description}</p>
           </div>

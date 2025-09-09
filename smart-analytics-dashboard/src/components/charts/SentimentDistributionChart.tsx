@@ -57,7 +57,7 @@ const SentimentDistributionChart: React.FC<SentimentDistributionChartProps> = ({
     switch (chartType) {
       case "pie":
         return (
-          <ResponsiveContainer width="100%" height={400}>
+          <ResponsiveContainer width="100%" height={500}>
             <PieChart>
               <Pie
                 data={chartData}
@@ -88,7 +88,7 @@ const SentimentDistributionChart: React.FC<SentimentDistributionChartProps> = ({
 
       case "donut":
         return (
-          <ResponsiveContainer width="100%" height={400}>
+          <ResponsiveContainer width="100%" height={500}>
             <PieChart>
               <Pie
                 data={chartData}
@@ -120,7 +120,7 @@ const SentimentDistributionChart: React.FC<SentimentDistributionChartProps> = ({
 
       case "bar":
         return (
-          <ResponsiveContainer width="100%" height={400}>
+          <ResponsiveContainer width="100%" height={500}>
             <BarChart
               data={chartData}
               margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
@@ -154,13 +154,21 @@ const SentimentDistributionChart: React.FC<SentimentDistributionChartProps> = ({
 
   if (chartData.length === 0) {
     return (
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '400px', color: '#6b7280' }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "500px",
+          color: "#6b7280",
+        }}
+      >
         <p>No sentiment data available</p>
       </div>
     );
   }
 
-  return <div style={{ width: '100%', height: '400px' }}>{renderChart()}</div>;
+  return <div style={{ width: "100%", height: "500px" }}>{renderChart()}</div>;
 };
 
 export default SentimentDistributionChart;
