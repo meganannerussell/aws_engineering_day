@@ -114,6 +114,7 @@ def analyze_dataset():
     try:
         data = request.get_json()
         dataset_name = data.get('dataset')
+        force_fresh = data.get('force_fresh', False)
         
         if not dataset_name:
             return jsonify({'error': 'Dataset name is required'}), 400
@@ -131,10 +132,12 @@ def analyze_dataset():
         if not dataset_path or not os.path.exists(dataset_path):
             return jsonify({'error': f'Dataset {dataset_name} not found'}), 404
         
-        # Check if we have a cached result
-        cached_result = get_cached_result(dataset_name)
-        if cached_result:
-            return jsonify(cached_result)
+        # Check if we have a cached result (only if not forcing fresh)
+        if not force_fresh:
+            cached_result = get_cached_result(dataset_name)
+            if cached_result:
+                logger.info(f"📋 Returning cached result for {dataset_name}")
+                return jsonify(cached_result)
         
         logger.info(f"🔬 Starting analysis of {dataset_name}")
         
@@ -179,12 +182,15 @@ def analyze_uploaded_file():
         
         logger.info(f"📁 Uploaded file saved to: {temp_path}")
         
+        # Get force_fresh parameter from form data
+        force_fresh = request.form.get('force_fresh', 'false').lower() == 'true'
+        
         # Generate cache key for uploaded file
         cache_key = get_cache_key(temp_path)
         cache_file = os.path.join(CACHE_DIR, f"{cache_key}.json")
         
-        # Check if we have a cached result for this exact file
-        if os.path.exists(cache_file):
+        # Check if we have a cached result for this exact file (only if not forcing fresh)
+        if not force_fresh and os.path.exists(cache_file):
             try:
                 with open(cache_file, 'r') as f:
                     cached_data = json.load(f)

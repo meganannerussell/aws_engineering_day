@@ -8,6 +8,7 @@ import SentimentDistributionChart from "../components/charts/SentimentDistributi
 import DarkModeToggle from "../components/DarkModeToggle";
 import ExportButton from "../components/ExportButton";
 import DatasetAnalyzer from "../components/DatasetAnalyzer";
+import ExcitingLoader from "../components/ExcitingLoader";
 
 const Results: React.FC = () => {
   const [data, setData] = useState<AnalyticsData | null>(null);
@@ -39,10 +40,7 @@ const Results: React.FC = () => {
           onLoadingChange={handleLoadingChange}
           onDrawerToggle={handleDrawerToggle}
         />
-        <div className="loading-state">
-          <div className="loading-spinner"></div>
-          <p className="loading-state__text">Loading analytics data...</p>
-        </div>
+        <ExcitingLoader duration={30} />
       </div>
     );
   }

@@ -21,6 +21,7 @@ const DatasetAnalyzer: React.FC<DatasetAnalyzerProps> = ({
     Array<{ value: string; label: string; file: File }>
   >([]);
   const [isUploading, setIsUploading] = useState(false);
+  const [hasCachedData, setHasCachedData] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const sampleDatasets = [
@@ -37,7 +38,16 @@ const DatasetAnalyzer: React.FC<DatasetAnalyzerProps> = ({
 
   const handleDatasetChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDataset(event.target.value);
+    // Check if we have cached data for this dataset
+    const cachedData = getCachedData(event.target.value);
+    setHasCachedData(!!cachedData);
   };
+
+  // Check for cached data when component mounts
+  React.useEffect(() => {
+    const cachedData = getCachedData(selectedDataset);
+    setHasCachedData(!!cachedData);
+  }, [selectedDataset]);
 
   const toggleCollapsed = () => {
     const newCollapsedState = !isCollapsed;
@@ -81,6 +91,85 @@ const DatasetAnalyzer: React.FC<DatasetAnalyzerProps> = ({
     // Reset file input
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
+    }
+  };
+
+  const handleFreshAnalysis = async () => {
+    console.log("🔄 Starting fresh analysis for:", selectedDataset);
+    setIsAnalyzing(true);
+    onLoadingChange(true);
+
+    try {
+      // Clear cached data to force fresh analysis
+      clearCachedData(selectedDataset);
+      setHasCachedData(false);
+
+      // Check if this is an uploaded file
+      const uploadedDataset = uploadedDatasets.find(
+        (ds) => ds.value === selectedDataset
+      );
+
+      if (uploadedDataset) {
+        // Handle uploaded file - send as FormData
+        const formData = new FormData();
+        formData.append("file", uploadedDataset.file);
+        formData.append("dataset", selectedDataset);
+        formData.append("force_fresh", "true");
+
+        const response = await fetch(
+          "http://localhost:5002/api/analyze-upload",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`Analysis failed: ${response.statusText}`);
+        }
+
+        const analysisData = await response.json();
+        console.log(
+          "✅ Fresh analysis completed for uploaded file:",
+          selectedDataset
+        );
+        setCachedData(selectedDataset, analysisData);
+        setHasCachedData(true);
+        onAnalysisComplete(analysisData);
+      } else {
+        // Handle sample dataset - send as JSON
+        const response = await fetch("http://localhost:5002/api/analyze", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            dataset: selectedDataset,
+            force_fresh: true,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error(`Analysis failed: ${response.statusText}`);
+        }
+
+        const analysisData = await response.json();
+        console.log(
+          "✅ Fresh analysis completed for sample dataset:",
+          selectedDataset
+        );
+        setCachedData(selectedDataset, analysisData);
+        setHasCachedData(true);
+        onAnalysisComplete(analysisData);
+      }
+    } catch (error) {
+      console.error("Fresh analysis failed:", error);
+      // Fallback to mock data for demo purposes
+      const mockData = generateMockData(selectedDataset);
+      onAnalysisComplete(mockData);
+    } finally {
+      setIsAnalyzing(false);
+      onLoadingChange(false);
     }
   };
 
@@ -130,6 +219,15 @@ const DatasetAnalyzer: React.FC<DatasetAnalyzerProps> = ({
       console.log(`💾 Cached data for ${dataset}`);
     } catch (error) {
       console.warn("Failed to cache data:", error);
+    }
+  };
+
+  const clearCachedData = (dataset: string) => {
+    try {
+      localStorage.removeItem(`analytics_cache_${dataset}`);
+      console.log(`🗑️ Cleared cached data for ${dataset}`);
+    } catch (error) {
+      console.warn("Failed to clear cached data:", error);
     }
   };
 
@@ -423,6 +521,35 @@ const DatasetAnalyzer: React.FC<DatasetAnalyzerProps> = ({
               </>
             )}
           </motion.button>
+
+          {hasCachedData && (
+            <motion.button
+              className="fresh-analysis-button"
+              onClick={handleFreshAnalysis}
+              disabled={isAnalyzing}
+              whileHover={{ scale: isAnalyzing ? 1 : 1.05 }}
+              whileTap={{ scale: isAnalyzing ? 1 : 0.95 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              {isAnalyzing ? (
+                <>
+                  <Loader2 className="fresh-analysis-button__icon" size={18} />
+                  <span className="fresh-analysis-button__text">
+                    Getting Fresh Results...
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span className="fresh-analysis-button__icon">🔄</span>
+                  <span className="fresh-analysis-button__text">
+                    Get Fresh Results
+                  </span>
+                </>
+              )}
+            </motion.button>
+          )}
         </div>
 
         <div className="dataset-analyzer__info">

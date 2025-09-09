@@ -277,13 +277,15 @@ class TextAnalyticsPipeline:
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 
-        # Adaptive parameters based on dataset size
+        # Adaptive parameters for more granular clustering
         if n_samples < 50:
-            eps, min_samples = 0.3, 3
+            eps, min_samples = 0.25, 2  # More granular for small datasets
         elif n_samples < 150:
-            eps, min_samples = 0.25, 4
+            eps, min_samples = 0.2, 3   # More granular for medium datasets
+        elif n_samples < 300:
+            eps, min_samples = 0.18, 4  # More granular for larger datasets
         else:
-            eps, min_samples = 0.2, 5
+            eps, min_samples = 0.15, 5  # More granular for very large datasets
 
         try:
             dbscan = DBSCAN(
@@ -295,17 +297,17 @@ class TextAnalyticsPipeline:
 
             labels = dbscan.fit_predict(X_scaled)
 
-            # Handle noise points intelligently
+            # Handle noise points intelligently - create individual clusters for better granularity
             noise_points = np.where(labels == -1)[0]
             if len(noise_points) > 0:
                 logger.info(f"Found {len(noise_points)} noise points, creating individual clusters")
 
                 valid_clusters = set(labels) - {-1}
                 if len(valid_clusters) == 0:
-                    # All noise - create simple clusters
-                    labels = np.array([i % 3 for i in range(len(labels))])
+                    # All noise - create more granular clusters based on content similarity
+                    labels = self._create_content_based_clusters(embeddings, labels)
                 else:
-                    # Assign noise points to individual clusters
+                    # Assign noise points to individual clusters for better granularity
                     next_cluster_id = max(valid_clusters) + 1 if valid_clusters else 0
                     for noise_idx in noise_points:
                         labels[noise_idx] = next_cluster_id
@@ -471,7 +473,7 @@ class TextAnalyticsPipeline:
 
     def generate_topic_labels(self, cluster_groups: Dict[int, List[str]]) -> Dict[int, str]:
         """
-        Generate high-quality topic labels using LLM with business context
+        Generate high-quality, granular, and unique topic labels using LLM with business context
 
         Args:
             cluster_groups: Dictionary mapping cluster_id to list of texts
@@ -484,52 +486,65 @@ class TextAnalyticsPipeline:
         if len(cluster_groups) == 0:
             return {}
 
-        if len(cluster_groups) > 15:
-            logger.warning(f"Large number of clusters ({len(cluster_groups)}), using simpler labels")
-            return {i: f"Topic {i+1}" for i in cluster_groups.keys()}
+        if len(cluster_groups) > 20:
+            logger.warning(f"Large number of clusters ({len(cluster_groups)}), using keyword-based labels")
+            return self._generate_keyword_labels_fallback(cluster_groups)
 
         # Process clusters in batches for efficiency
-        batch_size = 5
+        batch_size = 4
         all_labels = {}
+        used_labels = set()
 
         cluster_items = list(cluster_groups.items())
         for i in range(0, len(cluster_items), batch_size):
             batch = cluster_items[i:i + batch_size]
-            batch_labels = self._generate_batch_labels(batch)
+            batch_labels = self._generate_batch_labels(batch, used_labels)
             all_labels.update(batch_labels)
+            used_labels.update(batch_labels.values())
             time.sleep(0.5)  # Rate limiting for LLM calls
 
         # Fill any missing labels with keyword-based fallbacks
         for cluster_id in cluster_groups.keys():
             if cluster_id not in all_labels:
-                all_labels[cluster_id] = self._generate_keyword_label(cluster_groups[cluster_id], cluster_id)
+                all_labels[cluster_id] = self._generate_unique_keyword_label(
+                    cluster_groups[cluster_id], cluster_id, used_labels
+                )
+                used_labels.add(all_labels[cluster_id])
 
         return all_labels
 
-    def _generate_batch_labels(self, batch_clusters: List[Tuple[int, List[str]]]) -> Dict[int, str]:
-        """Generate labels for a batch of clusters using LLM"""
+    def _generate_batch_labels(self, batch_clusters: List[Tuple[int, List[str]]], used_labels: set) -> Dict[int, str]:
+        """Generate labels for a batch of clusters using LLM with uniqueness constraints"""
         # Prepare batch prompt with representative samples
         clusters_text = ""
         cluster_mapping = {}
 
         for idx, (cluster_id, texts) in enumerate(batch_clusters):
-            sample_texts = texts[:4]  # Use top 4 examples for context
-            clusters_text += f"Cluster {idx}: {' | '.join(text[:80] for text in sample_texts)}\n"
+            sample_texts = texts[:5]  # Use top 5 examples for better context
+            clusters_text += f"Cluster {idx}: {' | '.join(text[:100] for text in sample_texts)}\n"
             cluster_mapping[idx] = cluster_id
 
-        prompt = f"""Create precise 2-3 word business labels for these customer feedback clusters about {self.domain_context}:
+        # Create context about already used labels to avoid duplicates
+        used_labels_context = ""
+        if used_labels:
+            used_labels_context = f"\nAlready used labels (avoid these): {', '.join(list(used_labels)[:10])}"
+
+        prompt = f"""Create precise, granular, and unique 2-4 word business labels for these customer feedback clusters about {self.domain_context}:
 
 {clusters_text}
 
 Return ONLY valid JSON format:
-{{"0": "Label One", "1": "Label Two", "2": "Label Three"}}
+{{"0": "Specific Label One", "1": "Detailed Label Two", "2": "Granular Label Three"}}
 
 Requirements:
-- Exactly 2-3 words per label
+- Exactly 2-4 words per label (prefer 3-4 for granularity)
 - Professional business terminology
-- Focus on topics/themes, not sentiment
-- Be specific and actionable
-- No generic words like "feedback" or "responses\""""
+- Focus on specific topics/themes, not general sentiment
+- Be granular and actionable (e.g., "Mobile App Performance" not just "Performance")
+- Make each label unique and distinct
+- Avoid generic words like "feedback", "responses", "comments"
+- Use specific business domains (e.g., "Payment Processing", "User Interface Design", "Customer Support Response")
+{used_labels_context}"""
 
         try:
             payload = {
@@ -565,8 +580,14 @@ Requirements:
                             idx = int(str_idx)
                             if idx in cluster_mapping:
                                 original_cluster_id = cluster_mapping[idx]
-                                clean_label = ' '.join(label.strip().split()[:3])  # Max 3 words
-                                final_labels[original_cluster_id] = clean_label
+                                clean_label = ' '.join(label.strip().split()[:4])  # Max 4 words
+                                # Ensure uniqueness
+                                if clean_label not in used_labels:
+                                    final_labels[original_cluster_id] = clean_label
+                                else:
+                                    # Add a modifier to make it unique
+                                    clean_label = self._make_label_unique(clean_label, used_labels)
+                                    final_labels[original_cluster_id] = clean_label
                         except (ValueError, KeyError):
                             continue
 
@@ -581,25 +602,67 @@ Requirements:
         # Return empty dict - fallback labels will be generated by caller
         return {}
 
-    def _generate_keyword_label(self, texts: List[str], cluster_id: int) -> str:
-        """Generate keyword-based label as fallback"""
+
+    def _make_label_unique(self, label: str, used_labels: set) -> str:
+        """Make a label unique by adding a modifier if it already exists"""
+        if label not in used_labels:
+            return label
+        
+        # Try adding different modifiers
+        modifiers = ["Advanced", "Core", "Primary", "Secondary", "Specific", "Detailed", "Enhanced"]
+        for modifier in modifiers:
+            unique_label = f"{modifier} {label}"
+            if unique_label not in used_labels:
+                return unique_label
+        
+        # If all modifiers fail, add a number
+        counter = 2
+        while f"{label} {counter}" in used_labels:
+            counter += 1
+        return f"{label} {counter}"
+
+    def _generate_keyword_labels_fallback(self, cluster_groups: Dict[int, List[str]]) -> Dict[int, str]:
+        """Generate keyword-based labels for all clusters with uniqueness"""
+        used_labels = set()
+        labels = {}
+        
+        for cluster_id, texts in cluster_groups.items():
+            label = self._generate_unique_keyword_label(texts, cluster_id, used_labels)
+            labels[cluster_id] = label
+            used_labels.add(label)
+        
+        return labels
+
+    def _generate_unique_keyword_label(self, texts: List[str], cluster_id: int, used_labels: set) -> str:
+        """Generate keyword-based label as fallback with uniqueness"""
         if not texts:
             return f"Topic {cluster_id + 1}"
 
-        # Business-relevant keyword categories
+        # Enhanced business-relevant keyword categories with more granular options
         categories = {
-            'Product Quality': ['quality', 'good', 'great', 'excellent', 'perfect', 'amazing'],
-            'User Experience': ['easy', 'difficult', 'simple', 'intuitive', 'confusing', 'interface'],
-            'Customer Service': ['service', 'support', 'help', 'staff', 'representative'],
-            'Performance': ['fast', 'slow', 'quick', 'performance', 'speed', 'responsive'],
-            'Pricing Value': ['price', 'cost', 'expensive', 'value', 'worth', 'money'],
-            'Features': ['feature', 'function', 'capability', 'option', 'tool'],
-            'Design': ['design', 'look', 'appearance', 'style', 'beautiful', 'color'],
-            'Issues': ['problem', 'issue', 'bug', 'error', 'broken', 'fail'],
-            'Delivery': ['delivery', 'shipping', 'arrived', 'package', 'packaging']
+            'Product Quality Issues': ['quality', 'defective', 'broken', 'poor quality', 'flawed', 'damaged'],
+            'Product Quality Positive': ['excellent', 'amazing', 'perfect', 'outstanding', 'superior', 'premium'],
+            'User Interface Design': ['interface', 'design', 'layout', 'navigation', 'menu', 'buttons', 'ui'],
+            'User Experience Issues': ['confusing', 'difficult', 'complicated', 'hard to use', 'frustrating'],
+            'User Experience Positive': ['easy', 'simple', 'intuitive', 'user-friendly', 'smooth', 'seamless'],
+            'Customer Service Response': ['service', 'support', 'help', 'staff', 'representative', 'assistance'],
+            'Customer Service Quality': ['helpful', 'responsive', 'professional', 'knowledgeable', 'friendly'],
+            'Performance Speed': ['fast', 'quick', 'slow', 'performance', 'speed', 'responsive', 'laggy'],
+            'Performance Reliability': ['reliable', 'stable', 'consistent', 'unreliable', 'buggy', 'crashes'],
+            'Pricing Value': ['price', 'cost', 'expensive', 'value', 'worth', 'money', 'affordable', 'overpriced'],
+            'Feature Functionality': ['feature', 'function', 'capability', 'option', 'tool', 'functionality'],
+            'Feature Requests': ['missing', 'need', 'want', 'request', 'suggest', 'improvement', 'enhancement'],
+            'Visual Design': ['design', 'look', 'appearance', 'style', 'beautiful', 'color', 'aesthetic'],
+            'Technical Issues': ['problem', 'issue', 'bug', 'error', 'broken', 'fail', 'glitch', 'malfunction'],
+            'Delivery Shipping': ['delivery', 'shipping', 'arrived', 'package', 'packaging', 'shipped'],
+            'Mobile App Experience': ['mobile', 'app', 'phone', 'tablet', 'ios', 'android', 'download'],
+            'Website Experience': ['website', 'site', 'web', 'online', 'browser', 'loading', 'page'],
+            'Payment Processing': ['payment', 'billing', 'charge', 'credit', 'card', 'transaction', 'refund'],
+            'Account Management': ['account', 'profile', 'login', 'password', 'registration', 'settings'],
+            'Communication Updates': ['email', 'notification', 'update', 'message', 'alert', 'reminder']
         }
 
-        combined_text = ' '.join(texts[:8]).lower()
+        combined_text = ' '.join(texts[:10]).lower()
         best_category, best_score = f"Topic {cluster_id + 1}", 0
 
         for category, keywords in categories.items():
@@ -608,7 +671,26 @@ Requirements:
                 best_score = score
                 best_category = category
 
-        return best_category
+        # Make the label unique if it's already used
+        unique_label = self._make_label_unique(best_category, used_labels)
+        return unique_label
+
+    def _create_content_based_clusters(self, embeddings: np.ndarray, labels: np.ndarray) -> np.ndarray:
+        """Create clusters based on content similarity when all points are noise"""
+        from sklearn.cluster import KMeans
+        
+        n_samples = len(embeddings)
+        # Create more granular clusters - aim for 5-8 clusters
+        n_clusters = min(max(5, n_samples // 10), 8)
+        
+        try:
+            kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
+            cluster_labels = kmeans.fit_predict(embeddings)
+            return cluster_labels
+        except Exception as e:
+            logger.warning(f"KMeans fallback failed: {e}, using simple grouping")
+            # Simple fallback - group by position
+            return np.array([i % 5 for i in range(n_samples)])
 
     # =============================================================================
     # MAIN PROCESSING PIPELINE
