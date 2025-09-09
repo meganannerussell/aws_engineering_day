@@ -1,0 +1,3513 @@
+{
+  "cached_at": "2025-09-09T15:10:47.537030",
+  "dataset": "data_set_2.csv",
+  "analysis_data": {
+    "project_metadata": {
+      "project_title": "Consumer Attitudes on Prebiotic and Probiotic Sodas",
+      "question_text": "Is there anything else that would make you more likely to purchase prebiotic/probiotic soda?",
+      "total_responses": 163,
+      "processing_time_seconds": 36.79,
+      "timestamp": "2025-09-09T15:10:47.535586",
+      "pipeline_version": "clean_structured_v1",
+      "services_used": {
+        "bedrock_embeddings": true,
+        "bedrock_llm": true,
+        "comprehend_sentiment": false,
+        "dbscan_clustering": true,
+        "intelligent_caching": true
+      }
+    },
+    "summary_stats": {
+      "total_topics": 3,
+      "avg_responses_per_topic": 54.3,
+      "overall_sentiment_score": 0.362,
+      "pii_detection_rate": 0.012,
+      "processing_rate": 4.4,
+      "cache_performance": {
+        "embedding_cache_size": 0,
+        "sentiment_cache_size": 396
+      }
+    },
+    "topics": [
+      {
+        "topic_id": "topic_0",
+        "label": "Pricing Value",
+        "count": 55,
+        "percentage": 33.7,
+        "sentiment_mean": 0.331,
+        "sentiment_distribution": {
+          "positive": 7,
+          "negative": 3,
+          "neutral": 45,
+          "mixed": 0
+        },
+        "examples": [
+          "No, just not interested",
+          "nothing whatsoever",
+          "Rarely drink soda as it is. Why try other sodas"
+        ]
+      },
+      {
+        "topic_id": "topic_1",
+        "label": "Pricing Value",
+        "count": 54,
+        "percentage": 33.1,
+        "sentiment_mean": 0.403,
+        "sentiment_distribution": {
+          "positive": 12,
+          "negative": 1,
+          "neutral": 41,
+          "mixed": 0
+        },
+        "examples": [
+          "Yes the right price",
+          "Better tasting, I have tried them and do not enjoy the taste at all. Taste very artificial.",
+          "not much this time"
+        ]
+      },
+      {
+        "topic_id": "topic_2",
+        "label": "Pricing Value",
+        "count": 54,
+        "percentage": 33.1,
+        "sentiment_mean": 0.351,
+        "sentiment_distribution": {
+          "positive": 8,
+          "negative": 1,
+          "neutral": 45,
+          "mixed": 0
+        },
+        "examples": [
+          "I would probably not purchase this product. Soda is a guilty pleasure and people wouldn't feel that way if it's branded being even moderately healthy. Too many people would use it as an excuse to over indulge.",
+          "Understanding more about these products",
+          "Just health factors"
+        ]
+      }
+    ],
+    "responses": [
+      {
+        "response_id": "resp_0002",
+        "original_text": "No, just not interested",
+        "clean_text": "No, just not interested",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0005",
+        "original_text": "Yes the right price",
+        "clean_text": "Yes the right price",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0006",
+        "original_text": "I would probably not purchase this product. Soda is a guilty pleasure and people wouldn't feel that way if it's branded being even moderately healthy. Too many people would use it as an excuse to over indulge.",
+        "clean_text": "I would probably not purchase this product. Soda is a guilty pleasure and people wouldn't feel that way if it's branded being even moderately healthy. Too many people would use it as an excuse to over indulge.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0007",
+        "original_text": "nothing whatsoever",
+        "clean_text": "nothing whatsoever",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0008",
+        "original_text": "Better tasting, I have tried them and do not enjoy the taste at all. Taste very artificial.",
+        "clean_text": "Better tasting, I have tried them and do not enjoy the taste at all. Taste very artificial.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0009",
+        "original_text": "Understanding more about these products",
+        "clean_text": "Understanding more about these products",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0010",
+        "original_text": "Rarely drink soda as it is. Why try other sodas",
+        "clean_text": "Rarely drink soda as it is. Why try other sodas",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0011",
+        "original_text": "not much this time",
+        "clean_text": "not much this time",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0012",
+        "original_text": "Just health factors",
+        "clean_text": "Just health factors",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0014",
+        "original_text": "Nothing else",
+        "clean_text": "Nothing else",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0016",
+        "original_text": "If it taste like diet soda",
+        "clean_text": "If it taste like diet soda",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0018",
+        "original_text": "endorsed by health professionals",
+        "clean_text": "endorsed by health professionals",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0021",
+        "original_text": "NO THERE ISNT",
+        "clean_text": "NO THERE ISNT",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0022",
+        "original_text": "Impossible  and just you know anything about CO2 in the soda drink????????????????",
+        "clean_text": "Impossible  and just you know anything about CO2 in the soda drink????????????????",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0023",
+        "original_text": "nothing that i can think of",
+        "clean_text": "nothing that i can think of",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0024",
+        "original_text": "Lower price and better health benefits",
+        "clean_text": "Lower price and better health benefits",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0025",
+        "original_text": "Reduce that amounts of added sugars, but stay away from the sugar substitutes",
+        "clean_text": "Reduce that amounts of added sugars, but stay away from the sugar substitutes",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0026",
+        "original_text": "If I knew more about it, I would consider it.",
+        "clean_text": "If I knew more about it, I would consider it.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0027",
+        "original_text": "nope not at all",
+        "clean_text": "nope not at all",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0028",
+        "original_text": "I have no interest in drinking this type of soda",
+        "clean_text": "I have no interest in drinking this type of soda",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0032",
+        "original_text": "No, Price is the main deterrent. The other reason is that it's not readily available at restaurants.",
+        "clean_text": "No, Price is the main deterrent. The other reason is that it's not readily available at restaurants.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0033",
+        "original_text": "There is no reason for me to switch to something with which I have no interest, nor from something which I do NOT consume!",
+        "clean_text": "There is no reason for me to switch to something with which I have no interest, nor from something which I do NOT consume!",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0034",
+        "original_text": "I cannot think of anything.",
+        "clean_text": "I cannot think of anything.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0036",
+        "original_text": "If it tastes the same as what I am drinking now as a diet soda.",
+        "clean_text": "If it tastes the same as what I am drinking now as a diet soda.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0037",
+        "original_text": "More proven research that they actually provide health benefits",
+        "clean_text": "More proven research that they actually provide health benefits",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0038",
+        "original_text": "More variety",
+        "clean_text": "More variety",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0039",
+        "original_text": "No I don\u2019t like soda",
+        "clean_text": "No I don\u2019t like soda",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0042",
+        "original_text": "Good tasting flavors.",
+        "clean_text": "Good tasting flavors.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0043",
+        "original_text": "is it really good for you.",
+        "clean_text": "is it really good for you.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0044",
+        "original_text": "Customer reviews that confirm their benefits.",
+        "clean_text": "Customer reviews that confirm their benefits.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0046",
+        "original_text": "A recommendation from my primary care physician would make me more likely to purchase.",
+        "clean_text": "A recommendation from my primary care physician would make me more likely to purchase.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0050",
+        "original_text": "Not that I can think of",
+        "clean_text": "Not that I can think of",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0051",
+        "original_text": "More health info on them.",
+        "clean_text": "More health info on them.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0053",
+        "original_text": "IF ITS A PROVEN HEALTH BENEFIT",
+        "clean_text": "IF ITS A PROVEN HEALTH BENEFIT",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0054",
+        "original_text": "Simply, not interested in this junk",
+        "clean_text": "Simply, not interested in this junk",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0055",
+        "original_text": "only if it guarantees a glorious, on-schedule poop every morning. clockwork gut > miracle soda.",
+        "clean_text": "only if it guarantees a glorious, on-schedule poop every morning. clockwork gut > miracle soda.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0056",
+        "original_text": "prebiotic sod is alot more pricey than regular soda so the price would have to drop signicantly",
+        "clean_text": "prebiotic sod is alot more pricey than regular soda so the price would have to drop signicantly",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0057",
+        "original_text": "Nothing more as I\u2019m buying them already",
+        "clean_text": "Nothing more as I\u2019m buying them already",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0059",
+        "original_text": "Nothing. I don't drink soda",
+        "clean_text": "Nothing. I don't drink soda",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0061",
+        "original_text": "Maybe samples to see how theytaste",
+        "clean_text": "Maybe samples to see how theytaste",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0064",
+        "original_text": "prebiotic and probiotic sodas aid digestion, promote blood sugar balance, and support overall gut health.",
+        "clean_text": "prebiotic and probiotic sodas aid digestion, promote blood sugar balance, and support overall gut health.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0065",
+        "original_text": "Leading brands beging to manufacture",
+        "clean_text": "Leading brands beging to manufacture",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0066",
+        "original_text": "The first time the team had played together was the in person meeting in person with a friend and",
+        "clean_text": "The first time the team had played together was the in person meeting in person with a friend and",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0067",
+        "original_text": "Glory be to glory for glory shines the glory upon glory in the kingdom of glory.",
+        "clean_text": "Glory be to glory for glory shines the glory upon glory in the kingdom of glory.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0068",
+        "original_text": "I DON'T THINK SO NOTHING MAKES ME DO ANYTHING",
+        "clean_text": "I DON'T THINK SO NOTHING MAKES ME DO ANYTHING",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0069",
+        "original_text": "it helps me understand why it is so awesome",
+        "clean_text": "it helps me understand why it is so awesome",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0073",
+        "original_text": "Nothing else",
+        "clean_text": "Nothing else",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0074",
+        "original_text": "as i told u i have gut problem and slow digestion and i know that probiotics helps with my problem so i go for it",
+        "clean_text": "as i told u i have gut problem and slow digestion and i know that probiotics helps with my problem so i go for it",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0075",
+        "original_text": "Proof that they work.",
+        "clean_text": "Proof that they work.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0077",
+        "original_text": "I don't think so, no",
+        "clean_text": "I don't think so, no",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0078",
+        "original_text": "I have been trying a few different ones over the past month, I am still trying to find the one I like best. Keep up the good work",
+        "clean_text": "I have been trying a few different ones over the past month, I am still trying to find the one I like best. Keep up the good work",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0079",
+        "original_text": "Information on benefits vs non benefits.  Is there artificial ingredients.",
+        "clean_text": "Information on benefits vs non benefits.  Is there artificial ingredients.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0080",
+        "original_text": "affordability and good tasting options",
+        "clean_text": "affordability and good tasting options",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0085",
+        "original_text": "not sure.  i never notice them in the store",
+        "clean_text": "not sure.  i never notice them in the store",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0087",
+        "original_text": "No there isnt",
+        "clean_text": "No there isnt",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0088",
+        "original_text": "if they taste good",
+        "clean_text": "if they taste good",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0089",
+        "original_text": "No but I think that\u2019s all for now",
+        "clean_text": "No but I think that\u2019s all for now",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0091",
+        "original_text": "The taste will be a huge factor in whether I purchase it or not",
+        "clean_text": "The taste will be a huge factor in whether I purchase it or not",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0092",
+        "original_text": "I don\u2019t drink enough soda to have to ad these extra ingredients to",
+        "clean_text": "I don\u2019t drink enough soda to have to ad these extra ingredients to",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0093",
+        "original_text": "Great flavor",
+        "clean_text": "Great flavor",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0094",
+        "original_text": "A good price",
+        "clean_text": "A good price",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0095",
+        "original_text": "What are the real proven benefits to justify cost/existence?",
+        "clean_text": "What are the real proven benefits to justify cost/existence?",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0096",
+        "original_text": "I'd like to see these types of sodas in bottles as opposed to aluminum.",
+        "clean_text": "I'd like to see these types of sodas in bottles as opposed to aluminum.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0101",
+        "original_text": "Coupon for free trial",
+        "clean_text": "Coupon for free trial",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0104",
+        "original_text": "Eat real foods , that are healthy stop with trying to get rich from sales",
+        "clean_text": "Eat real foods , that are healthy stop with trying to get rich from sales",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0106",
+        "original_text": "Just like seeing new flavors introduced by the brands",
+        "clean_text": "Just like seeing new flavors introduced by the brands",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0107",
+        "original_text": "I would like samples to try.",
+        "clean_text": "I would like samples to try.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0108",
+        "original_text": "If they tasted exactly like a diet soda.",
+        "clean_text": "If they tasted exactly like a diet soda.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0109",
+        "original_text": "if I could taste it first",
+        "clean_text": "if I could taste it first",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0110",
+        "original_text": "It would be to try it",
+        "clean_text": "It would be to try it",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0111",
+        "original_text": "i would need to learn more about them",
+        "clean_text": "i would need to learn more about them",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0112",
+        "original_text": "Feature it in store ads and do more advertising online.",
+        "clean_text": "Feature it in store ads and do more advertising online.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0113",
+        "original_text": "Ads showing people open product, drink & give an opinion",
+        "clean_text": "Ads showing people open product, drink & give an opinion",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0114",
+        "original_text": "i like the sodas very much .its my personal opening and i like it so much.There are more else that would make me more likely to purchase prebiotic and probiotic soda very much.There are very costly and interesting.There are more eliment of sodas ,such as.",
+        "clean_text": "i like the sodas very much .its my personal opening and i like it so much.There are more else that would make me more likely to purchase prebiotic and probiotic soda very much.There are very costly and interesting.There are more eliment of sodas ,such as.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0120",
+        "original_text": "Free sample to try first",
+        "clean_text": "Free sample to try first",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0121",
+        "original_text": "More flavors and better price",
+        "clean_text": "More flavors and better price",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0122",
+        "original_text": "Better flavors",
+        "clean_text": "Better flavors",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0123",
+        "original_text": "No I don't think of anything as of now",
+        "clean_text": "No I don't think of anything as of now",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0124",
+        "original_text": "Nothing bc I don't like anything healthy or diet bc it usually taste like garbage",
+        "clean_text": "Nothing bc I don't like anything healthy or diet bc it usually taste like garbage",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0125",
+        "original_text": "I don\u2019t know anything about this type of soda.",
+        "clean_text": "I don\u2019t know anything about this type of soda.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0128",
+        "original_text": "proof of the benefits",
+        "clean_text": "proof of the benefits",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0129",
+        "original_text": "If it had a lot less sugar; If it had all organic ingredients in it and if it wasn't gmo/bioengineered ingredients; and if it didn't have any artificial colorings and flavorings and had a more natural sugar, like stevia.",
+        "clean_text": "If it had a lot less sugar; If it had all organic ingredients in it and if it wasn't gmo/bioengineered ingredients; and if it didn't have any artificial colorings and flavorings and had a more natural sugar, like stevia.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0130",
+        "original_text": "nothing else besides the added health benefits",
+        "clean_text": "nothing else besides the added health benefits",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0131",
+        "original_text": "if they are a healthier option, yes",
+        "clean_text": "if they are a healthier option, yes",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0132",
+        "original_text": "Like it muh",
+        "clean_text": "Like it muh",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0134",
+        "original_text": "it must have great taste",
+        "clean_text": "it must have great taste",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0135",
+        "original_text": "I would say having g product for small children",
+        "clean_text": "I would say having g product for small children",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0136",
+        "original_text": "nothing at all",
+        "clean_text": "nothing at all",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0139",
+        "original_text": "I need more information on this to make a better decision.",
+        "clean_text": "I need more information on this to make a better decision.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0142",
+        "original_text": "Yes if they would leave the sugar out and artificial sugars",
+        "clean_text": "Yes if they would leave the sugar out and artificial sugars",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0143",
+        "original_text": "No, I do purchase them occasionally but only when they are on sale.",
+        "clean_text": "No, I do purchase them occasionally but only when they are on sale.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0144",
+        "original_text": "The house is in the middle of the road and I don\u2019t know if you want to. I\u2019m not gonna be home until late morning so I\u2019ll be home in time for you guys to get the boys and then I will be home by six if that\u2019s",
+        "clean_text": "The house is in the middle of the road and I don\u2019t know if you want to. I\u2019m not gonna be home until late morning so I\u2019ll be home in time for you guys to get the boys and then I will be home by six if that\u2019s",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0148",
+        "original_text": "Am not sure.",
+        "clean_text": "Am not sure.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0150",
+        "original_text": "This doesn't apply to me, since I do not drink soda.",
+        "clean_text": "This doesn't apply to me, since I do not drink soda.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0151",
+        "original_text": "The biggest thing is price they are so expensive",
+        "clean_text": "The biggest thing is price they are so expensive",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0154",
+        "original_text": "I'd really have to know more about it's claims. I don't want to drink something with pre or probiotics if it's going to mess up my gut.",
+        "clean_text": "I'd really have to know more about it's claims. I don't want to drink something with pre or probiotics if it's going to mess up my gut.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0155",
+        "original_text": "No, I like my sodas the way they are.",
+        "clean_text": "No, I like my sodas the way they are.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0156",
+        "original_text": "Offers to try for free. Coupons and special prices",
+        "clean_text": "Offers to try for free. Coupons and special prices",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0157",
+        "original_text": "Iam all about healthy foods",
+        "clean_text": "Iam all about healthy foods",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0158",
+        "original_text": "proven health benefits",
+        "clean_text": "proven health benefits",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0159",
+        "original_text": "If they had them in name brands",
+        "clean_text": "If they had them in name brands",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0160",
+        "original_text": "No it sounds gross",
+        "clean_text": "No it sounds gross",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0161",
+        "original_text": "Nothing additional to provide.",
+        "clean_text": "Nothing additional to provide.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0163",
+        "original_text": "Low or no sugar content and low calories",
+        "clean_text": "Low or no sugar content and low calories",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0164",
+        "original_text": "If i knew where to get them to try it I would.",
+        "clean_text": "If i knew where to get them to try it I would.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0165",
+        "original_text": "It help me loose a lot of weight",
+        "clean_text": "It help me loose a lot of weight",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0167",
+        "original_text": "Not familiar with this type of soda.",
+        "clean_text": "Not familiar with this type of soda.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0168",
+        "original_text": "No.  I take a daily probiotic, have tried prebiotic and found them expensive and somewhat useless.",
+        "clean_text": "No.  I take a daily probiotic, have tried prebiotic and found them expensive and somewhat useless.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0169",
+        "original_text": "No I got what I like",
+        "clean_text": "No I got what I like",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0170",
+        "original_text": "Not one thing",
+        "clean_text": "Not one thing",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0172",
+        "original_text": "Nothing yet",
+        "clean_text": "Nothing yet",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0176",
+        "original_text": "Need to be better educated on this topic",
+        "clean_text": "Need to be better educated on this topic",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0177",
+        "original_text": "I like it very much.",
+        "clean_text": "I like it very much.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0178",
+        "original_text": "I already purchase these types of sodas because they are delicious and healthy, making me feel like I am drinking real soda.",
+        "clean_text": "I already purchase these types of sodas because they are delicious and healthy, making me feel like I am drinking real soda.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0179",
+        "original_text": "If I knew more confidentially it was healthy. And if it had a good taste",
+        "clean_text": "If I knew more confidentially it was healthy. And if it had a good taste",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0181",
+        "original_text": "No, there all good",
+        "clean_text": "No, there all good",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0182",
+        "original_text": "New flavors",
+        "clean_text": "New flavors",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0184",
+        "original_text": "No, I'm not interested in this type of beverage.",
+        "clean_text": "No, [NAME] interested in this type of beverage.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0186",
+        "original_text": "Soda.  Can kill  their health warning. Same happen not me age 16. And I learn lesson  never again.",
+        "clean_text": "Soda.  Can kill  their health warning. Same happen not me age 16. And I learn lesson  never again.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0187",
+        "original_text": "If they are recommended by health professionals.",
+        "clean_text": "If they are recommended by health professionals.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0188",
+        "original_text": "doctors orders.",
+        "clean_text": "doctors orders.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0189",
+        "original_text": "good enough",
+        "clean_text": "good enough",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0190",
+        "original_text": "not at this time",
+        "clean_text": "not at this time",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0191",
+        "original_text": "Convincing heath benefits",
+        "clean_text": "Convincing heath benefits",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0192",
+        "original_text": "The taste must be good",
+        "clean_text": "The taste must be good",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0193",
+        "original_text": "It's it was educational",
+        "clean_text": "It's it was educational",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0194",
+        "original_text": "maybe cheaper",
+        "clean_text": "maybe cheaper",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0195",
+        "original_text": "I will never drink sodas",
+        "clean_text": "I will never drink sodas",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0198",
+        "original_text": "Nothing else in particular",
+        "clean_text": "Nothing else in particular",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0200",
+        "original_text": "Nothing that I can think of.",
+        "clean_text": "Nothing that I can think of.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0201",
+        "original_text": "I\u2019m sorry I just don\u2019t want to be in this house anymore and I",
+        "clean_text": "I\u2019m sorry I just don\u2019t want to be in this house anymore and I",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0202",
+        "original_text": "I would try it in a creamy coffee drink like a double shot of espresso",
+        "clean_text": "I would try it in a creamy coffee drink like a double shot of espresso",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0203",
+        "original_text": "If it tasted better.",
+        "clean_text": "If it tasted better.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0204",
+        "original_text": "Better taste",
+        "clean_text": "Better taste",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0205",
+        "original_text": "Not really. I don\u2019t drink soda expecting it to be healthy. I also don\u2019t want to drink more soda.",
+        "clean_text": "Not really. I don\u2019t drink soda expecting it to be healthy. I also don\u2019t want to drink more soda.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0208",
+        "original_text": "I would purchase this type of soda if I knew more about them. I don\u2019t completely understand how they work/affect gut health.",
+        "clean_text": "I would purchase this type of soda if I knew more about them. I don\u2019t completely understand how they work/affect gut health.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0210",
+        "original_text": "The good taste and quality",
+        "clean_text": "The good taste and quality",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0213",
+        "original_text": "I don\u2019t think I would like it",
+        "clean_text": "I don\u2019t think I would like it",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0214",
+        "original_text": "If it tastes good!",
+        "clean_text": "If it tastes good!",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0216",
+        "original_text": "Not that I can think of.",
+        "clean_text": "Not that I can think of.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0217",
+        "original_text": "I don\u2019t really but if it\u2019s diet soda I will definitely buy and drink",
+        "clean_text": "I don\u2019t really but if it\u2019s diet soda I will definitely buy and drink",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0220",
+        "original_text": "Ok let\u2019s see what are you doing for my birthday and then I\u2019ll ask my mom if you want me too come back up tomorrow",
+        "clean_text": "Ok let\u2019s see what are you doing for my birthday and then I\u2019ll ask my mom if you want me too come back up tomorrow",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0225",
+        "original_text": "I'm not sure",
+        "clean_text": "[NAME] sure",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0226",
+        "original_text": "Affordable pricing and packaging",
+        "clean_text": "Affordable pricing and packaging",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0227",
+        "original_text": "Not really. I've tried them but they're not really my thing.",
+        "clean_text": "Not really. I've tried them but they're not really my thing.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0228",
+        "original_text": "Improve health",
+        "clean_text": "Improve health",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0229",
+        "original_text": "If it cheap and taste good",
+        "clean_text": "If it cheap and taste good",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0230",
+        "original_text": "Better taste and wider availability",
+        "clean_text": "Better taste and wider availability",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0231",
+        "original_text": "No, there is nothing else that I would make me more likely to purchase prebiotic/probiotic sodas.",
+        "clean_text": "No, there is nothing else that I would make me more likely to purchase prebiotic/probiotic sodas.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0232",
+        "original_text": "THE HIGH FIBRE CONTENT IN IT AND MORE USE OF NATURAL INGREDIENTS",
+        "clean_text": "THE HIGH FIBRE CONTENT IN IT AND MORE USE OF NATURAL INGREDIENTS",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0233",
+        "original_text": "I would have to look into them to see if I would gain any benefit from them",
+        "clean_text": "I would have to look into them to see if I would gain any benefit from them",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0235",
+        "original_text": "Lower environmental impact",
+        "clean_text": "Lower environmental impact",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0236",
+        "original_text": "Nothing really would help them",
+        "clean_text": "Nothing really would help them",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0237",
+        "original_text": "If I could sample it before I purchase it, that would be great!",
+        "clean_text": "If I could sample it before I purchase it, that would be great!",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0239",
+        "original_text": "More heart, and eye health benefits.",
+        "clean_text": "More heart, and eye health benefits.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0241",
+        "original_text": "Very appropriate",
+        "clean_text": "Very appropriate",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0242",
+        "original_text": "Great price",
+        "clean_text": "Great price",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0243",
+        "original_text": "I\u2019m not sure",
+        "clean_text": "I\u2019m not sure",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0244",
+        "original_text": "If there was a big advertising campaign",
+        "clean_text": "If there was a big advertising campaign",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0245",
+        "original_text": "The price is really the main thing right now.",
+        "clean_text": "The price is really the main thing right now.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0247",
+        "original_text": "Broader array of consumers",
+        "clean_text": "Broader array of consumers",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0249",
+        "original_text": "Yes the price is amazing.",
+        "clean_text": "Yes the price is amazing.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0250",
+        "original_text": "A variety of flavors",
+        "clean_text": "A variety of flavors",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Pricing Value"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      }
+    ]
+  }
+}

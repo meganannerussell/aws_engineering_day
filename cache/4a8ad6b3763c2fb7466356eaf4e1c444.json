@@ -1,0 +1,4202 @@
+{
+  "project_metadata": {
+    "project_title": "Consumer Attitudes on Prebiotic and Probiotic Sodas",
+    "question_text": "What first comes to mind when you hear about sodas with prebiotics and probiotics sodas?",
+    "total_responses": 196,
+    "processing_time_seconds": 45.67,
+    "timestamp": "2025-09-09T15:34:49.921039",
+    "pipeline_version": "clean_structured_v1",
+    "services_used": {
+      "bedrock_embeddings": true,
+      "bedrock_llm": true,
+      "comprehend_sentiment": false,
+      "dbscan_clustering": true,
+      "intelligent_caching": true
+    }
+  },
+  "summary_stats": {
+    "total_topics": 3,
+    "avg_responses_per_topic": 65.3,
+    "overall_sentiment_score": 0.351,
+    "pii_detection_rate": 0.015,
+    "processing_rate": 4.3,
+    "cache_performance": {
+      "embedding_cache_size": 0,
+      "sentiment_cache_size": 421
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "topic_0",
+      "label": "Product Quality",
+      "count": 66,
+      "percentage": 33.7,
+      "sentiment_mean": 0.368,
+      "sentiment_distribution": {
+        "positive": 12,
+        "negative": 4,
+        "neutral": 50,
+        "mixed": 0
+      },
+      "examples": [
+        "I don\u2019t really care either way",
+        "The world used to be simpler with just antibiotics",
+        "Healthy, great taste, refreshing"
+      ]
+    },
+    {
+      "topic_id": "topic_1",
+      "label": "Product Quality",
+      "count": 65,
+      "percentage": 33.2,
+      "sentiment_mean": 0.348,
+      "sentiment_distribution": {
+        "positive": 10,
+        "negative": 4,
+        "neutral": 51,
+        "mixed": 0
+      },
+      "examples": [
+        "I don't know",
+        "They are healthier alternatives to regular sodas.",
+        "I think of the product olli"
+      ]
+    },
+    {
+      "topic_id": "topic_2",
+      "label": "Features",
+      "count": 65,
+      "percentage": 33.2,
+      "sentiment_mean": 0.337,
+      "sentiment_distribution": {
+        "positive": 9,
+        "negative": 4,
+        "neutral": 52,
+        "mixed": 0
+      },
+      "examples": [
+        "It makes me think about yogurt honestly. I don't think I want anything else added to my current sodas, especially something for gut health.",
+        "A healthier drink available",
+        "They are a healthier option for soda"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "resp_0001",
+      "original_text": "I don\u2019t really care either way",
+      "clean_text": "I don\u2019t really care either way",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0004",
+      "original_text": "I don't know",
+      "clean_text": "I don't know",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0006",
+      "original_text": "It makes me think about yogurt honestly. I don't think I want anything else added to my current sodas, especially something for gut health.",
+      "clean_text": "It makes me think about yogurt honestly. I don't think I want anything else added to my current sodas, especially something for gut health.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0007",
+      "original_text": "The world used to be simpler with just antibiotics",
+      "clean_text": "The world used to be simpler with just antibiotics",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0008",
+      "original_text": "They are healthier alternatives to regular sodas.",
+      "clean_text": "They are healthier alternatives to regular sodas.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0009",
+      "original_text": "A healthier drink available",
+      "clean_text": "A healthier drink available",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0012",
+      "original_text": "Healthy, great taste, refreshing",
+      "clean_text": "Healthy, great taste, refreshing",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0013",
+      "original_text": "I think of the product olli",
+      "clean_text": "I think of the product olli",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0014",
+      "original_text": "They are a healthier option for soda",
+      "clean_text": "They are a healthier option for soda",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0015",
+      "original_text": "An okay substitute for plain water",
+      "clean_text": "An okay substitute for plain water",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0016",
+      "original_text": "Probably doesn\u2019t taste good",
+      "clean_text": "Probably doesn\u2019t taste good",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0017",
+      "original_text": "What\u2019s is that I need to stop drinking soda",
+      "clean_text": "What\u2019s is that I need to stop drinking soda",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0019",
+      "original_text": "Good for health",
+      "clean_text": "Good for health",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0020",
+      "original_text": "Not sure that sounds appealing",
+      "clean_text": "Not sure that sounds appealing",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0021",
+      "original_text": "A HEALTHY DRINK",
+      "clean_text": "A HEALTHY DRINK",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0022",
+      "original_text": "Impossible CO2",
+      "clean_text": "Impossible CO2",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0023",
+      "original_text": "never heard of them",
+      "clean_text": "never heard of them",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0024",
+      "original_text": "I don\u2019t know",
+      "clean_text": "I don\u2019t know",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0025",
+      "original_text": "Not sure if they are good for you at all",
+      "clean_text": "Not sure if they are good for you at all",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0026",
+      "original_text": "Really? A healthier drink.",
+      "clean_text": "Really? A healthier drink.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0027",
+      "original_text": "healthier than the normal drink",
+      "clean_text": "healthier than the normal drink",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0028",
+      "original_text": "No interest",
+      "clean_text": "No interest",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0029",
+      "original_text": "I don't know never heard of that",
+      "clean_text": "I don't know never heard of that",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0030",
+      "original_text": "I would do not need them",
+      "clean_text": "I would do not need them",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0031",
+      "original_text": "How safe are they",
+      "clean_text": "How safe are they",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0032",
+      "original_text": "Expensive and a fad; yet a good alternative to traditional soda because of the health benefits of pre and probiotics.",
+      "clean_text": "Expensive and a fad; yet a good alternative to traditional soda because of the health benefits of pre and probiotics.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0033",
+      "original_text": "Nothing, not for me!",
+      "clean_text": "Nothing, not for me!",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0034",
+      "original_text": "Nothing.  I don't know what it means.",
+      "clean_text": "Nothing.  I don't know what it means.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0035",
+      "original_text": "A great way to wind up with something relaxing",
+      "clean_text": "A great way to wind up with something relaxing",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0036",
+      "original_text": "Hard to believe that it would not change the taste or if it would be good to drink as a healthy drink.",
+      "clean_text": "Hard to believe that it would not change the taste or if it would be good to drink as a healthy drink.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0037",
+      "original_text": "They\u2019re healthier than regular sodas",
+      "clean_text": "They\u2019re healthier than regular sodas",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0038",
+      "original_text": "Healthy options",
+      "clean_text": "Healthy options",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0039",
+      "original_text": "That would be good for kids",
+      "clean_text": "That would be good for kids",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0041",
+      "original_text": "Sounds intriguing",
+      "clean_text": "Sounds intriguing",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0042",
+      "original_text": "Organic, possibly herbal bases for flavor.",
+      "clean_text": "Organic, possibly herbal bases for flavor.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0043",
+      "original_text": "poppi brand",
+      "clean_text": "poppi brand",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0044",
+      "original_text": "It makes me think of a healthier product that would be better for me than other sodas.",
+      "clean_text": "It makes me think of a healthier product that would be better for me than other sodas.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0046",
+      "original_text": "It is for people with health issues that need prebiotics",
+      "clean_text": "It is for people with health issues that need prebiotics",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0047",
+      "original_text": "Ollipop prebiotic soda",
+      "clean_text": "Ollipop prebiotic soda",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0048",
+      "original_text": "Not interested",
+      "clean_text": "Not interested",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0049",
+      "original_text": "Good for the gut health",
+      "clean_text": "Good for the gut health",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0051",
+      "original_text": "I do not drank soda because most is full of sugar.  If I think I need a prebiotic or a  probiotic I will take a supplement.",
+      "clean_text": "I do not drank soda because most is full of sugar.  If I think I need a prebiotic or a  probiotic I will take a supplement.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0052",
+      "original_text": "Nasty tasting,  low flavor yuck",
+      "clean_text": "Nasty tasting,  low flavor yuck",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0053",
+      "original_text": "SOUNDS A BIT WEIRD PUTTING IT IN WHATS CONSIDERED JUNK BEVERAGES",
+      "clean_text": "SOUNDS A BIT WEIRD PUTTING IT IN WHATS CONSIDERED JUNK BEVERAGES",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0054",
+      "original_text": "Junk product and something I would not buy",
+      "clean_text": "Junk product and something I would not buy",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0055",
+      "original_text": "gut health fizz",
+      "clean_text": "gut health fizz",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0058",
+      "original_text": "Not interested in any kind of soda  with or without probiotics",
+      "clean_text": "Not interested in any kind of soda  with or without probiotics",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0060",
+      "original_text": "Will it change the flavor",
+      "clean_text": "Will it change the flavor",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0061",
+      "original_text": "Never had them new to me",
+      "clean_text": "Never had them new to me",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0062",
+      "original_text": "are they good for you?",
+      "clean_text": "are they good for you?",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0063",
+      "original_text": "Many soft drinks are full of sugar, caffeine, or a combination of both \u2013 and these are two substances evidence suggests are addictive. Soda can be amazing for your mental health if it is used to make a bad situation happy or a celebration.",
+      "clean_text": "Many soft drinks are full of sugar, caffeine, or a combination of both \u2013 and these are two substances evidence suggests are addictive. Soda can be amazing for your mental health if it is used to make a bad situation happy or a celebration.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.8928571428571429,
+        "scores": {
+          "Positive": 0.8928571428571429,
+          "Negative": 0.1,
+          "Neutral": 0.00714285714285709,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0064",
+      "original_text": "New and different but it'll probly taste like diet",
+      "clean_text": "New and different but it'll probly taste like diet",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0065",
+      "original_text": "The first time the two sides agreed to meet on a a date for a new peace agreement reached last month between their countries was last",
+      "clean_text": "The first time the two sides agreed to meet on a a date for a new peace agreement reached last month between their countries was last",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0066",
+      "original_text": "I LIKE OLLI POP, BUT I REALLY DON'T KNOW WHAT OTHER DRINKS THERE ARE",
+      "clean_text": "I LIKE OLLI POP, BUT I REALLY DON'T KNOW WHAT OTHER DRINKS THERE ARE",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0068",
+      "original_text": "It is different",
+      "clean_text": "It is different",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0069",
+      "original_text": "Nothing particular",
+      "clean_text": "Nothing particular",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0070",
+      "original_text": "What are they going to come up with next.",
+      "clean_text": "What are they going to come up with next.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0071",
+      "original_text": "A healthier alternative that benefits digestion.",
+      "clean_text": "A healthier alternative that benefits digestion.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0072",
+      "original_text": "Its new for me and since i have gut problems probiotics will help me alot",
+      "clean_text": "Its new for me and since i have gut problems probiotics will help me alot",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0073",
+      "original_text": "Attempting to be healthy.",
+      "clean_text": "Attempting to be healthy.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0075",
+      "original_text": "Sounds gross",
+      "clean_text": "Sounds gross",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0076",
+      "original_text": "A drink that can help to maintain some sort of gut balance",
+      "clean_text": "A drink that can help to maintain some sort of gut balance",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0077",
+      "original_text": "I think of yougut",
+      "clean_text": "I think of yougut",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0078",
+      "original_text": "I am curious to try them",
+      "clean_text": "I am curious to try them",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0079",
+      "original_text": "not interested",
+      "clean_text": "not interested",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0080",
+      "original_text": "Absolutely nothing because we never use this type of soda.",
+      "clean_text": "Absolutely nothing because we never use this type of soda.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0082",
+      "original_text": "A crazy trend",
+      "clean_text": "A crazy trend",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0083",
+      "original_text": "nothing.  i really dont associate soda with health",
+      "clean_text": "nothing.  i really dont associate soda with health",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0084",
+      "original_text": "Don\u2019t know much about soda",
+      "clean_text": "Don\u2019t know much about soda",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0085",
+      "original_text": "Not tasting good",
+      "clean_text": "Not tasting good",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0086",
+      "original_text": "interesting to add such a substance to soda",
+      "clean_text": "interesting to add such a substance to soda",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0087",
+      "original_text": "I think of cola because it\u2019s pretty amazing",
+      "clean_text": "I think of cola because it\u2019s pretty amazing",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0088",
+      "original_text": "I think it is too healthy",
+      "clean_text": "I think it is too healthy",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0089",
+      "original_text": "I might try them but I\u2019m not sure",
+      "clean_text": "I might try them but I\u2019m not sure",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0090",
+      "original_text": "Not interested in that",
+      "clean_text": "Not interested in that",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0091",
+      "original_text": "Sounds interesting",
+      "clean_text": "Sounds interesting",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0093",
+      "original_text": "Does it really help?",
+      "clean_text": "Does it really help?",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0094",
+      "original_text": "I think of Olipop and Poppi sodas. Sodas with prebiotics and probiotics.",
+      "clean_text": "I think of Olipop and Poppi sodas. Sodas with prebiotics and probiotics.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0096",
+      "original_text": "the fist think that cames to mind is the taste",
+      "clean_text": "the fist think that cames to mind is the taste",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0098",
+      "original_text": "more expensive and takes away the reason your buying soda to begin with",
+      "clean_text": "more expensive and takes away the reason your buying soda to begin with",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0099",
+      "original_text": "Specialty or niche",
+      "clean_text": "Specialty or niche",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0102",
+      "original_text": "Dose this help with ! With gut health or is is this a way that the soda company make more money  saying the the drink is healthy when soda is not!",
+      "clean_text": "Dose this help with ! With gut health or is is this a way that the soda company make more money  saying the the drink is healthy when soda is not!",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0105",
+      "original_text": "I wonder how they taste, and if they're genuinely healthy.",
+      "clean_text": "I wonder how they taste, and if they're genuinely healthy.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0106",
+      "original_text": "That they are very expensive and their taste is bland.",
+      "clean_text": "That they are very expensive and their taste is bland.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0108",
+      "original_text": "I would like to try them",
+      "clean_text": "I would like to try them",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0110",
+      "original_text": "It\u2019s very healthy and made with natural ingredients.  It\u2019s made with no sugar and natural ingredients.",
+      "clean_text": "It\u2019s very healthy and made with natural ingredients.  It\u2019s made with no sugar and natural ingredients.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0111",
+      "original_text": "I'm ok with it but not first choice",
+      "clean_text": "[NAME] with it but not first choice",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0112",
+      "original_text": "Its a very alcoholic.There are sugar,soda,alcohol,color,[[rebiotic and probiotic soda are first comes to mind hear.Its see very liqued and hot.So the first comes to mind when i hear about sodas with prebiotic and probiotic sodas.its gorgiuse and popular .",
+      "clean_text": "Its a very alcoholic.There are sugar,soda,alcohol,color,[[rebiotic and probiotic soda are first comes to mind hear.Its see very liqued and hot.So the first comes to mind when i hear about sodas with prebiotic and probiotic sodas.its gorgiuse and popular .",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0113",
+      "original_text": "Better for you sodas are popular",
+      "clean_text": "Better for you sodas are popular",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0114",
+      "original_text": "Soda with added benefits to digestion",
+      "clean_text": "Soda with added benefits to digestion",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0115",
+      "original_text": "It sounds like a healthier brand",
+      "clean_text": "It sounds like a healthier brand",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0117",
+      "original_text": "I don't not think that these will provide enough of the pre/probiotics that are needed.",
+      "clean_text": "I don't not think that these will provide enough of the pre/probiotics that are needed.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0119",
+      "original_text": "Interested in seeing them",
+      "clean_text": "Interested in seeing them",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0120",
+      "original_text": "Why? No need",
+      "clean_text": "Why? No need",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0121",
+      "original_text": "They will be really good & energetic & must be healthy",
+      "clean_text": "They will be really good & energetic & must be healthy",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0122",
+      "original_text": "What the hell is probiotics n orebiiotics",
+      "clean_text": "What the hell is probiotics n orebiiotics",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0123",
+      "original_text": "I never hear of these types of sodas.",
+      "clean_text": "I never hear of these types of sodas.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0124",
+      "original_text": "Nothing I never gave a thought about it",
+      "clean_text": "Nothing I never gave a thought about it",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0125",
+      "original_text": "I don't need those added to the sodas I drink.",
+      "clean_text": "I don't need those added to the sodas I drink.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0126",
+      "original_text": "healthy benefits added perks",
+      "clean_text": "healthy benefits added perks",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0127",
+      "original_text": "The word \"\"new\"\" comes to mind first.",
+      "clean_text": "The word \"\"new\"\" comes to mind first.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0128",
+      "original_text": "has better gut benefits",
+      "clean_text": "has better gut benefits",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0129",
+      "original_text": "that its not very appealing to me personally",
+      "clean_text": "that its not very appealing to me personally",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0132",
+      "original_text": "probably better for gut health and digestion",
+      "clean_text": "probably better for gut health and digestion",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0133",
+      "original_text": "I think zero sugars and organic",
+      "clean_text": "I think zero sugars and organic",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0135",
+      "original_text": "Popping and oligopoly brands",
+      "clean_text": "Popping and oligopoly brands",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0136",
+      "original_text": "That it should be healthier",
+      "clean_text": "That it should be healthier",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0137",
+      "original_text": "None, I am not familiar with this kind of soda.",
+      "clean_text": "None, I am not familiar with this kind of soda.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0138",
+      "original_text": "I don't know enough about that,so I am confused about what that is",
+      "clean_text": "I don't know enough about that,so I am confused about what that is",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0139",
+      "original_text": "Never heard of it",
+      "clean_text": "Never heard of it",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0141",
+      "original_text": "These are a healthier alternative to regular sodas.",
+      "clean_text": "These are a healthier alternative to regular sodas.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0142",
+      "original_text": "The only thing that makes sense to you right back now are you going back in time. I can see that you\u2019re going back in a couple. I\u2019m not going back in the house going back in and out of the house like that",
+      "clean_text": "The only thing that makes sense to you right back now are you going back in time. I can see that you\u2019re going back in a couple. I\u2019m not going back in the house going back in and out of the house like that",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0143",
+      "original_text": "I don't like it at all",
+      "clean_text": "I don't like it at all",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0145",
+      "original_text": "Gross and an unhealthy gimmick",
+      "clean_text": "Gross and an unhealthy gimmick",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0146",
+      "original_text": "I would want more information on it.",
+      "clean_text": "I would want more information on it.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0147",
+      "original_text": "I have never heard of this.",
+      "clean_text": "I have never heard of this.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0150",
+      "original_text": "That they are healthy and help with certain health issues but still have the same good flavor for the most part.",
+      "clean_text": "That they are healthy and help with certain health issues but still have the same good flavor for the most part.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0152",
+      "original_text": "I wonder if the claims are actually supported by clinical science or if it's just another reason to rationalize something unhealthy being a bit healthier.",
+      "clean_text": "I wonder if the claims are actually supported by clinical science or if it's just another reason to rationalize something unhealthy being a bit healthier.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0153",
+      "original_text": "I don't care about those, I like my Coke products.",
+      "clean_text": "I don't care about those, I like my Coke products.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0154",
+      "original_text": "I have never noted them but sounds like a good idea.",
+      "clean_text": "I have never noted them but sounds like a good idea.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0155",
+      "original_text": "I like pop with out sugar and caffeine free better for you",
+      "clean_text": "I like pop with out sugar and caffeine free better for you",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0156",
+      "original_text": "better for you sodas",
+      "clean_text": "better for you sodas",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0157",
+      "original_text": "Help with my digestive system",
+      "clean_text": "Help with my digestive system",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0158",
+      "original_text": "Sounds weird and not appealing",
+      "clean_text": "Sounds weird and not appealing",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0159",
+      "original_text": "Poppi is the first thing that comes to mind.",
+      "clean_text": "Poppi is the first thing that comes to mind.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0160",
+      "original_text": "They are healthy.",
+      "clean_text": "They are healthy.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0161",
+      "original_text": "It sounds intriguing",
+      "clean_text": "It sounds intriguing",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0162",
+      "original_text": "I'm surprised because I didn't know they had it",
+      "clean_text": "[NAME] because I didn't know they had it",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0163",
+      "original_text": "I think it\u2019s ok",
+      "clean_text": "I think it\u2019s ok",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0165",
+      "original_text": "Some type of new soda that is healthier to consume.",
+      "clean_text": "Some type of new soda that is healthier to consume.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0166",
+      "original_text": "expensive waste of money",
+      "clean_text": "expensive waste of money",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0167",
+      "original_text": "I look past it",
+      "clean_text": "I look past it",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0168",
+      "original_text": "I think these additives are totally unnecessary and aren't good for you",
+      "clean_text": "I think these additives are totally unnecessary and aren't good for you",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0169",
+      "original_text": "Sounds unappealing",
+      "clean_text": "Sounds unappealing",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0170",
+      "original_text": "Is very helpful",
+      "clean_text": "Is very helpful",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0173",
+      "original_text": "never heard of ot, so nothing.",
+      "clean_text": "never heard of ot, so nothing.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0174",
+      "original_text": "Not a clue. Haven\u2019t seen anything about this.",
+      "clean_text": "Not a clue. Haven\u2019t seen anything about this.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0176",
+      "original_text": "I think they are healthy and taste great.",
+      "clean_text": "I think they are healthy and taste great.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0177",
+      "original_text": "I don\u2019t know any?",
+      "clean_text": "I don\u2019t know any?",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0178",
+      "original_text": "That I don't know what prebiotics or probiotics are",
+      "clean_text": "That I don't know what prebiotics or probiotics are",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0179",
+      "original_text": "I have a watermelon one in the fridge",
+      "clean_text": "I have a watermelon one in the fridge",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0181",
+      "original_text": "I think they are unbelievable",
+      "clean_text": "I think they are unbelievable",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0182",
+      "original_text": "I'm not interested in sodas.",
+      "clean_text": "[NAME] interested in sodas.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0184",
+      "original_text": "I must honestly  wish u.  Age 16 and I drink coke soda and pepesi  and I have. Bad kidney  and. Remove  and. Doctor save my life almost. Die andni m.no longer.  Drink soda.    And  I believe  it. Soda. Put people. Their life threatening  worse.",
+      "clean_text": "I must honestly  wish u.  Age 16 and I drink coke soda and pepesi  and I have. Bad kidney  and. Remove  and. Doctor save my life almost. Die andni m.no longer.  Drink soda.    And  I believe  it. Soda. Put people. Their life threatening  worse.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0185",
+      "original_text": "I didn't know there was sodas with prebiotics or probiotics.  I typically associate them with yogurt.",
+      "clean_text": "I didn't know there was sodas with prebiotics or probiotics.  I typically associate them with yogurt.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0186",
+      "original_text": "is this needed?",
+      "clean_text": "is this needed?",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0188",
+      "original_text": "more healthy for you",
+      "clean_text": "more healthy for you",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0189",
+      "original_text": "Satisfaction",
+      "clean_text": "Satisfaction",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0190",
+      "original_text": "They are healthy",
+      "clean_text": "They are healthy",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0191",
+      "original_text": "Nothing really",
+      "clean_text": "Nothing really",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0192",
+      "original_text": "not interested in that feature so I usually dont pay attention",
+      "clean_text": "not interested in that feature so I usually dont pay attention",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0193",
+      "original_text": "I dont like sodas",
+      "clean_text": "I dont like sodas",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0194",
+      "original_text": "Not a bad idea.",
+      "clean_text": "Not a bad idea.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0196",
+      "original_text": "The first thing that comes to mind is that the soda is healthier",
+      "clean_text": "The first thing that comes to mind is that the soda is healthier",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0197",
+      "original_text": "Diet low calorie sodas",
+      "clean_text": "Diet low calorie sodas",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0198",
+      "original_text": "I\u2019d wonder if it would taste weird, but I\u2019d try it.",
+      "clean_text": "I\u2019d wonder if it would taste weird, but I\u2019d try it.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0199",
+      "original_text": "Sweet and good and enjoyable to drink",
+      "clean_text": "Sweet and good and enjoyable to drink",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0200",
+      "original_text": "I wonder what it taste\u2019s like",
+      "clean_text": "I wonder what it taste\u2019s like",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0201",
+      "original_text": "That sounds really sketchy.",
+      "clean_text": "That sounds really sketchy.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0202",
+      "original_text": "Not healthy. Prebiotic sounds healthy but I have no information on it",
+      "clean_text": "Not healthy. Prebiotic sounds healthy but I have no information on it",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0203",
+      "original_text": "It\u2019s still soda and not healthy.",
+      "clean_text": "It\u2019s still soda and not healthy.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0204",
+      "original_text": "Is that for real?",
+      "clean_text": "Is that for real?",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0205",
+      "original_text": "Gross, bitter, aspartame flavor",
+      "clean_text": "Gross, bitter, aspartame flavor",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0206",
+      "original_text": "I think about brands like Ollipop and Poppi. These are brands that seem healthier to me than regular soda, created with a specific purpose to increase gut health.",
+      "clean_text": "I think about brands like Ollipop and Poppi. These are brands that seem healthier to me than regular soda, created with a specific purpose to increase gut health.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0208",
+      "original_text": "I use to drink , its good for health",
+      "clean_text": "I use to drink , its good for health",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0212",
+      "original_text": "I think about Oli and it sounds like they would be good!",
+      "clean_text": "I think about Oli and it sounds like they would be good!",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0213",
+      "original_text": "I've had lollipop before and liked it",
+      "clean_text": "I've had lollipop before and liked it",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0214",
+      "original_text": "I don't know. That they're a gimmick to sell soda.",
+      "clean_text": "I don't know. That they're a gimmick to sell soda.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0215",
+      "original_text": "I don\u2019t know anything",
+      "clean_text": "I don\u2019t know anything",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0216",
+      "original_text": "I have no idea what that means",
+      "clean_text": "I have no idea what that means",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0217",
+      "original_text": "I've tried them there not bad",
+      "clean_text": "I've tried them there not bad",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0218",
+      "original_text": "I love you too and I\u2019m going home now and then I\u2019ll ask my mom to take the kids out for my birthday",
+      "clean_text": "I love you too and I\u2019m going home now and then I\u2019ll ask my mom to take the kids out for my birthday",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0219",
+      "original_text": "That I wouldn\u2019t want that it doesn\u2019t sound right with soda",
+      "clean_text": "That I wouldn\u2019t want that it doesn\u2019t sound right with soda",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0220",
+      "original_text": "I don't know never heard of",
+      "clean_text": "I don't know never heard of",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0221",
+      "original_text": "Wonder how they taste",
+      "clean_text": "Wonder how they taste",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0224",
+      "original_text": "Arch chemicals with too much sugar",
+      "clean_text": "Arch chemicals with too much sugar",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0225",
+      "original_text": "I like the idea because prebiotics and probiotics are good for the body.",
+      "clean_text": "I like the idea because prebiotics and probiotics are good for the body.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0226",
+      "original_text": "High calories",
+      "clean_text": "High calories",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0227",
+      "original_text": "My first mind is how much is in it",
+      "clean_text": "My first mind is how much is in it",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0229",
+      "original_text": "Tasty and filling is what first comes to mind when I hear about sodas with prebiotics and probiotics soda.",
+      "clean_text": "Tasty and filling is what first comes to mind when I hear about sodas with prebiotics and probiotics soda.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0230",
+      "original_text": "I THINK SODAS THAT HAS GOOD HEALTH BENEFITS",
+      "clean_text": "I THINK SODAS THAT HAS GOOD HEALTH BENEFITS",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0231",
+      "original_text": "I am interested in want to know more about their function and their purpose",
+      "clean_text": "I am interested in want to know more about their function and their purpose",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0233",
+      "original_text": "I think of kombucha",
+      "clean_text": "I think of kombucha",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0234",
+      "original_text": "Good for you",
+      "clean_text": "Good for you",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0235",
+      "original_text": "Healthy for your digestive and gut",
+      "clean_text": "Healthy for your digestive and gut",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0236",
+      "original_text": "its not good for you rots teeth",
+      "clean_text": "its not good for you rots teeth",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.65,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.25,
+          "Neutral": 0.5,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0238",
+      "original_text": "soda with nutritious value",
+      "clean_text": "soda with nutritious value",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0239",
+      "original_text": "Healthy and has nutrients for people",
+      "clean_text": "Healthy and has nutrients for people",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0240",
+      "original_text": "Great drink",
+      "clean_text": "Great drink",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0241",
+      "original_text": "Olipop and poppi",
+      "clean_text": "Olipop and poppi",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0242",
+      "original_text": "Never heard of it",
+      "clean_text": "Never heard of it",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0243",
+      "original_text": "Healthy alternatives but too expensive",
+      "clean_text": "Healthy alternatives but too expensive",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0245",
+      "original_text": "They can't taste very good.",
+      "clean_text": "They can't taste very good.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0246",
+      "original_text": "Coke because it\u2019s very good to me",
+      "clean_text": "Coke because it\u2019s very good to me",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0247",
+      "original_text": "Pepsi comes to mind",
+      "clean_text": "Pepsi comes to mind",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Features"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0250",
+      "original_text": "I don,t care to much about that.",
+      "clean_text": "I don,t care to much about that.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    }
+  ]
+}

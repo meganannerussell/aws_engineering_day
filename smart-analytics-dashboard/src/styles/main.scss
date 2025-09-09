@@ -174,11 +174,159 @@ body {
 .results-page {
   min-height: 100vh;
   background-color: $background-color;
+  margin-left: 50px; // Account for left sidebar (open by default)
+  transition: margin-left 0.3s ease;
+
+  &.drawer-collapsed {
+    margin-left: -200px; // No margin when collapsed
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .results-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+// Loading and error states within results page
+.results-page .loading-state,
+.results-page .error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+// CSV Uploader Styles
+.csv-uploader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba($primary-color, 0.05);
+  border: 2px dashed rgba($primary-color, 0.3);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba($primary-color, 0.08);
+    border-color: rgba($primary-color, 0.5);
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: $primary-color;
+    font-size: 0.9rem;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover:not(:disabled) {
+      background: darken($primary-color, 10%);
+      transform: translateY(-1px);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+
+  &__hint {
+    font-size: 0.8rem;
+    color: $text-secondary;
+    margin: 0;
+  }
+}
+
+// Uploaded Files Styles
+.uploaded-files {
+  margin-bottom: 1.5rem;
+
+  &__title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin: 0 0 0.75rem 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.uploaded-file {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba($success-color, 0.1);
+  border: 1px solid rgba($success-color, 0.3);
+  border-radius: 6px;
+  font-size: 0.875rem;
+
+  &__name {
+    flex: 1;
+    color: $text-primary;
+    font-weight: 500;
+  }
+
+  &__remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: rgba($error-color, 0.1);
+    color: $error-color;
+    border: 1px solid rgba($error-color, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover:not(:disabled) {
+      background: rgba($error-color, 0.2);
+      border-color: rgba($error-color, 0.5);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
 }
 
 // Utility classes
@@ -1445,6 +1593,283 @@ body {
   }
 }
 
+// Dataset Analyzer Light Mode Styles - Left Sidebar Drawer
+.dataset-analyzer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    $card-background 0%,
+    lighten($card-background, 2%) 100%
+  );
+  border-right: 1px solid $border-color;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: visible;
+  transition: all 0.3s ease;
+
+  &.collapsed {
+    width: 50px;
+  }
+
+  &.collapsed &__content {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.collapsed &__collapsed-icon {
+    opacity: 1;
+  }
+
+  // Add a subtle animation for the width change
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      $primary-color,
+      transparent
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &__content {
+    padding: 2rem 2rem 2rem 2rem;
+    padding-right: 3rem; // Extra space for the toggle arrow
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
+  }
+
+  &__collapsed-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: $text-primary;
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+
+  &__toggle-arrow {
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: $card-background;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+
+    &:hover {
+      background: $primary-color;
+      color: white;
+      border-color: $primary-color;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .arrow-icon {
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    &.collapsed .arrow-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border-color;
+
+    &-icon {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__form {
+    margin-bottom: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; // Add space between dropdown and button
+  }
+
+  &__info {
+    margin-top: auto;
+  }
+
+  &__description {
+    color: $text-secondary;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      background: rgba($primary-color, 0.1);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: $text-primary;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: rgba($primary-color, 0.15);
+        transform: translateX(2px);
+      }
+    }
+  }
+}
+
+.dataset-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  position: relative;
+
+  &__label {
+    color: $text-primary;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: white;
+    border: 2px solid $border-color;
+    border-radius: 8px;
+    color: #000000;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+
+    &:hover {
+      border-color: $primary-color;
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-1px);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 4px rgba($primary-color, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #f8f9fa;
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    option {
+      background: white;
+      color: #000000;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.analyze-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  background: linear-gradient(135deg, $primary-color 0%, darken($primary-color, 10%) 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba($primary-color, 0.3);
+
+  &:hover:not(:disabled) {
+    background: linear-gradient(135deg, darken($primary-color, 5%) 0%, darken($primary-color, 15%) 100%);
+    box-shadow: 0 6px 16px rgba($primary-color, 0.4);
+    transform: translateY(-1px);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba($primary-color, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 600;
+  }
+}
+
 // Dark Theme Styles
 [data-theme="dark"],
 body[data-theme="dark"] {
@@ -1481,6 +1906,13 @@ body[data-theme="dark"] {
   .results-page {
     background-color: $dark-bg-primary;
     min-height: 100vh;
+    margin-left: 50px; // Account for left sidebar (open by default)
+
+    &.drawer-collapsed {
+      margin-left: -200px; // No margin when collapsed
+      display: flex;
+      justify-content: center;
+    }
   }
 
   // Ensure the entire viewport is dark
@@ -1950,4 +2382,324 @@ body[data-theme="dark"] {
   background: $dark-bg-primary !important;
   background-color: $dark-bg-primary !important;
   color: $dark-text-primary !important;
+}
+
+// Dataset Analyzer Dark Mode Styles - Left Sidebar Drawer
+[data-theme="dark"] .dataset-analyzer,
+body[data-theme="dark"] .dataset-analyzer {
+  background: linear-gradient(
+    180deg,
+    $dark-bg-card 0%,
+    $dark-bg-secondary 100%
+  );
+  border-right: 1px solid $dark-border-color;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+
+  &__collapsed-icon {
+    color: $dark-text-primary;
+  }
+
+  &__toggle-arrow {
+    background: $dark-bg-card;
+    border-color: $dark-border-color;
+    color: $dark-text-primary;
+    right: -8px; // Ensure consistent positioning
+
+    &:hover {
+      background: $primary-color;
+      color: white;
+      border-color: $primary-color;
+    }
+  }
+
+  &__title {
+    color: $dark-text-primary;
+    border-color: $dark-border-color;
+  }
+
+  &__description {
+    color: $dark-text-secondary;
+  }
+
+  &__features li {
+    background: rgba($primary-color, 0.2);
+    color: $dark-text-primary;
+
+    &:hover {
+      background: rgba($primary-color, 0.25);
+    }
+  }
+
+  &:hover {
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
+  }
+
+  &::before {
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      $primary-color,
+      transparent
+    );
+  }
+}
+
+// Dark mode dataset selector styles
+[data-theme="dark"] .dataset-selector,
+body[data-theme="dark"] .dataset-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  position: relative;
+
+  &__label {
+    font-weight: 500;
+    color: $dark-text-primary;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid $dark-border-color;
+    border-radius: 8px;
+    background: $dark-bg-card;
+    backdrop-filter: blur(10px);
+    color: $dark-text-primary;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ccc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    &:hover {
+      border-color: $bright-blue;
+      background-color: lighten($dark-bg-card, 3%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transform: translateY(-1px);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $bright-blue;
+      box-shadow: 0 0 0 4px rgba($bright-blue, 0.15), 0 4px 8px rgba(0, 0, 0, 0.3);
+      background-color: lighten($dark-bg-card, 3%);
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    option {
+      background: $dark-bg-card;
+      color: $dark-text-primary;
+      padding: 0.5rem;
+    }
+  }
+}
+
+// Dark mode analyze button styles
+[data-theme="dark"] .analyze-button,
+body[data-theme="dark"] .analyze-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  background: linear-gradient(135deg, $bright-blue 0%, darken($bright-blue, 10%) 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba($bright-blue, 0.3);
+
+  &:hover:not(:disabled) {
+    background: linear-gradient(135deg, darken($bright-blue, 5%) 0%, darken($bright-blue, 15%) 100%);
+    box-shadow: 0 6px 16px rgba($bright-blue, 0.4);
+    transform: translateY(-1px);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba($bright-blue, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 600;
+  }
+
+  &__icon {
+    animation: spin 1s linear infinite;
+  }
+
+  &__text {
+    font-weight: 600;
+  }
+}
+
+// Dark mode CSV uploader styles
+[data-theme="dark"] .csv-uploader,
+body[data-theme="dark"] .csv-uploader {
+  background: rgba($primary-color, 0.1);
+  border-color: rgba($primary-color, 0.4);
+
+  &:hover {
+    background: rgba($primary-color, 0.15);
+    border-color: rgba($primary-color, 0.6);
+  }
+
+  &__label {
+    color: $primary-color;
+  }
+
+  &__hint {
+    color: $dark-text-secondary;
+  }
+}
+
+[data-theme="dark"] .uploaded-files,
+body[data-theme="dark"] .uploaded-files {
+  &__title {
+    color: $dark-text-primary;
+  }
+}
+
+[data-theme="dark"] .uploaded-file,
+body[data-theme="dark"] .uploaded-file {
+  background: rgba($success-color, 0.15);
+  border-color: rgba($success-color, 0.4);
+
+  &__name {
+    color: $dark-text-primary;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Welcome State Styles
+.welcome-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2rem;
+
+  &__content {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 0 0 1rem 0;
+    background: linear-gradient(135deg, $primary-color, $bright-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__message {
+    font-size: 1.1rem;
+    color: $text-secondary;
+    margin: 0 0 2rem 0;
+    line-height: 1.6;
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba($card-background, 0.8);
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: $primary-color;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    font-weight: 500;
+    color: $text-primary;
+  }
+}
+
+// Dark mode welcome state
+body[data-theme="dark"] {
+  .welcome-state {
+    &__title {
+      color: $dark-text-primary;
+    }
+
+    &__message {
+      color: $dark-text-secondary;
+    }
+  }
+
+  .feature-item {
+    background: rgba($dark-bg-card, 0.8);
+    border-color: $dark-border-color;
+
+    &:hover {
+      border-color: $bright-blue;
+    }
+
+    &__text {
+      color: $dark-text-primary;
+    }
+  }
 }
