@@ -1,20 +1,45 @@
 import { motion } from "framer-motion";
 import { BarChart3, Users, Clock, Target } from "lucide-react";
 import type { AnalyticsData } from "../types/analytics";
-import { formatNumber, formatTime, formatConfidence } from "../lib/utils";
+import {
+  formatNumber,
+  formatTime,
+  formatSentimentPolarity,
+  getSentimentDescription,
+  getSentimentColorFromPolarity,
+} from "../lib/utils";
 
 interface MetricsHeaderProps {
   data: AnalyticsData;
 }
 
-const MetricsHeader: React.FC<MetricsHeaderProps> = ({ data }) => {
+const MetricsHeader = ({ data }: MetricsHeaderProps) => {
   const { project_metadata, topics } = data;
 
-  // Calculate average confidence score from topics
-  const avgConfidence =
-    topics.length > 0
-      ? topics.reduce((sum, topic) => sum + topic.sentiment_mean, 0) /
-        topics.length
+  // Calculate overall sentiment polarity from all topics
+  const totalSentimentAnalyzed = topics.reduce(
+    (sum, topic) =>
+      sum +
+      topic.sentiment_distribution.positive +
+      topic.sentiment_distribution.negative +
+      topic.sentiment_distribution.neutral +
+      topic.sentiment_distribution.mixed,
+    0
+  );
+
+  const totalPositive = topics.reduce(
+    (sum, topic) => sum + topic.sentiment_distribution.positive,
+    0
+  );
+  const totalNegative = topics.reduce(
+    (sum, topic) => sum + topic.sentiment_distribution.negative,
+    0
+  );
+
+  // Calculate sentiment polarity as a score from -1 (very negative) to +1 (very positive)
+  const sentimentPolarity =
+    totalSentimentAnalyzed > 0
+      ? (totalPositive - totalNegative) / totalSentimentAnalyzed
       : 0;
 
   const metrics = [
@@ -33,9 +58,9 @@ const MetricsHeader: React.FC<MetricsHeaderProps> = ({ data }) => {
       iconClass: "metric-card__icon--green",
     },
     {
-      title: "Avg. Sentiment",
-      value: formatConfidence(avgConfidence),
-      description: "Average sentiment",
+      title: "Sentiment Score",
+      value: formatSentimentPolarity(sentimentPolarity),
+      description: getSentimentDescription(sentimentPolarity),
       icon: Target,
       iconClass: "metric-card__icon--purple",
     },
@@ -51,7 +76,12 @@ const MetricsHeader: React.FC<MetricsHeaderProps> = ({ data }) => {
   return (
     <div className="metrics-grid">
       {metrics.map((metric, index) => {
-        const Icon = metric.icon;
+        const IconComponent = metric.icon;
+        const isSentimentScore = metric.title === "Sentiment Score";
+        const sentimentColor = isSentimentScore
+          ? getSentimentColorFromPolarity(sentimentPolarity)
+          : undefined;
+
         return (
           <motion.div
             key={metric.title}
@@ -64,11 +94,18 @@ const MetricsHeader: React.FC<MetricsHeaderProps> = ({ data }) => {
             <div className="metric-card__header">
               <div style={{ flex: 1 }}>
                 <p className="metric-card__title">{metric.title}</p>
-                <p className="metric-card__value">{metric.value}</p>
+                <p
+                  className="metric-card__value"
+                  style={
+                    isSentimentScore ? { color: sentimentColor } : undefined
+                  }
+                >
+                  {metric.value}
+                </p>
                 <p className="metric-card__description">{metric.description}</p>
               </div>
               <div className={`metric-card__icon ${metric.iconClass}`}>
-                <Icon style={{ width: "1.5rem", height: "1.5rem" }} />
+                <IconComponent style={{ width: "1.5rem", height: "1.5rem" }} />
               </div>
             </div>
           </motion.div>

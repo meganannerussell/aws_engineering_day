@@ -56,6 +56,7 @@ class TextAnalyticsPipeline:
         self.session = boto3.Session(profile_name=aws_profile)
         self.bedrock = self.session.client('bedrock-runtime', region_name='us-east-1')
         self.comprehend = self.session.client('comprehend', region_name='us-east-1')
+        self.domain_context = "beauty and skincare products"
 
         # Model configuration
         self.embedding_model = "amazon.titan-embed-text-v2:0"
@@ -529,21 +530,38 @@ class TextAnalyticsPipeline:
         if used_labels:
             used_labels_context = f"\nAlready used labels (avoid these): {', '.join(list(used_labels)[:10])}"
 
-        prompt = f"""Create precise, granular, and unique 2-4 word business labels for these customer feedback clusters about {self.domain_context}:
+        prompt = f"""You are a beauty and skincare market research analyst classifying customer feedback into meaningful, actionable themes.
+
+Analyze these customer feedback clusters about {self.domain_context}:
 
 {clusters_text}
 
+Create clear, distinct, and non-overlapping theme labels that are:
+- Consumer-friendly and business-relevant for beauty/skincare industry
+- Specific and actionable for product managers, designers, and marketers
+- Capture both positive and negative sentiments when present
+- Avoid vague categories like "Miscellaneous" or "General"
+- Focus on what beauty/skincare customers actually care about
+
 Return ONLY valid JSON format:
-{{"0": "Specific Label One", "1": "Detailed Label Two", "2": "Granular Label Three"}}
+{{"0": "Theme Label One", "1": "Theme Label Two", "2": "Theme Label Three"}}
+
+Examples of good beauty/skincare themes:
+- "Product effectiveness" (not "Results")
+- "Skin compatibility issues" (not "Skin")
+- "Ingredient benefits" (not "Ingredients")
+- "Visual appeal" (not "Design")
+- "Ease of application" (not "Usage")
+- "Affordable pricing" (not "Cost")
+- "Packaging design" (not "Packaging")
+- "Safety concerns" (not "Safety")
 
 Requirements:
-- Exactly 2-4 words per label (prefer 3-4 for granularity)
-- Professional business terminology
-- Focus on specific topics/themes, not general sentiment
-- Be granular and actionable (e.g., "Mobile App Performance" not just "Performance")
+- 2-4 words per label (prefer 3-4 for clarity)
+- Use beauty/skincare industry terminology customers understand
 - Make each label unique and distinct
-- Avoid generic words like "feedback", "responses", "comments"
-- Use specific business domains (e.g., "Payment Processing", "User Interface Design", "Customer Support Response")
+- Focus on specific topics/themes, not general sentiment
+- Consider product effectiveness, user experience, visual appeal, pricing, safety
 {used_labels_context}"""
 
         try:
@@ -638,28 +656,49 @@ Requirements:
         if not texts:
             return f"Topic {cluster_id + 1}"
 
-        # Enhanced business-relevant keyword categories with more granular options
+        # Beauty & Skincare specific keyword categories for actionable themes
         categories = {
-            'Product Quality Issues': ['quality', 'defective', 'broken', 'poor quality', 'flawed', 'damaged'],
-            'Product Quality Positive': ['excellent', 'amazing', 'perfect', 'outstanding', 'superior', 'premium'],
-            'User Interface Design': ['interface', 'design', 'layout', 'navigation', 'menu', 'buttons', 'ui'],
-            'User Experience Issues': ['confusing', 'difficult', 'complicated', 'hard to use', 'frustrating'],
-            'User Experience Positive': ['easy', 'simple', 'intuitive', 'user-friendly', 'smooth', 'seamless'],
-            'Customer Service Response': ['service', 'support', 'help', 'staff', 'representative', 'assistance'],
-            'Customer Service Quality': ['helpful', 'responsive', 'professional', 'knowledgeable', 'friendly'],
-            'Performance Speed': ['fast', 'quick', 'slow', 'performance', 'speed', 'responsive', 'laggy'],
-            'Performance Reliability': ['reliable', 'stable', 'consistent', 'unreliable', 'buggy', 'crashes'],
-            'Pricing Value': ['price', 'cost', 'expensive', 'value', 'worth', 'money', 'affordable', 'overpriced'],
-            'Feature Functionality': ['feature', 'function', 'capability', 'option', 'tool', 'functionality'],
-            'Feature Requests': ['missing', 'need', 'want', 'request', 'suggest', 'improvement', 'enhancement'],
-            'Visual Design': ['design', 'look', 'appearance', 'style', 'beautiful', 'color', 'aesthetic'],
-            'Technical Issues': ['problem', 'issue', 'bug', 'error', 'broken', 'fail', 'glitch', 'malfunction'],
-            'Delivery Shipping': ['delivery', 'shipping', 'arrived', 'package', 'packaging', 'shipped'],
-            'Mobile App Experience': ['mobile', 'app', 'phone', 'tablet', 'ios', 'android', 'download'],
-            'Website Experience': ['website', 'site', 'web', 'online', 'browser', 'loading', 'page'],
-            'Payment Processing': ['payment', 'billing', 'charge', 'credit', 'card', 'transaction', 'refund'],
-            'Account Management': ['account', 'profile', 'login', 'password', 'registration', 'settings'],
-            'Communication Updates': ['email', 'notification', 'update', 'message', 'alert', 'reminder']
+            # Product Effectiveness & Results
+            'Product effectiveness': ['works', 'effective', 'results', 'improvement', 'better', 'amazing results', 'transformation'],
+            'Skin compatibility': ['skin type', 'sensitive skin', 'works on my skin', 'compatible', 'suits my skin', 'skin reaction'],
+            'Ingredient benefits': ['ingredients', 'natural', 'organic', 'chemical', 'formula', 'active ingredients', 'vitamin'],
+            'Long-term results': ['long lasting', 'permanent', 'temporary', 'fades', 'stays', 'durable', 'lasting effect'],
+            
+            # Product Quality & Performance
+            'High quality product': ['excellent', 'amazing', 'perfect', 'outstanding', 'premium', 'high quality', 'superior'],
+            'Product quality issues': ['poor quality', 'cheap', 'bad', 'terrible', 'awful', 'defective', 'flawed'],
+            'Texture and feel': ['smooth', 'creamy', 'thick', 'thin', 'lightweight', 'heavy', 'texture', 'consistency'],
+            'Scent and fragrance': ['smell', 'fragrance', 'scent', 'aroma', 'perfume', 'odor', 'smells good', 'bad smell'],
+            
+            # Visual Appeal & Design
+            'Visual appeal': ['beautiful', 'attractive', 'pretty', 'ugly', 'design', 'look', 'appearance', 'aesthetic'],
+            'Packaging design': ['packaging', 'bottle', 'container', 'box', 'design', 'attractive packaging', 'beautiful packaging'],
+            'Brand recognition': ['brand', 'name', 'reputation', 'trusted', 'popular', 'famous', 'well known', 'brand name'],
+            
+            # User Experience & Application
+            'Ease of application': ['easy to apply', 'simple', 'difficult', 'hard to use', 'application', 'apply', 'user friendly'],
+            'Product consistency': ['consistent', 'reliable', 'unreliable', 'inconsistent', 'varies', 'same every time'],
+            'Convenience factors': ['convenient', 'easy', 'portable', 'travel', 'quick', 'fast', 'time saving'],
+            
+            # Pricing & Value
+            'Affordable pricing': ['affordable', 'cheap', 'inexpensive', 'budget', 'value', 'worth', 'price', 'cost'],
+            'Pricing concerns': ['expensive', 'overpriced', 'costly', 'high price', 'too much', 'money', 'cost'],
+            'Value for money': ['value', 'worth', 'bang for buck', 'deal', 'bargain', 'good value', 'worth it'],
+            
+            # Availability & Access
+            'Product availability': ['available', 'hard to find', 'out of stock', 'limited', 'exclusive', 'rare', 'unavailable'],
+            'Shopping experience': ['store', 'online', 'website', 'app', 'shopping', 'purchase', 'buy', 'retail'],
+            'Recommendation sources': ['recommended', 'suggestion', 'advice', 'friend', 'influencer', 'review', 'word of mouth'],
+            
+            # Personalization & Customization
+            'Personalized experience': ['personalized', 'custom', 'tailored', 'individual', 'specific', 'unique', 'personal'],
+            'Skin type matching': ['skin type', 'sensitive', 'oily', 'dry', 'combination', 'normal', 'acne prone'],
+            'Age appropriate': ['age', 'young', 'mature', 'anti aging', 'wrinkles', 'fine lines', 'youthful'],
+            
+            # Safety & Concerns
+            'Safety concerns': ['safe', 'unsafe', 'allergic', 'reaction', 'irritation', 'side effects', 'harmful'],
+            'Ingredient safety': ['natural', 'chemical', 'toxic', 'safe ingredients', 'organic', 'synthetic', 'clean'],
+            'Trial and testing': ['try', 'test', 'sample', 'trial', 'experiment', 'testing', 'first time']
         }
 
         combined_text = ' '.join(texts[:10]).lower()
