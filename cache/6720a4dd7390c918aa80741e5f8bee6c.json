@@ -1,0 +1,4391 @@
+{
+  "project_metadata": {
+    "project_title": "Ask Anything Beauty Demo",
+    "question_text": "In your opinion, what has been the most truly outstanding new beauty product introduced in the last year or two?",
+    "total_responses": 205,
+    "processing_time_seconds": 49.33,
+    "timestamp": "2025-09-09T16:22:15.162112",
+    "pipeline_version": "clean_structured_v1",
+    "services_used": {
+      "bedrock_embeddings": true,
+      "bedrock_llm": true,
+      "comprehend_sentiment": false,
+      "dbscan_clustering": true,
+      "intelligent_caching": true
+    }
+  },
+  "summary_stats": {
+    "total_topics": 3,
+    "avg_responses_per_topic": 68.3,
+    "overall_sentiment_score": 0.415,
+    "pii_detection_rate": 0.01,
+    "processing_rate": 4.2,
+    "cache_performance": {
+      "embedding_cache_size": 0,
+      "sentiment_cache_size": 439
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "topic_0",
+      "label": "Product Quality",
+      "count": 69,
+      "percentage": 33.7,
+      "sentiment_mean": 0.392,
+      "sentiment_distribution": {
+        "positive": 14,
+        "negative": 0,
+        "neutral": 55,
+        "mixed": 0
+      },
+      "examples": [
+        "I don't know.",
+        "The most outstanding products were fenty beauty foundation and lip oil.",
+        "It\u2019s nice and good"
+      ]
+    },
+    {
+      "topic_id": "topic_1",
+      "label": "Topic 2",
+      "count": 68,
+      "percentage": 33.2,
+      "sentiment_mean": 0.398,
+      "sentiment_distribution": {
+        "positive": 15,
+        "negative": 3,
+        "neutral": 50,
+        "mixed": 0
+      },
+      "examples": [
+        "The make up eye liner fragance",
+        "a new fragrance",
+        "The eyeshadow pallets that have been coming out"
+      ]
+    },
+    {
+      "topic_id": "topic_2",
+      "label": "Product Quality",
+      "count": 68,
+      "percentage": 33.2,
+      "sentiment_mean": 0.454,
+      "sentiment_distribution": {
+        "positive": 20,
+        "negative": 1,
+        "neutral": 47,
+        "mixed": 0
+      },
+      "examples": [
+        "It's very cool it works",
+        "honestly i don't see anything as the most, they're all good",
+        "ritnol serum"
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "resp_0003",
+      "original_text": "I don't know.",
+      "clean_text": "I don't know.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0004",
+      "original_text": "The make up eye liner fragance",
+      "clean_text": "The make up eye liner fragance",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0005",
+      "original_text": "It's very cool it works",
+      "clean_text": "It's very cool it works",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0006",
+      "original_text": "The most outstanding products were fenty beauty foundation and lip oil.",
+      "clean_text": "The most outstanding products were fenty beauty foundation and lip oil.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0007",
+      "original_text": "a new fragrance",
+      "clean_text": "a new fragrance",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0008",
+      "original_text": "honestly i don't see anything as the most, they're all good",
+      "clean_text": "honestly i don't see anything as the most, they're all good",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0009",
+      "original_text": "It\u2019s nice and good",
+      "clean_text": "It\u2019s nice and good",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0010",
+      "original_text": "The eyeshadow pallets that have been coming out",
+      "clean_text": "The eyeshadow pallets that have been coming out",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0011",
+      "original_text": "ritnol serum",
+      "clean_text": "ritnol serum",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0012",
+      "original_text": "Fenty Beauty Pro Fil'tr Soft Matte Longwear foundation",
+      "clean_text": "Fenty Beauty Pro Fil'tr Soft Matte Longwear foundation",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0015",
+      "original_text": "I wouldn't know.",
+      "clean_text": "I wouldn't know.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0016",
+      "original_text": "They make great products for sensitive skin",
+      "clean_text": "They make great products for sensitive skin",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0017",
+      "original_text": "Not too sure bc I don\u2019t really wear makeup",
+      "clean_text": "Not too sure bc I don\u2019t really wear makeup",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0018",
+      "original_text": "I can\u2019t really say for sure",
+      "clean_text": "I can\u2019t really say for sure",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0019",
+      "original_text": "I'd go with tape radiant concealer",
+      "clean_text": "I'd go with tape radiant concealer",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0020",
+      "original_text": "It's truly outstanding",
+      "clean_text": "It's truly outstanding",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0021",
+      "original_text": "Loren\u2019s long lasting lipstick",
+      "clean_text": "Loren\u2019s long lasting lipstick",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0022",
+      "original_text": "I mostly use dove men",
+      "clean_text": "I mostly use dove men",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0024",
+      "original_text": "Liquid everything, blush, bronzer, highlight, concealer, foundation. and skin primers/bronzers",
+      "clean_text": "Liquid everything, blush, bronzer, highlight, concealer, foundation. and skin primers/bronzers",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0025",
+      "original_text": "It's very unique and different",
+      "clean_text": "It's very unique and different",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0026",
+      "original_text": "I cant pick any new ones i mostly use established products",
+      "clean_text": "I cant pick any new ones i mostly use established products",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0027",
+      "original_text": "The best one has been Rihanna Sith Savage Century which is very good",
+      "clean_text": "The best one has been Rihanna Sith Savage Century which is very good",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0029",
+      "original_text": "The product which is new and update.",
+      "clean_text": "The product which is new and update.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0030",
+      "original_text": "L'Oreal eye makeup",
+      "clean_text": "L'Oreal eye makeup",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0031",
+      "original_text": "l\u2019or\u00e9al because they offer a wide range of products catering to various, skincare, hair care and makeup needs.",
+      "clean_text": "l\u2019or\u00e9al because they offer a wide range of products catering to various, skincare, hair care and makeup needs.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0032",
+      "original_text": "The new waterproof foundation they made so it won't easily get messed up",
+      "clean_text": "The new waterproof foundation they made so it won't easily get messed up",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0033",
+      "original_text": "The new beauty product that is outstanding is the new highlighter that drips on your face",
+      "clean_text": "The new beauty product that is outstanding is the new highlighter that drips on your face",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0034",
+      "original_text": "I would say Olay",
+      "clean_text": "I would say Olay",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0035",
+      "original_text": "I haven't used any beauty products",
+      "clean_text": "I haven't used any beauty products",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0036",
+      "original_text": "Nothing really",
+      "clean_text": "Nothing really",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0037",
+      "original_text": "Not really sure",
+      "clean_text": "Not really sure",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0038",
+      "original_text": "Bronzing drops",
+      "clean_text": "Bronzing drops",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0039",
+      "original_text": "How it has helper my beard dandruff and my skin stay hydrated.",
+      "clean_text": "How it has helper my beard dandruff and my skin stay hydrated.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0040",
+      "original_text": "I have no idea what I am supposed to say I am very very very sorry",
+      "clean_text": "I have no idea what I am supposed to say I am very very very sorry",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0041",
+      "original_text": "In my opinion, the most outstanding new beauty product I PERSONALLY have tried, is the E.L.F halo glow foundation. It has nice coverage, a cute and hot glow, nice applicator, and overall just a good product !",
+      "clean_text": "In my opinion, the most outstanding new beauty product I PERSONALLY have tried, is the E.L.F halo glow foundation. It has nice coverage, a cute and hot glow, nice applicator, and overall just a good product !",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0042",
+      "original_text": "Maybe for the yea the black one",
+      "clean_text": "Maybe for the yea the black one",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0043",
+      "original_text": "You tell me",
+      "clean_text": "You tell me",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0044",
+      "original_text": "The new truly outstanding beauty product is color changing mascara",
+      "clean_text": "The new truly outstanding beauty product is color changing mascara",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0045",
+      "original_text": "Rare beauty",
+      "clean_text": "Rare beauty",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0047",
+      "original_text": "Fenty Beauty/Skin from Rihanna has been the best in my opinion, she recently released  new foundation formula and skincare line",
+      "clean_text": "Fenty Beauty/Skin from Rihanna has been the best in my opinion, she recently released  new foundation formula and skincare line",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0048",
+      "original_text": "honestly the foundation that covers up everything, like even a politician\u2019s lies lol. full coverage is an understatement.",
+      "clean_text": "honestly the foundation that covers up everything, like even a politician\u2019s lies lol. full coverage is an understatement.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0049",
+      "original_text": "The most outstanding and truly newest. Beauty product introduced in the last year. Or 2, that is blue. My mind has been the timeless Tony storm foundation.",
+      "clean_text": "The most outstanding and truly newest. Beauty product introduced in the last year. Or 2, that is blue. My mind has been the timeless Tony storm foundation.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0050",
+      "original_text": "the most truly outstanding is dior mens wash",
+      "clean_text": "the most truly outstanding is dior mens wash",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0051",
+      "original_text": "L\u2019Or\u00e9al is the top player in the beauty industry",
+      "clean_text": "L\u2019Or\u00e9al is the top player in the beauty industry",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0052",
+      "original_text": "I don\u2019t know honestly",
+      "clean_text": "I don\u2019t know honestly",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0053",
+      "original_text": "Well me personally what works on my face it\u2019s Mary Kay",
+      "clean_text": "Well me personally what works on my face it\u2019s Mary Kay",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0054",
+      "original_text": "Machines that let women do curls with ease without going to a professional is an outstanding beauty products, since now women won't have to pay x amount of money to get the same results",
+      "clean_text": "Machines that let women do curls with ease without going to a professional is an outstanding beauty products, since now women won't have to pay x amount of money to get the same results",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0056",
+      "original_text": "Astounding beauty products are the shimmering eyeshadow a and lip products. Also foundation for combination skin.",
+      "clean_text": "Astounding beauty products are the shimmering eyeshadow a and lip products. Also foundation for combination skin.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0058",
+      "original_text": "Waterproof eyeliner",
+      "clean_text": "Waterproof eyeliner",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0059",
+      "original_text": "lip liner i just started using them",
+      "clean_text": "lip liner i just started using them",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0061",
+      "original_text": "It is very interesting, good calidad",
+      "clean_text": "It is very interesting, good calidad",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0062",
+      "original_text": "Mascara, it\u2019s eye opening",
+      "clean_text": "Mascara, it\u2019s eye opening",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0063",
+      "original_text": "A standout beauty product that has been more and more pushed out has been multi purpose products that usually contain different types of ingredients to benefit their different possible uses",
+      "clean_text": "A standout beauty product that has been more and more pushed out has been multi purpose products that usually contain different types of ingredients to benefit their different possible uses",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0064",
+      "original_text": "Burgundy mascara",
+      "clean_text": "Burgundy mascara",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0066",
+      "original_text": "None to my knowledge",
+      "clean_text": "None to my knowledge",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0067",
+      "original_text": "The first time we had to go to a store to",
+      "clean_text": "The first time we had to go to a store to",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0068",
+      "original_text": "Cream blushes that are long wear",
+      "clean_text": "Cream blushes that are long wear",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0069",
+      "original_text": "Fenty Highlighter",
+      "clean_text": "Fenty Highlighter",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0070",
+      "original_text": "The moisturizers have bieng great",
+      "clean_text": "The moisturizers have bieng great",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0071",
+      "original_text": "Rimmel lip gloss",
+      "clean_text": "Rimmel lip gloss",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0072",
+      "original_text": "Lady Gaga House of Haus foundation",
+      "clean_text": "Lady Gaga House of Haus foundation",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0073",
+      "original_text": "Toner that fits your tone of color.",
+      "clean_text": "Toner that fits your tone of color.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0075",
+      "original_text": "The creativity !!",
+      "clean_text": "The creativity !!",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0076",
+      "original_text": "I can\u2019t think of any",
+      "clean_text": "I can\u2019t think of any",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0077",
+      "original_text": "Plastic surgery has been an outstanding beauty transition.",
+      "clean_text": "Plastic surgery has been an outstanding beauty transition.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0078",
+      "original_text": "elf products are advancing and reqlly good quality",
+      "clean_text": "elf products are advancing and reqlly good quality",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0079",
+      "original_text": "I\u2019m not sure since I\u2019m a guy who doesn\u2019t use make up",
+      "clean_text": "I\u2019m not sure since I\u2019m a guy who doesn\u2019t use make up",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0080",
+      "original_text": "Diamond foundation",
+      "clean_text": "Diamond foundation",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0081",
+      "original_text": "I would say, Fendi was really innovative and rear Beauty definitely provided lots of shades",
+      "clean_text": "I would say, Fendi was really innovative and rear Beauty definitely provided lots of shades",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0082",
+      "original_text": "Liquid blush\u2019s specifically rare beauty",
+      "clean_text": "Liquid blush\u2019s specifically rare beauty",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0083",
+      "original_text": "makeupthat brings out your natural beauty",
+      "clean_text": "makeupthat brings out your natural beauty",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0084",
+      "original_text": "The two face fountain really stepping they game up",
+      "clean_text": "The two face fountain really stepping they game up",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0085",
+      "original_text": "Not applicable I\u2019m not sure on what product",
+      "clean_text": "Not applicable I\u2019m not sure on what product",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0086",
+      "original_text": "i love eyelashes and broz",
+      "clean_text": "i love eyelashes and broz",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0087",
+      "original_text": "The elf halo glow",
+      "clean_text": "The elf halo glow",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0088",
+      "original_text": "Felt tip eyeliner, as well as brush application liner.",
+      "clean_text": "Felt tip eyeliner, as well as brush application liner.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0089",
+      "original_text": "Do not know",
+      "clean_text": "Do not know",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0090",
+      "original_text": "The moat outstanding beauty product for me has been the puff puff pass kimichi powder it sets very well and leaves a matte finish",
+      "clean_text": "The moat outstanding beauty product for me has been the puff puff pass kimichi powder it sets very well and leaves a matte finish",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0092",
+      "original_text": "Fake hair Restoration, for men, fiber particles sprinkled on top of completely bald spots subtley creating depth and density of a hairstyle of hair literally when there is none, like out of thin air . . Or shall I say out of \"\"Thin Hair\"\"...",
+      "clean_text": "Fake hair Restoration, for men, fiber particles sprinkled on top of completely bald spots subtley creating depth and density of a hairstyle of hair literally when there is none, like out of thin air . . Or shall I say out of \"\"Thin Hair\"\"...",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0093",
+      "original_text": "i really love some lip stains i got off of amazon, theyre chinese and last all day",
+      "clean_text": "i really love some lip stains i got off of amazon, theyre chinese and last all day",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0095",
+      "original_text": "Color matching foundation",
+      "clean_text": "Color matching foundation",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0096",
+      "original_text": "finishing powder",
+      "clean_text": "finishing powder",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0097",
+      "original_text": "I don\u2019t use any beauty product. I have friends who use it though and it\u2019s good",
+      "clean_text": "I don\u2019t use any beauty product. I have friends who use it though and it\u2019s good",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0099",
+      "original_text": "Elf lip oil",
+      "clean_text": "Elf lip oil",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0100",
+      "original_text": "pressed powder",
+      "clean_text": "pressed powder",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0102",
+      "original_text": "New neuropeptides",
+      "clean_text": "New neuropeptides",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0104",
+      "original_text": "Forgot brand but face sunscreen",
+      "clean_text": "Forgot brand but face sunscreen",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0105",
+      "original_text": "I don't k ow I don't buy it.",
+      "clean_text": "I don't k ow I don't buy it.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0106",
+      "original_text": "Definitely all organic eco friendly foundation and contoure.",
+      "clean_text": "Definitely all organic eco friendly foundation and contoure.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0107",
+      "original_text": "I have no idea I stick with the same brand for my whole life",
+      "clean_text": "I have no idea I stick with the same brand for my whole life",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0113",
+      "original_text": "Elmis cleansing balm",
+      "clean_text": "Elmis cleansing balm",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0114",
+      "original_text": "Ultra seems to make great products",
+      "clean_text": "Ultra seems to make great products",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0115",
+      "original_text": "I think rare beauty",
+      "clean_text": "I think rare beauty",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0116",
+      "original_text": "Rare beauty liquid blush, and the Haus labs rebrand has been revolutionary.",
+      "clean_text": "Rare beauty liquid blush, and the Haus labs rebrand has been revolutionary.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0117",
+      "original_text": "Snail mucin",
+      "clean_text": "Snail mucin",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0118",
+      "original_text": "I don\u2019t know but I wanna try Kylie cosmetics",
+      "clean_text": "I don\u2019t know but I wanna try Kylie cosmetics",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0119",
+      "original_text": "They have made them even better",
+      "clean_text": "They have made them even better",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0120",
+      "original_text": "I really enjoy the foundation",
+      "clean_text": "I really enjoy the foundation",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0121",
+      "original_text": "Things for lashes and lips plumpers",
+      "clean_text": "Things for lashes and lips plumpers",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0123",
+      "original_text": "Mascara and blush bc it makes me look younger",
+      "clean_text": "Mascara and blush bc it makes me look younger",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0125",
+      "original_text": "Would have to be the eyeshadow",
+      "clean_text": "Would have to be the eyeshadow",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0126",
+      "original_text": "Hallelujah in the morning and in the night hallelujah for the bread of the bread is the bread of life.",
+      "clean_text": "Hallelujah in the morning and in the night hallelujah for the bread of the bread is the bread of life.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0127",
+      "original_text": "The too faced born this way concealer has truly been the most outstanding product I was introduced too this year.  It helps cover my under eye bags really well!",
+      "clean_text": "The too faced born this way concealer has truly been the most outstanding product I was introduced too this year.  It helps cover my under eye bags really well!",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0128",
+      "original_text": "No idea. I truly have sucked to naive products for a basic look.",
+      "clean_text": "No idea. I truly have sucked to naive products for a basic look.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0130",
+      "original_text": "I. Don't know honestly",
+      "clean_text": "I. Don't know honestly",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0131",
+      "original_text": "the e.l.f. setting spray",
+      "clean_text": "the e.l.f. setting spray",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0134",
+      "original_text": "i have been loving super pigmented blush that juvias released i love how versatile it is",
+      "clean_text": "i have been loving super pigmented blush that juvias released i love how versatile it is",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0136",
+      "original_text": "Its a good idea",
+      "clean_text": "Its a good idea",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0137",
+      "original_text": "I\u2019m just going home home to",
+      "clean_text": "I\u2019m just going home home to",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0140",
+      "original_text": "i really dont know",
+      "clean_text": "i really dont know",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0141",
+      "original_text": "Nutrafol is a hair growth supplement that is designed to address the root cause of hair loss. Its an outstanding product that means what it says.",
+      "clean_text": "Nutrafol is a hair growth supplement that is designed to address the root cause of hair loss. Its an outstanding product that means what it says.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0142",
+      "original_text": "The too faced chocolate mascara is the most truly outstanding new beauty product. It makes my eyelashes look longer and natural.",
+      "clean_text": "The too faced chocolate mascara is the most truly outstanding new beauty product. It makes my eyelashes look longer and natural.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0143",
+      "original_text": "Loreal because it's very popular",
+      "clean_text": "Loreal because it's very popular",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0144",
+      "original_text": "The primer is like blue and pick it\u2019s sticky",
+      "clean_text": "The primer is like blue and pick it\u2019s sticky",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0145",
+      "original_text": "i\u2019m unsure, uhm maybe makeup?",
+      "clean_text": "i\u2019m unsure, uhm maybe makeup?",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0148",
+      "original_text": "None Apply Specifically",
+      "clean_text": "None Apply Specifically",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0149",
+      "original_text": "In my opinion, I am really enjoying the new marshmellow primer from nyx.",
+      "clean_text": "In my opinion, I am really enjoying the new marshmellow primer from nyx.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0150",
+      "original_text": "I think the Urban Decay Eyeshadow Primer Potion is a really good eye primer, it keeps the eyeshadow on for up to 10 hours, and the colors look vibrant when put on.",
+      "clean_text": "I think the Urban Decay Eyeshadow Primer Potion is a really good eye primer, it keeps the eyeshadow on for up to 10 hours, and the colors look vibrant when put on.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0153",
+      "original_text": "I\u2019m not sure, I always use the same products",
+      "clean_text": "I\u2019m not sure, I always use the same products",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0154",
+      "original_text": "Face creams",
+      "clean_text": "Face creams",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0155",
+      "original_text": "Elf brand is best affordable makeup",
+      "clean_text": "Elf brand is best affordable makeup",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0157",
+      "original_text": "Rare beauty concealer",
+      "clean_text": "Rare beauty concealer",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0158",
+      "original_text": "Kylie Jenner",
+      "clean_text": "Kylie Jenner",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0159",
+      "original_text": "beauty blenders",
+      "clean_text": "beauty blenders",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0160",
+      "original_text": "Rare beauty liquid blush",
+      "clean_text": "Rare beauty liquid blush",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0161",
+      "original_text": "Murad had been skin products that gives fast results",
+      "clean_text": "Murad had been skin products that gives fast results",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0162",
+      "original_text": "Probably this new lineofeye shadow don't know its called though",
+      "clean_text": "Probably this new lineofeye shadow don't know its called though",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0163",
+      "original_text": "I received a sample in the mail about two years ago,  I can\u2019t remember what it was called, and I was never able to find it in stores.  It was little packets of condensed shampoo and they made my hair look so perfect, volume, bounce, very good.",
+      "clean_text": "I received a sample in the mail about two years ago,  I can\u2019t remember what it was called, and I was never able to find it in stores.  It was little packets of condensed shampoo and they made my hair look so perfect, volume, bounce, very good.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0164",
+      "original_text": "La girl  And cover girl",
+      "clean_text": "La girl  And cover girl",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0165",
+      "original_text": "Vitamin c serum",
+      "clean_text": "Vitamin c serum",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0166",
+      "original_text": "Elf foundation",
+      "clean_text": "Elf foundation",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0167",
+      "original_text": "I don\u2019t know",
+      "clean_text": "I don\u2019t know",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0169",
+      "original_text": "Rare beauty blush",
+      "clean_text": "Rare beauty blush",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0170",
+      "original_text": "Probably the elf foundation it looks so good on me",
+      "clean_text": "Probably the elf foundation it looks so good on me",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0171",
+      "original_text": "I really like Too Faced mascara.",
+      "clean_text": "I really like Too Faced mascara.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0172",
+      "original_text": "I'm not sure I'm a male and I don't use make up.",
+      "clean_text": "[NAME] sure I'm a male and I don't use make up.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0173",
+      "original_text": "Rare beauty products are amazing. They are really pigmented and last all day long",
+      "clean_text": "Rare beauty products are amazing. They are really pigmented and last all day long",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0174",
+      "original_text": "I like sunscreen, I think my mom and aunt really like avon moisturizers and brazilian bum bum cream.",
+      "clean_text": "I like sunscreen, I think my mom and aunt really like avon moisturizers and brazilian bum bum cream.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0175",
+      "original_text": "I love the loreal limited edition mascara, it's amazing.",
+      "clean_text": "I love the loreal limited edition mascara, it's amazing.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0176",
+      "original_text": "The face serum and the liquid blush",
+      "clean_text": "The face serum and the liquid blush",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0177",
+      "original_text": "There are a couple things I want you you",
+      "clean_text": "There are a couple things I want you you",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0178",
+      "original_text": "I honestly don\u2019t really know",
+      "clean_text": "I honestly don\u2019t really know",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0179",
+      "original_text": "Elf and the goth collab they did.",
+      "clean_text": "Elf and the goth collab they did.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0180",
+      "original_text": "Bronzer is the best beauty product",
+      "clean_text": "Bronzer is the best beauty product",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0181",
+      "original_text": "I enjoy sunscreen and toners to hydrate my skin",
+      "clean_text": "I enjoy sunscreen and toners to hydrate my skin",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0182",
+      "original_text": "The new beauty product introduced in the mast two years would be some eye shadow palettes from fenty beauty from youtuber social media people.",
+      "clean_text": "The new beauty product introduced in the mast two years would be some eye shadow palettes from fenty beauty from youtuber social media people.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0183",
+      "original_text": "The most outstanding new beauty product introduced to me was elf beauty because it is good makeup for a low price.",
+      "clean_text": "The most outstanding new beauty product introduced to me was elf beauty because it is good makeup for a low price.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0184",
+      "original_text": "not sure I'm a guy I don't use makeup only concealing makeup for imperfections",
+      "clean_text": "not sure I'm a guy I don't use makeup only concealing makeup for imperfections",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0185",
+      "original_text": "I\u2019m a big fan of those dry brushing gloves / washable makeup towels. The surge of non-invasive skincare products has been fascinating.",
+      "clean_text": "I\u2019m a big fan of those dry brushing gloves / washable makeup towels. The surge of non-invasive skincare products has been fascinating.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0187",
+      "original_text": "the way it turns out on me",
+      "clean_text": "the way it turns out on me",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0188",
+      "original_text": "Tinted moisturizer, they don\u2019t feel so heavy on my skin",
+      "clean_text": "Tinted moisturizer, they don\u2019t feel so heavy on my skin",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0189",
+      "original_text": "In Shane has d she dubs",
+      "clean_text": "In Shane has d she dubs",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0190",
+      "original_text": "She glam powder makeup works great nice color match",
+      "clean_text": "She glam powder makeup works great nice color match",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0191",
+      "original_text": "Dior lip oil",
+      "clean_text": "Dior lip oil",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0192",
+      "original_text": "Mascara and foundation that doesn\u2019t fall of with water",
+      "clean_text": "Mascara and foundation that doesn\u2019t fall of with water",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0193",
+      "original_text": "The pour remover",
+      "clean_text": "The pour remover",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0194",
+      "original_text": "I think the tutorial videos have been the most outstanding new beauty products.",
+      "clean_text": "I think the tutorial videos have been the most outstanding new beauty products.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0195",
+      "original_text": "Plumbing lipgloss",
+      "clean_text": "Plumbing lipgloss",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0196",
+      "original_text": "I really enjoy the NYX matte lip balm. It\u2019s long lasting and smudge proof and absolutely amazing",
+      "clean_text": "I really enjoy the NYX matte lip balm. It\u2019s long lasting and smudge proof and absolutely amazing",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0197",
+      "original_text": "lush mascara",
+      "clean_text": "lush mascara",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0198",
+      "original_text": "i have no idea",
+      "clean_text": "i have no idea",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0199",
+      "original_text": "Two faced and rare beauty new collections",
+      "clean_text": "Two faced and rare beauty new collections",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0201",
+      "original_text": "I don\u2019t buy makeup",
+      "clean_text": "I don\u2019t buy makeup",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0202",
+      "original_text": "I\u2019m unsure. I purchased products released before this time period.",
+      "clean_text": "I\u2019m unsure. I purchased products released before this time period.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0203",
+      "original_text": "Nothing because although I\u2019m female, makeup is something I\u2019m REALLY not interested in.",
+      "clean_text": "Nothing because although I\u2019m female, makeup is something I\u2019m REALLY not interested in.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0204",
+      "original_text": "I feel that the NYX Fat Gloss Lip Oil lipgloss has truly been so useful and it looks so pretty on me!",
+      "clean_text": "I feel that the NYX Fat Gloss Lip Oil lipgloss has truly been so useful and it looks so pretty on me!",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0205",
+      "original_text": "Thank you very good.",
+      "clean_text": "Thank you very good.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0206",
+      "original_text": "I think the lip stains has been very good",
+      "clean_text": "I think the lip stains has been very good",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0207",
+      "original_text": "The mascara that doesn\u2019t move no matter what \u2014 cried through a breakup and a presidential debate, still looked good.",
+      "clean_text": "The mascara that doesn\u2019t move no matter what \u2014 cried through a breakup and a presidential debate, still looked good.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0208",
+      "original_text": "It has to be Cera ve face moisturizer omg girl! It does magic!!!",
+      "clean_text": "It has to be Cera ve face moisturizer omg girl! It does magic!!!",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0209",
+      "original_text": "The most truly outstanding new beauty product would have to be one of the lo'real productsvthat a lot of women use.",
+      "clean_text": "The most truly outstanding new beauty product would have to be one of the lo'real productsvthat a lot of women use.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0210",
+      "original_text": "All the mascara from L\u2019Oreal has been amazing",
+      "clean_text": "All the mascara from L\u2019Oreal has been amazing",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0211",
+      "original_text": "It has to be this new moisturizer from revlon that my best friend recommended to me a few months ago. It was absolutely life-altering",
+      "clean_text": "It has to be this new moisturizer from revlon that my best friend recommended to me a few months ago. It was absolutely life-altering",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0212",
+      "original_text": "the rare beauty blush highlight hybrid",
+      "clean_text": "the rare beauty blush highlight hybrid",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0213",
+      "original_text": "I\u2019m not really sure",
+      "clean_text": "I\u2019m not really sure",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0214",
+      "original_text": "I would say lip tints since they allow you to wear lipstick or some kind of color without you having to reapply it constantly",
+      "clean_text": "I would say lip tints since they allow you to wear lipstick or some kind of color without you having to reapply it constantly",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0215",
+      "original_text": "Im not a woman so my best guess exfoliation",
+      "clean_text": "[NAME] a woman so my best guess exfoliation",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0216",
+      "original_text": "I haven\u2019t found any new ones I\u2019ve always been using the ones I\u2019ve been using for years.",
+      "clean_text": "I haven\u2019t found any new ones I\u2019ve always been using the ones I\u2019ve been using for years.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0217",
+      "original_text": "I have no idea",
+      "clean_text": "I have no idea",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0218",
+      "original_text": "I am not sure",
+      "clean_text": "I am not sure",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0221",
+      "original_text": "Kylie Jenner Product was the best one released. Hands down.",
+      "clean_text": "Kylie Jenner Product was the best one released. Hands down.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0222",
+      "original_text": "It seems interesting",
+      "clean_text": "It seems interesting",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0223",
+      "original_text": "Rihanna new care line",
+      "clean_text": "Rihanna new care line",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0225",
+      "original_text": "I would say the moisturizers for sensitive skin",
+      "clean_text": "I would say the moisturizers for sensitive skin",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0226",
+      "original_text": "Not applicable to me",
+      "clean_text": "Not applicable to me",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0227",
+      "original_text": "Curlsmith products",
+      "clean_text": "Curlsmith products",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0229",
+      "original_text": "i would say elephant was",
+      "clean_text": "i would say elephant was",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0230",
+      "original_text": "Fenty beauty",
+      "clean_text": "Fenty beauty",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0231",
+      "original_text": "Pencils that highlight your face",
+      "clean_text": "Pencils that highlight your face",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0232",
+      "original_text": "Glow tinted primer",
+      "clean_text": "Glow tinted primer",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0233",
+      "original_text": "The value of the product firstly and the quality of the product",
+      "clean_text": "The value of the product firstly and the quality of the product",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0234",
+      "original_text": "Very amazing it blend",
+      "clean_text": "Very amazing it blend",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0235",
+      "original_text": "I do nit knoe",
+      "clean_text": "I do nit knoe",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0236",
+      "original_text": "I really like the different colors of eyeshadows that companies are coming out with",
+      "clean_text": "I really like the different colors of eyeshadows that companies are coming out with",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0237",
+      "original_text": "Maybelline primer it's very good because it mos moisturizers it does very good when hiding your pores and minimize them before you put on your makeup so you can have a Flawless finish look",
+      "clean_text": "Maybelline primer it's very good because it mos moisturizers it does very good when hiding your pores and minimize them before you put on your makeup so you can have a Flawless finish look",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0238",
+      "original_text": "not sure what to say",
+      "clean_text": "not sure what to say",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0239",
+      "original_text": "I really love the Urban Decay brow pencil in any kind of dupe for your eyebrows",
+      "clean_text": "I really love the Urban Decay brow pencil in any kind of dupe for your eyebrows",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0241",
+      "original_text": "I think that Panteene has been the most outstanding in my opinion for personal higene.",
+      "clean_text": "I think that Panteene has been the most outstanding in my opinion for personal higene.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0242",
+      "original_text": "My hair smile voice walk",
+      "clean_text": "My hair smile voice walk",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0243",
+      "original_text": "Unsure due to the fact that I do not wear make-up very often",
+      "clean_text": "Unsure due to the fact that I do not wear make-up very often",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0244",
+      "original_text": "It's nice n great n lovely",
+      "clean_text": "It's nice n great n lovely",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0245",
+      "original_text": "Dior is amazing",
+      "clean_text": "Dior is amazing",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0246",
+      "original_text": "In not too sure of what\u2019s been newly introduced but my most outstanding product are eyelashes",
+      "clean_text": "In not too sure of what\u2019s been newly introduced but my most outstanding product are eyelashes",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Topic 2"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0247",
+      "original_text": "Mac conceler",
+      "clean_text": "Mac conceler",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0249",
+      "original_text": "Glow recipe.",
+      "clean_text": "Glow recipe.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Product Quality"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    }
+  ]
+}

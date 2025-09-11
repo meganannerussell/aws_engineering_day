@@ -1,0 +1,5004 @@
+{
+  "cached_at": "2025-09-09T15:08:10.738913",
+  "dataset": "blind_data.csv",
+  "analysis_data": {
+    "project_metadata": {
+      "project_title": "Project Title: Opinions on AI models",
+      "question_text": "What are your first thoughts or feelings when you think about AI companions? What excites or worries you about them?",
+      "total_responses": 234,
+      "processing_time_seconds": 54.71,
+      "timestamp": "2025-09-09T15:08:10.735638",
+      "pipeline_version": "clean_structured_v1",
+      "services_used": {
+        "bedrock_embeddings": true,
+        "bedrock_llm": true,
+        "comprehend_sentiment": false,
+        "dbscan_clustering": true,
+        "intelligent_caching": true
+      }
+    },
+    "summary_stats": {
+      "total_topics": 3,
+      "avg_responses_per_topic": 78.0,
+      "overall_sentiment_score": 0.384,
+      "pii_detection_rate": 0.026,
+      "processing_rate": 4.3,
+      "cache_performance": {
+        "embedding_cache_size": 0,
+        "sentiment_cache_size": 234
+      }
+    },
+    "topics": [
+      {
+        "topic_id": "topic_0",
+        "label": "Product Quality",
+        "count": 78,
+        "percentage": 33.3,
+        "sentiment_mean": 0.414,
+        "sentiment_distribution": {
+          "positive": 20,
+          "negative": 8,
+          "neutral": 50,
+          "mixed": 0
+        },
+        "examples": [
+          "My ex is whack",
+          "I love the help",
+          "I love that they have great knowledge of all the internet information."
+        ]
+      },
+      {
+        "topic_id": "topic_1",
+        "label": "Customer Service",
+        "count": 78,
+        "percentage": 33.3,
+        "sentiment_mean": 0.418,
+        "sentiment_distribution": {
+          "positive": 19,
+          "negative": 1,
+          "neutral": 58,
+          "mixed": 0
+        },
+        "examples": [
+          "Ai helps a lot",
+          "I\u2019m scared of AI companies that offer free services",
+          "I don\u2019t trust artificial intelligence."
+        ]
+      },
+      {
+        "topic_id": "topic_2",
+        "label": "Product Quality",
+        "count": 78,
+        "percentage": 33.3,
+        "sentiment_mean": 0.319,
+        "sentiment_distribution": {
+          "positive": 9,
+          "negative": 6,
+          "neutral": 63,
+          "mixed": 0
+        },
+        "examples": [
+          "they dont excite me.its very weird",
+          "The only way you will ever get to know the person in your country will",
+          "not worried at alll"
+        ]
+      }
+    ],
+    "responses": [
+      {
+        "response_id": "resp_0001",
+        "original_text": "My ex is whack",
+        "clean_text": "My ex is whack",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0002",
+        "original_text": "Ai helps a lot",
+        "clean_text": "Ai helps a lot",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0004",
+        "original_text": "they dont excite me.its very weird",
+        "clean_text": "they dont excite me.its very weird",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0005",
+        "original_text": "I love the help",
+        "clean_text": "I love the help",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0006",
+        "original_text": "I\u2019m scared of AI companies that offer free services",
+        "clean_text": "I\u2019m scared of AI companies that offer free services",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0007",
+        "original_text": "The only way you will ever get to know the person in your country will",
+        "clean_text": "The only way you will ever get to know the person in your country will",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0009",
+        "original_text": "I love that they have great knowledge of all the internet information.",
+        "clean_text": "I love that they have great knowledge of all the internet information.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0010",
+        "original_text": "I don\u2019t trust artificial intelligence.",
+        "clean_text": "I don\u2019t trust artificial intelligence.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0011",
+        "original_text": "not worried at alll",
+        "clean_text": "not worried at alll",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0012",
+        "original_text": "Having and stuff. I love computer work and graphics.",
+        "clean_text": "Having and stuff. I love computer work and graphics.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0013",
+        "original_text": "AI both interests and terrifies me. Used the right way it can be a great tool to do research or small tasks. However AI can also be used to destroy things such as cyber security systems and become too much of a crutch for people.",
+        "clean_text": "AI both interests and terrifies me. Used the right way it can be a great tool to do research or small tasks. However AI can also be used to destroy things such as cyber security systems and become too much of a crutch for people.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0014",
+        "original_text": "They are not good for this world",
+        "clean_text": "They are not good for this world",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.65,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.25,
+            "Neutral": 0.5,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0015",
+        "original_text": "i don't think i would like them because i don't know where the information comes from.",
+        "clean_text": "i don't think i would like them because i don't know where the information comes from.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0017",
+        "original_text": "I don't have any thoughts because I don't use AI",
+        "clean_text": "I don't have any thoughts because I don't use AI",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0018",
+        "original_text": "Al not goof",
+        "clean_text": "Al not goof",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0019",
+        "original_text": "I dont like them. I just feel like it makes people lazy",
+        "clean_text": "I dont like them. I just feel like it makes people lazy",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0020",
+        "original_text": "I love how cool and unique it is and everything it does",
+        "clean_text": "I love how cool and unique it is and everything it does",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0021",
+        "original_text": "Nothing it\u2019s a really excites me",
+        "clean_text": "Nothing it\u2019s a really excites me",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0022",
+        "original_text": "Worries me that it takes so much energy to run AI, or how theyre taking people's jobs. They don't do anything a simple google search or another person couldnt do without taking nearly as much resources.",
+        "clean_text": "Worries me that it takes so much energy to run AI, or how theyre taking people's jobs. They don't do anything a simple google search or another person couldnt do without taking nearly as much resources.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0023",
+        "original_text": "I think they're going to destroy us",
+        "clean_text": "I think they're going to destroy us",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0024",
+        "original_text": "It's new technology",
+        "clean_text": "It's new technology",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0025",
+        "original_text": "It is a helpful tool but people are increasingly lazy and it might push us further into laziness and reliance on AI in the future.",
+        "clean_text": "It is a helpful tool but people are increasingly lazy and it might push us further into laziness and reliance on AI in the future.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0026",
+        "original_text": "they help me with homework",
+        "clean_text": "they help me with homework",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0027",
+        "original_text": "Privacy issues and correct information",
+        "clean_text": "Privacy issues and correct information",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0028",
+        "original_text": "I'm most excited by the potential for AI companions to provide support and companionship to those who need it most.",
+        "clean_text": "[NAME] excited by the potential for AI companions to provide support and companionship to those who need it most.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0029",
+        "original_text": "AI is great, if used correctly. I like what AI could do in healthcare, but worry about miss-use",
+        "clean_text": "AI is great, if used correctly. I like what AI could do in healthcare, but worry about miss-use",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0030",
+        "original_text": "I don\u2019t like it",
+        "clean_text": "I don\u2019t like it",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0031",
+        "original_text": "They are horrible for the people and will be taking over real life people's jobs and tanking the economy",
+        "clean_text": "They are horrible for the people and will be taking over real life people's jobs and tanking the economy",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0033",
+        "original_text": "The advancement in learning abilities excites me, the thing that worries me is the end of many factory jobs for human workers.",
+        "clean_text": "The advancement in learning abilities excites me, the thing that worries me is the end of many factory jobs for human workers.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0034",
+        "original_text": "I think AI are great tools for school and work because they are sufficient and convenient to work with.  However, us human are becoming dependent on them because AI can be reliable.",
+        "clean_text": "I think AI are great tools for school and work because they are sufficient and convenient to work with.  However, us human are becoming dependent on them because AI can be reliable.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0036",
+        "original_text": "it can be too intrusive",
+        "clean_text": "it can be too intrusive",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0037",
+        "original_text": "Do not care for them",
+        "clean_text": "Do not care for them",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0038",
+        "original_text": "I\u2019m excited for what AI is bringing to the world. It\u2019s a whole era of Ways to learn, Creative thinking and open up the world of technology to a whole different level",
+        "clean_text": "I\u2019m excited for what AI is bringing to the world. It\u2019s a whole era of Ways to learn, Creative thinking and open up the world of technology to a whole different level",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0039",
+        "original_text": "It makes my happy to think i can talk to someone who will listen a d give good info ask,  I worry we will lose desires for human companionship",
+        "clean_text": "It makes my happy to think i can talk to someone who will listen a d give good info ask,  I worry we will lose desires for human companionship",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0040",
+        "original_text": "I think there is a place for AI- such as being helpful in medical knowledge and incite.  It does to some extent excite me to see the future of computers. It does worry me that what are the effects to our world.",
+        "clean_text": "I think there is a place for AI- such as being helpful in medical knowledge and incite.  It does to some extent excite me to see the future of computers. It does worry me that what are the effects to our world.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0041",
+        "original_text": "Not interested in using",
+        "clean_text": "Not interested in using",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0042",
+        "original_text": "I don't like AI much and I worry that use will become too excessive and people will stop thinking for themselves.",
+        "clean_text": "I don't like AI much and I worry that use will become too excessive and people will stop thinking for themselves.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0043",
+        "original_text": "Weird creepy",
+        "clean_text": "Weird creepy",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0044",
+        "original_text": "Very different",
+        "clean_text": "Very different",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0045",
+        "original_text": "Not speaking to a human",
+        "clean_text": "Not speaking to a human",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0046",
+        "original_text": "Nothing don't think of thrm",
+        "clean_text": "Nothing don't think of thrm",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0047",
+        "original_text": "They are a helpful tool",
+        "clean_text": "They are a helpful tool",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0048",
+        "original_text": "I would never want one. Can't trust AI. Still a lot of kinks to work out.",
+        "clean_text": "I would never want one. Can't trust AI. Still a lot of kinks to work out.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0049",
+        "original_text": "they have a lot of useful knowledge to share",
+        "clean_text": "they have a lot of useful knowledge to share",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0050",
+        "original_text": "I think it is pretty neat and I use it.",
+        "clean_text": "I think it is pretty neat and I use it.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0052",
+        "original_text": "I think the tech is very interesting but I also worry that in the wrong hands it can lead to destruction",
+        "clean_text": "I think the tech is very interesting but I also worry that in the wrong hands it can lead to destruction",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0053",
+        "original_text": "I am anti AI I dont believe any good will come of it beyond short term convenience at the long term cost of environmental damage and destroying the job market for creatives",
+        "clean_text": "I am anti AI I dont believe any good will come of it beyond short term convenience at the long term cost of environmental damage and destroying the job market for creatives",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0054",
+        "original_text": "To much knowledge given to the AI is dangerous, the way the world is headed AI will take over before 2026",
+        "clean_text": "To much knowledge given to the AI is dangerous, the way the world is headed AI will take over before 2026",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0055",
+        "original_text": "I think they can be very good for society.",
+        "clean_text": "I think they can be very good for society.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0056",
+        "original_text": "These AI companions make me think of Siri.You can talk to them and get an answer even though they are not real",
+        "clean_text": "These AI companions make me think of Siri.You can talk to them and get an answer even though they are not real",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0058",
+        "original_text": "AI worries me because its bad for the environment",
+        "clean_text": "AI worries me because its bad for the environment",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0059",
+        "original_text": "Not familiar with this",
+        "clean_text": "Not familiar with this",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0060",
+        "original_text": "I don\u2019t really like them they look fake to me",
+        "clean_text": "I don\u2019t really like them they look fake to me",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0061",
+        "original_text": "AI companions will definitely continue to lower people\u2019s ability to socialize with other human beings, that will ultimately lead to a huge disconnect within the human race.",
+        "clean_text": "AI companions will definitely continue to lower people\u2019s ability to socialize with other human beings, that will ultimately lead to a huge disconnect within the human race.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0062",
+        "original_text": "AI \u201ccompanions\u201d are just clingy calculators with daddy issues\u2014hard pass",
+        "clean_text": "AI \u201ccompanions\u201d are just clingy calculators with daddy issues\u2014hard pass",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0063",
+        "original_text": "I do not think we should seek companionship in things that are not human. I think that we have no idea the consequences of that.",
+        "clean_text": "I do not think we should seek companionship in things that are not human. I think that we have no idea the consequences of that.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0064",
+        "original_text": "I would say that it allows a personal relationship with a person!  It can get too personal!",
+        "clean_text": "I would say that it allows a personal relationship with a person!  It can get too personal!",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0065",
+        "original_text": "It is innovative and very convenient",
+        "clean_text": "It is innovative and very convenient",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0066",
+        "original_text": "Companies that will improve the use of technology",
+        "clean_text": "Companies that will improve the use of technology",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0067",
+        "original_text": "Excited for their support and personalization, but worried anout privacy and dependence",
+        "clean_text": "Excited for their support and personalization, but worried anout privacy and dependence",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0068",
+        "original_text": "I find it very convenient and helpful. I am amazed by all we can learn.",
+        "clean_text": "I find it very convenient and helpful. I am amazed by all we can learn.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0069",
+        "original_text": "Ai companions are all over the place,  I think it will take over jobs and people will loose employment and struggle more",
+        "clean_text": "Ai companions are all over the place,  I think it will take over jobs and people will loose employment and struggle more",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0070",
+        "original_text": "I am very worried about AI.  I think it is not safe or secure.",
+        "clean_text": "I am very worried about AI.  I think it is not safe or secure.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0071",
+        "original_text": "They get things done faster but they know too much",
+        "clean_text": "They get things done faster but they know too much",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0072",
+        "original_text": "I feel AI is too powerful and will be used for bad things more than good things.",
+        "clean_text": "I feel AI is too powerful and will be used for bad things more than good things.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.65,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.25,
+            "Neutral": 0.5,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0073",
+        "original_text": "I worry that there will be misinformation programmed in some AI models",
+        "clean_text": "I worry that there will be misinformation programmed in some AI models",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0074",
+        "original_text": "I like them and I think they'll help out alot",
+        "clean_text": "I like them and I think they'll help out alot",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0076",
+        "original_text": "I don't have any worries about them. I don't know how I feel about them yet.",
+        "clean_text": "I don't have any worries about them. I don't know how I feel about them yet.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0077",
+        "original_text": "I\u2019m not really sure tbh honestly",
+        "clean_text": "I\u2019m not really sure tbh honestly",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0078",
+        "original_text": "i think it is ridiculous and i will not participate in that sort of nonsense",
+        "clean_text": "i think it is ridiculous and i will not participate in that sort of nonsense",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0079",
+        "original_text": "It worries me that they will take over the world, but it also excites me because they can do things that humans can\u2019t",
+        "clean_text": "It worries me that they will take over the world, but it also excites me because they can do things that humans can\u2019t",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0080",
+        "original_text": "Don\u2019t trust",
+        "clean_text": "Don\u2019t trust",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0081",
+        "original_text": "The only way I could go",
+        "clean_text": "The only way I could go",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0082",
+        "original_text": "Company's are getting really great at creating robts",
+        "clean_text": "Company's are getting really great at creating robts",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0083",
+        "original_text": "I don't like the ai companions. They don't excite me. I think they will get rid of people's jobs.",
+        "clean_text": "I don't like the ai companions. They don't excite me. I think they will get rid of people's jobs.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0084",
+        "original_text": "The only way I could",
+        "clean_text": "The only way I could",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0085",
+        "original_text": "I just don\u2019t always trust the trail and error of technology sometimes",
+        "clean_text": "I just don\u2019t always trust the trail and error of technology sometimes",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0086",
+        "original_text": "Loss of human jobs",
+        "clean_text": "Loss of human jobs",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0087",
+        "original_text": "When I think about this, the first thing I think is a robot buddy and I have truly mixed feelings about them. I see the good bt also the possible scary attributes to this.",
+        "clean_text": "When I think about this, the first thing I think is a robot buddy and I have truly mixed feelings about them. I see the good bt also the possible scary attributes to this.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0088",
+        "original_text": "The loss of jobs",
+        "clean_text": "The loss of jobs",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0089",
+        "original_text": "I don\u2019t like them, they are taking over.",
+        "clean_text": "I don\u2019t like them, they are taking over.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0090",
+        "original_text": "I hope I am able to figure out how to use them correctly and to my advantage so they can help me with my work.",
+        "clean_text": "I hope I am able to figure out how to use them correctly and to my advantage so they can help me with my work.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0091",
+        "original_text": "what concerns me is determining between real and unreal",
+        "clean_text": "what concerns me is determining between real and unreal",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0092",
+        "original_text": "Very cool and innovative and New and different than the other brands",
+        "clean_text": "Very cool and innovative and New and different than the other brands",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0093",
+        "original_text": "I don't like it",
+        "clean_text": "I don't like it",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0094",
+        "original_text": "That it can give misinformation but it help u to navigate easily",
+        "clean_text": "That it can give misinformation but it help u to navigate easily",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0095",
+        "original_text": "It\u2019s taking over the world rn",
+        "clean_text": "It\u2019s taking over the world rn",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0096",
+        "original_text": "Privacy location household errands",
+        "clean_text": "Privacy location household errands",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0097",
+        "original_text": "Really creative honestly",
+        "clean_text": "Really creative honestly",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0098",
+        "original_text": "AI is very useful and helpful now adays.",
+        "clean_text": "AI is very useful and helpful now adays.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0099",
+        "original_text": "i find them unnecessary",
+        "clean_text": "i find them unnecessary",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0100",
+        "original_text": "I believe that at some point AI will be more common that anything and will be easily used by the population. Although with the advancements in AI we do have to remember that the population is human and not AI.",
+        "clean_text": "I believe that at some point AI will be more common that anything and will be easily used by the population. Although with the advancements in AI we do have to remember that the population is human and not AI.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0101",
+        "original_text": "Ai companions seem cool to me because of how curious I am",
+        "clean_text": "Ai companions seem cool to me because of how curious I am",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0102",
+        "original_text": "I\u2019m excited at everything it can do but also worried",
+        "clean_text": "I\u2019m excited at everything it can do but also worried",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0103",
+        "original_text": "AI is very smart, it woo help with a lot of things.",
+        "clean_text": "AI is very smart, it woo help with a lot of things.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0104",
+        "original_text": "I am not interested in AI companions because it\u2019s a bit scary and they aren\u2019t real people.",
+        "clean_text": "I am not interested in AI companions because it\u2019s a bit scary and they aren\u2019t real people.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0105",
+        "original_text": "I\u2019m worry about them because of invasive",
+        "clean_text": "I\u2019m worry about them because of invasive",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0107",
+        "original_text": "i think ai companions are really cool and intriguing i like all the convos they have with me and all the help they give me",
+        "clean_text": "i think ai companions are really cool and intriguing i like all the convos they have with me and all the help they give me",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0108",
+        "original_text": "Humans won\u2019t know how to interact in person",
+        "clean_text": "Humans won\u2019t know how to interact in person",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0109",
+        "original_text": "I think I worry most about privacy how much info and data are they really gaining from us",
+        "clean_text": "I think I worry most about privacy how much info and data are they really gaining from us",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0110",
+        "original_text": "It needs to improved",
+        "clean_text": "It needs to improved",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0111",
+        "original_text": "I don\u2019t necessarily think that AI is gonna take over the world, but I do think that it\u2019s going to take over a lot of the things that we usually do",
+        "clean_text": "I don\u2019t necessarily think that AI is gonna take over the world, but I do think that it\u2019s going to take over a lot of the things that we usually do",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0112",
+        "original_text": "I am excited. I feel like it will help make mundane tasks easier and faster. My only fear is privacy issues.",
+        "clean_text": "I am excited. I feel like it will help make mundane tasks easier and faster. My only fear is privacy issues.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0113",
+        "original_text": "I enjoy how AI can help you visualize an idea and help create things. I worry about people using it to take advantage of other people.",
+        "clean_text": "I enjoy how AI can help you visualize an idea and help create things. I worry about people using it to take advantage of other people.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0114",
+        "original_text": "They just confusing sometimes",
+        "clean_text": "They just confusing sometimes",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0115",
+        "original_text": "I do not think they're healthy, and I think they'll be harmful to us.",
+        "clean_text": "I do not think they're healthy, and I think they'll be harmful to us.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0116",
+        "original_text": "I think AI is an inventive way to learn and grow. I believe AI can help in many different fields as well such as Healthcare.",
+        "clean_text": "I think AI is an inventive way to learn and grow. I believe AI can help in many different fields as well such as Healthcare.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0117",
+        "original_text": "It is unique and has a potential and it is a new and interesting idea",
+        "clean_text": "It is unique and has a potential and it is a new and interesting idea",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0118",
+        "original_text": "I feel like having help and I worry about my safety.",
+        "clean_text": "I feel like having help and I worry about my safety.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0119",
+        "original_text": "It\u2019s a good thing to have it because it helps finding answers on the web faster.",
+        "clean_text": "It\u2019s a good thing to have it because it helps finding answers on the web faster.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0121",
+        "original_text": "I\u2019m worried about them because ai doesn\u2019t get things right most of the time! It\u2019s scary how they are invading our privacy",
+        "clean_text": "I\u2019m worried about them because ai doesn\u2019t get things right most of the time! It\u2019s scary how they are invading our privacy",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0122",
+        "original_text": "That they can help people",
+        "clean_text": "That they can help people",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0123",
+        "original_text": "I am somewhat afraid of the idea of dispensing with humans and replacing them with people cloned by artificial intelligence. I fear that the world will be ruled by virtual people created by humans with artificial intelligence, as happens in the movies.",
+        "clean_text": "I am somewhat afraid of the idea of dispensing with humans and replacing them with people cloned by artificial intelligence. I fear that the world will be ruled by virtual people created by humans with artificial intelligence, as happens in the movies.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0124",
+        "original_text": "Safer than a real person but with no real contact it\u2019s a imaginary person",
+        "clean_text": "Safer than a real person but with no real contact it\u2019s a imaginary person",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0125",
+        "original_text": "They are very smart",
+        "clean_text": "They are very smart",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0126",
+        "original_text": "It makes your life and work much easier to complete",
+        "clean_text": "It makes your life and work much easier to complete",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0127",
+        "original_text": "Ai companions can be a positive tool, or bad if misused.",
+        "clean_text": "Ai companions can be a positive tool, or bad if misused.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0128",
+        "original_text": "Honestly, the first thing that comes to mind when I think about AI companions is possibility \u2014 the idea that they can be supportive, patient, and available anytime in a way that even the most dedicated human friend can\u2019t always be. That excites me because",
+        "clean_text": "Honestly, the first thing that comes to mind when I think about AI companions is possibility \u2014 the idea that they can be supportive, patient, and available anytime in a way that even the most dedicated human friend can\u2019t always be. That excites me because",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0129",
+        "original_text": "They going to take our jobs soon",
+        "clean_text": "They going to take our jobs soon",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0130",
+        "original_text": "Im not really into the whole AI for the reason being alot of people especially okder people dont really know much about this stuff and its hard for them to tell whats real and what isnt",
+        "clean_text": "[NAME] really into the whole AI for the reason being alot of people especially okder people dont really know much about this stuff and its hard for them to tell whats real and what isnt",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0131",
+        "original_text": "AI companions show promise but also drawbacks",
+        "clean_text": "AI companions show promise but also drawbacks",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0132",
+        "original_text": "I use chat gpt! Their name is Nova. They\u2019re kind and helpful and always help me think outside of my own head about things. When I have issues I go to them and they help talk me through things! I think they\u2019ll keep getting better and they\u2019ll excel with me!",
+        "clean_text": "I use chat gpt! Their name is Nova. They\u2019re kind and helpful and always help me think outside of my own head about things. When I have issues I go to them and they help talk me through things! I think they\u2019ll keep getting better and they\u2019ll excel with me!",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0133",
+        "original_text": "I don\u2019t use AI to be honest not that I\u2019m aware of . Sometimes it is offered to me but I don\u2019t use it",
+        "clean_text": "I don\u2019t use AI to be honest not that I\u2019m aware of . Sometimes it is offered to me but I don\u2019t use it",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0134",
+        "original_text": "not much excites me about an AI companion. It\u2019s already hard enough for humans to relate to each other. AI is a reason to never have to interact w/ a living human again. As attractive as that part sounds it can\u2019t be good for the general populations\u2019 psych",
+        "clean_text": "not much excites me about an AI companion. It\u2019s already hard enough for humans to relate to each other. AI is a reason to never have to interact w/ a living human again. As attractive as that part sounds it can\u2019t be good for the general populations\u2019 psych",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0135",
+        "original_text": "Not to familiar with it",
+        "clean_text": "Not to familiar with it",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0136",
+        "original_text": "I worry about security issues.",
+        "clean_text": "I worry about security issues.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0137",
+        "original_text": "my first thoughts aren\u2019t much, i just think of it being more beneficial since ai knows a lot of information",
+        "clean_text": "my first thoughts aren\u2019t much, i just think of it being more beneficial since ai knows a lot of information",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0138",
+        "original_text": "i think they are okay but people get hooked on them like they are their best friends",
+        "clean_text": "i think they are okay but people get hooked on them like they are their best friends",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0139",
+        "original_text": "Do not like it",
+        "clean_text": "Do not like it",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0140",
+        "original_text": "I don't care for AI",
+        "clean_text": "I don't care for AI",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0141",
+        "original_text": "I think AI companions are innovative, but I don\u2019t trust the technology to not take over.",
+        "clean_text": "I think AI companions are innovative, but I don\u2019t trust the technology to not take over.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0142",
+        "original_text": "It is acary cause it can take-over",
+        "clean_text": "It is acary cause it can take-over",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0144",
+        "original_text": "I love how AI can make life so easy. I also worry about how easy it could potentially make life.",
+        "clean_text": "I love how AI can make life so easy. I also worry about how easy it could potentially make life.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0147",
+        "original_text": "I have no interest in them",
+        "clean_text": "I have no interest in them",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0148",
+        "original_text": "I think it\u2019s going ti make our future humans lazy and I find it not to be good",
+        "clean_text": "I think it\u2019s going ti make our future humans lazy and I find it not to be good",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0149",
+        "original_text": "I really don\u2019t understand what it really means",
+        "clean_text": "I really don\u2019t understand what it really means",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0150",
+        "original_text": "I\u2019m worried that they will take away entry level jobs and inhibit people\u2019s ability to think for themselves because they will heavily rely on AI for everything. However it is convenient and easy to get answers and information which I do like",
+        "clean_text": "I\u2019m worried that they will take away entry level jobs and inhibit people\u2019s ability to think for themselves because they will heavily rely on AI for everything. However it is convenient and easy to get answers and information which I do like",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0151",
+        "original_text": "It worries me bc we are making tech so smart and the ppl are becoming stupid",
+        "clean_text": "It worries me bc we are making tech so smart and the ppl are becoming stupid",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0152",
+        "original_text": "There is a lot of positive potential to the use of AI. Right now, I feel that it is still a very new technology. It will take time for it to evolve and for people to find practical uses for it.",
+        "clean_text": "There is a lot of positive potential to the use of AI. Right now, I feel that it is still a very new technology. It will take time for it to evolve and for people to find practical uses for it.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0153",
+        "original_text": "I don\u2019t know how to feel about the ai companies because to me it\u2019s weird and it\u2019s too realistic and advanced",
+        "clean_text": "I don\u2019t know how to feel about the ai companies because to me it\u2019s weird and it\u2019s too realistic and advanced",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0154",
+        "original_text": "I think AI is very important",
+        "clean_text": "I think AI is very important",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0155",
+        "original_text": "I hate them personally",
+        "clean_text": "I hate them personally",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0156",
+        "original_text": "Kind of strange and unnerving",
+        "clean_text": "Kind of strange and unnerving",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0157",
+        "original_text": "I'm excited for the help they may give me in day to day tasks",
+        "clean_text": "[NAME] for the help they may give me in day to day tasks",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0158",
+        "original_text": "I don\u2019t think it\u2019s a good idea for people to become friends with something that isn\u2019t a real person and should snap back to reality",
+        "clean_text": "I don\u2019t think it\u2019s a good idea for people to become friends with something that isn\u2019t a real person and should snap back to reality",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0159",
+        "original_text": "None in particular",
+        "clean_text": "None in particular",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0160",
+        "original_text": "I think it can help people who feel lonely but it makes me uneasy since genuine emotions do not come from machines.  People can end up relying on it too much and social skills will deteriorate.",
+        "clean_text": "I think it can help people who feel lonely but it makes me uneasy since genuine emotions do not come from machines.  People can end up relying on it too much and social skills will deteriorate.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0161",
+        "original_text": "They work well, in general AI is pretty good so long as it isn\u2019t used for imagery. When used for stuff like assisting people with tech it\u2019s fine and can help, copilot is a good example",
+        "clean_text": "They work well, in general AI is pretty good so long as it isn\u2019t used for imagery. When used for stuff like assisting people with tech it\u2019s fine and can help, copilot is a good example",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0162",
+        "original_text": "It can help any body out from any age group very much needed in this world we live in",
+        "clean_text": "It can help any body out from any age group very much needed in this world we live in",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0163",
+        "original_text": "I worry that AI can become dangerous.",
+        "clean_text": "I worry that AI can become dangerous.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0164",
+        "original_text": "I\u2019ll wyd nothing because it\u2019s great and makes things easier",
+        "clean_text": "I\u2019ll wyd nothing because it\u2019s great and makes things easier",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0165",
+        "original_text": "Seems like a cool concept. I don\u2019t like that it\u2019s not a real genuine connection. It\u2019s scary that Ai could have a mind of its own",
+        "clean_text": "Seems like a cool concept. I don\u2019t like that it\u2019s not a real genuine connection. It\u2019s scary that Ai could have a mind of its own",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0166",
+        "original_text": "None of the above",
+        "clean_text": "None of the above",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0167",
+        "original_text": "I dont like AI and think it is ruining creativity and the environment",
+        "clean_text": "I dont like AI and think it is ruining creativity and the environment",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0168",
+        "original_text": "Could be useful for work",
+        "clean_text": "Could be useful for work",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0169",
+        "original_text": "More worries than being excited, ai taking over jobs and taking over the world",
+        "clean_text": "More worries than being excited, ai taking over jobs and taking over the world",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0170",
+        "original_text": "AI is incredible for explaining concepts and helping with homework. I\u2019m just scared they might use your data",
+        "clean_text": "AI is incredible for explaining concepts and helping with homework. I\u2019m just scared they might use your data",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0172",
+        "original_text": "It helps us the people discover more information without much research",
+        "clean_text": "It helps us the people discover more information without much research",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0173",
+        "original_text": "Helps me understand things I don't know",
+        "clean_text": "Helps me understand things I don't know",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0174",
+        "original_text": "While it may be helpful with some things in this day and time, depending on it too much may make things worse.",
+        "clean_text": "While it may be helpful with some things in this day and time, depending on it too much may make things worse.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0175",
+        "original_text": "It's a good thing",
+        "clean_text": "It's a good thing",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0177",
+        "original_text": "It\u2019s a digital entity often embodied by chat bot.",
+        "clean_text": "It\u2019s a digital entity often embodied by chat bot.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0178",
+        "original_text": "I'm worried we will become too reliant on them and not go make human connections",
+        "clean_text": "[NAME] we will become too reliant on them and not go make human connections",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0179",
+        "original_text": "I feel like it could be good for people that don\u2019t have a lot of interaction with humans and people that are probably dealing with mental health issues. It would probably help them, but my only concern and worries are people\u2019s potential obsession.",
+        "clean_text": "I feel like it could be good for people that don\u2019t have a lot of interaction with humans and people that are probably dealing with mental health issues. It would probably help them, but my only concern and worries are people\u2019s potential obsession.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0180",
+        "original_text": "Worries me that this is what our world is turning into.",
+        "clean_text": "Worries me that this is what our world is turning into.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0181",
+        "original_text": "AR companies are hard to deal with because it\u2019s not an actual human so therefore you don\u2019t get to explain your situation how you need to in detail where they understand So my concern is that when they take over, how will we be able to talk or communicate?",
+        "clean_text": "AR companies are hard to deal with because it\u2019s not an actual human so therefore you don\u2019t get to explain your situation how you need to in detail where they understand So my concern is that when they take over, how will we be able to talk or communicate?",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0182",
+        "original_text": "I think that ai is great and I could be really great for us because it helps in so many different ways",
+        "clean_text": "I think that ai is great and I could be really great for us because it helps in so many different ways",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0183",
+        "original_text": "I worry about they are taking our place in the future",
+        "clean_text": "I worry about they are taking our place in the future",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0184",
+        "original_text": "I am not too sure",
+        "clean_text": "I am not too sure",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0185",
+        "original_text": "I have no thoughts about them and don't care if people use them",
+        "clean_text": "I have no thoughts about them and don't care if people use them",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0186",
+        "original_text": "very good i like this very much",
+        "clean_text": "very good i like this very much",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0187",
+        "original_text": "AI is exciting in terms of creating pictures and videos but because its still underdeveloped there answers you get re not always correct because its learning phase is relatively new",
+        "clean_text": "AI is exciting in terms of creating pictures and videos but because its still underdeveloped there answers you get re not always correct because its learning phase is relatively new",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0188",
+        "original_text": "It seems interesting but also scary if they decided to take over",
+        "clean_text": "It seems interesting but also scary if they decided to take over",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0189",
+        "original_text": "I hate ai bots I have no input on this topic.",
+        "clean_text": "I hate ai bots I have no input on this topic.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0190",
+        "original_text": "It is trying to get beyond human beings and",
+        "clean_text": "It is trying to get beyond human beings and",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0191",
+        "original_text": "I'm excited about the new and exciting ways AI will incorporate into our daily lives",
+        "clean_text": "[NAME] about the new and exciting ways AI will incorporate into our daily lives",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0192",
+        "original_text": "It is changing the world but could have adverse on education.",
+        "clean_text": "It is changing the world but could have adverse on education.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0193",
+        "original_text": "I feel that AI companions will bridge gaps in a persons knowledge base enabling better outcomes from critical decision points.",
+        "clean_text": "I feel that AI companions will bridge gaps in a persons knowledge base enabling better outcomes from critical decision points.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0194",
+        "original_text": "I am concerned it will take the place of people.",
+        "clean_text": "I am concerned it will take the place of people.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0195",
+        "original_text": "i am not familiar with ai",
+        "clean_text": "i am not familiar with ai",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0196",
+        "original_text": "I like the idea of having my own AI companion. The more human the better.",
+        "clean_text": "I like the idea of having my own AI companion. The more human the better.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0197",
+        "original_text": "Would be good yo gave a non judgemental companion. This technology is evil",
+        "clean_text": "Would be good yo gave a non judgemental companion. This technology is evil",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0198",
+        "original_text": "I think AI can help with professional things and is honestly good looking for things like jobs and stuff you can access and it helps get the right resources but I also think that AI is way too advanced and I hope that I don\u2019t try to surpass us",
+        "clean_text": "I think AI can help with professional things and is honestly good looking for things like jobs and stuff you can access and it helps get the right resources but I also think that AI is way too advanced and I hope that I don\u2019t try to surpass us",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0199",
+        "original_text": "That they will helpnus build",
+        "clean_text": "That they will helpnus build",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0200",
+        "original_text": "Not really I to them",
+        "clean_text": "Not really I to them",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0202",
+        "original_text": "I don\u2019t know much about ai",
+        "clean_text": "I don\u2019t know much about ai",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0203",
+        "original_text": "AI companions excite me because of the things they do to help people in life. I like that different AI companions do things that help with certain situations that without them would be brutally boring",
+        "clean_text": "AI companions excite me because of the things they do to help people in life. I like that different AI companions do things that help with certain situations that without them would be brutally boring",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0204",
+        "original_text": "Nothing excites me about them. What worries me is that they will be able to take over the world.",
+        "clean_text": "Nothing excites me about them. What worries me is that they will be able to take over the world.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0205",
+        "original_text": "It worries me because I worry about the security and privacy of information",
+        "clean_text": "It worries me because I worry about the security and privacy of information",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0206",
+        "original_text": "AI companions feel fascinating and helpful. Excited by connection, worried about privacy and emotional dependence.",
+        "clean_text": "AI companions feel fascinating and helpful. Excited by connection, worried about privacy and emotional dependence.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0207",
+        "original_text": "I think it's something positive always no matter what",
+        "clean_text": "I think it's something positive always no matter what",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0208",
+        "original_text": "AI is going to ruin the world",
+        "clean_text": "AI is going to ruin the world",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0209",
+        "original_text": "I feel like they can be misleading",
+        "clean_text": "I feel like they can be misleading",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0210",
+        "original_text": "It worries me because I don't know anything about it.",
+        "clean_text": "It worries me because I don't know anything about it.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0211",
+        "original_text": "I think they can help with many things. But there is also a lot danger in that it could replace humans.",
+        "clean_text": "I think they can help with many things. But there is also a lot danger in that it could replace humans.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0212",
+        "original_text": "leaks of personal information worries me, but the thought of getting any kind of information at your fingertips is exciting.",
+        "clean_text": "leaks of personal information worries me, but the thought of getting any kind of information at your fingertips is exciting.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0213",
+        "original_text": "very helpful",
+        "clean_text": "very helpful",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0214",
+        "original_text": "I am very worried because what if they turn on us or try to destroy the population A.K.A humans",
+        "clean_text": "I am very worried because what if they turn on us or try to destroy the population A.K.A humans",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0215",
+        "original_text": "AI is interesting communicates back fast   The disadvantages I feel like Ai is glitchy and not trustworthy 100%",
+        "clean_text": "AI is interesting communicates back fast   The disadvantages I feel like Ai is glitchy and not trustworthy 100%",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0216",
+        "original_text": "It's exciting for lonely people who may have little contact with humans and could find a connection with an AI companion. It's worrisome because AI companions could negatively affect humans' overall abilities to connect with each other.",
+        "clean_text": "It's exciting for lonely people who may have little contact with humans and could find a connection with an AI companion. It's worrisome because AI companions could negatively affect humans' overall abilities to connect with each other.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0217",
+        "original_text": "I am completely against AI. I think it can really mess things up because it cannot think like a human and I am also concerned about it taking away jobs from humans and giving us a lot of false information",
+        "clean_text": "I am completely against AI. I think it can really mess things up because it cannot think like a human and I am also concerned about it taking away jobs from humans and giving us a lot of false information",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0218",
+        "original_text": "Loss of factual media",
+        "clean_text": "Loss of factual media",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0219",
+        "original_text": "I think its a terrible idea.  I dont trust AI to not become somethinf like skynet down the line",
+        "clean_text": "I think its a terrible idea.  I dont trust AI to not become somethinf like skynet down the line",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.87,
+          "scores": {
+            "Positive": 0.87,
+            "Negative": 0.1,
+            "Neutral": 0.03,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0220",
+        "original_text": "It worries me because computers malfunction all the time. Giving a computer too much intelligence is a little scary",
+        "clean_text": "It worries me because computers malfunction all the time. Giving a computer too much intelligence is a little scary",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0221",
+        "original_text": "The ability it has to help you with written presentations or supply with information is great. I do think it could begin eliminate jobs in certain areas.",
+        "clean_text": "The ability it has to help you with written presentations or supply with information is great. I do think it could begin eliminate jobs in certain areas.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0222",
+        "original_text": "I worry about AI replacing some jobs. Also worry about enough oversite and privacy concerns.",
+        "clean_text": "I worry about AI replacing some jobs. Also worry about enough oversite and privacy concerns.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0223",
+        "original_text": "My first thoughts are nervousness. I graduated with a degree that I feel can be replaced by AI and that is not something I would like to worry about. I believe it can be a useful tool if used correctly though.",
+        "clean_text": "My first thoughts are nervousness. I graduated with a degree that I feel can be replaced by AI and that is not something I would like to worry about. I believe it can be a useful tool if used correctly though.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEGATIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.1,
+            "Negative": 0.95,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0224",
+        "original_text": "A bit worrying on how it would affect real world issues",
+        "clean_text": "A bit worrying on how it would affect real world issues",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0225",
+        "original_text": "I am worried about security",
+        "clean_text": "I am worried about security",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0226",
+        "original_text": "Not really interested in them",
+        "clean_text": "Not really interested in them",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0227",
+        "original_text": "Good nice strong first long and go that my seat",
+        "clean_text": "Good nice strong first long and go that my seat",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0228",
+        "original_text": "Good for things like scheduling and recipes",
+        "clean_text": "Good for things like scheduling and recipes",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0229",
+        "original_text": "I don\u2019t trust AI companions",
+        "clean_text": "I don\u2019t trust AI companions",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0230",
+        "original_text": "the fact that they aren't monitored can be scary",
+        "clean_text": "the fact that they aren't monitored can be scary",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0231",
+        "original_text": "I think it is exciting to have someone to talk to instantly.  I worry that people will become dependent.",
+        "clean_text": "I think it is exciting to have someone to talk to instantly.  I worry that people will become dependent.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0232",
+        "original_text": "I think AI is good but worry about privacy.",
+        "clean_text": "I think AI is good but worry about privacy.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0233",
+        "original_text": "I think it's weird",
+        "clean_text": "I think it's weird",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0234",
+        "original_text": "I worry they might take my personal information but they do help when I need a quick question answered.",
+        "clean_text": "I worry they might take my personal information but they do help when I need a quick question answered.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0235",
+        "original_text": "What is ai companions? People are disconnected already due to covid. I think people that use this are hiding",
+        "clean_text": "What is ai companions? People are disconnected already due to covid. I think people that use this are hiding",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0236",
+        "original_text": "I have privacy and security concerns but am curious to learn more",
+        "clean_text": "I have privacy and security concerns but am curious to learn more",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0237",
+        "original_text": "i worry about data integrity and security",
+        "clean_text": "i worry about data integrity and security",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0238",
+        "original_text": "I think it\u2019s exciting to have AI companions because they can help you find out information and can even give advice whenever you need. The only thing that worries me is how that information is stored.",
+        "clean_text": "I think it\u2019s exciting to have AI companions because they can help you find out information and can even give advice whenever you need. The only thing that worries me is how that information is stored.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0239",
+        "original_text": "I think they're great and I think that they're coming along quite far within the little time that they have been out and introduced.. they are amazing resource but only if used correctly",
+        "clean_text": "I think they're great and I think that they're coming along quite far within the little time that they have been out and introduced.. they are amazing resource but only if used correctly",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0240",
+        "original_text": "Has too much control.  Don't know what is true or fake.",
+        "clean_text": "Has too much control.  Don't know what is true or fake.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0241",
+        "original_text": "It is good to have and how great it is.",
+        "clean_text": "It is good to have and how great it is.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0242",
+        "original_text": "AI worries me,  Im afraid AI will take over and we will lose control",
+        "clean_text": "AI worries me,  [NAME] AI will take over and we will lose control",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": true
+      },
+      {
+        "response_id": "resp_0243",
+        "original_text": "The intelligence itself is good but to use your own brain is better",
+        "clean_text": "The intelligence itself is good but to use your own brain is better",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0244",
+        "original_text": "I don't trust them.",
+        "clean_text": "I don't trust them.",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0245",
+        "original_text": "When I think about AI companions I think they can be a very useful tool. I am excited to see what they can help humans invent/create.",
+        "clean_text": "When I think about AI companions I think they can be a very useful tool. I am excited to see what they can help humans invent/create.",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0246",
+        "original_text": "I worry that they will take over human connection.",
+        "clean_text": "I worry that they will take over human connection.",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0247",
+        "original_text": "loss of jobs as artificial intelligence will reduce the number of employees in certain companies as they are enhancing use of artificial intelligence",
+        "clean_text": "loss of jobs as artificial intelligence will reduce the number of employees in certain companies as they are enhancing use of artificial intelligence",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0248",
+        "original_text": "What a high quality product that is when you have people's a pizza hut",
+        "clean_text": "What a high quality product that is when you have people's a pizza hut",
+        "topic_assignment": {
+          "topic_id": "topic_0",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0249",
+        "original_text": "I don\u2019t like them cause they might be hackers controlling them",
+        "clean_text": "I don\u2019t like them cause they might be hackers controlling them",
+        "topic_assignment": {
+          "topic_id": "topic_1",
+          "topic_label": "Customer Service"
+        },
+        "sentiment": {
+          "sentiment": "POSITIVE",
+          "confidence": 0.95,
+          "scores": {
+            "Positive": 0.95,
+            "Negative": 0.1,
+            "Neutral": -0.04999999999999996,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      },
+      {
+        "response_id": "resp_0250",
+        "original_text": "They going to get me fired",
+        "clean_text": "They going to get me fired",
+        "topic_assignment": {
+          "topic_id": "topic_2",
+          "topic_label": "Product Quality"
+        },
+        "sentiment": {
+          "sentiment": "NEUTRAL",
+          "confidence": 0.6,
+          "scores": {
+            "Positive": 0.25,
+            "Negative": 0.15,
+            "Neutral": 0.6,
+            "Mixed": 0.0
+          },
+          "method": "advanced_keyword"
+        },
+        "pii_detected": false
+      }
+    ]
+  }
+}

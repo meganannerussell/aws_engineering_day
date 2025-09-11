@@ -1,0 +1,4943 @@
+{
+  "project_metadata": {
+    "project_title": "Ask Anything Beauty Demo",
+    "question_text": "Thinking about that truly outstanding new beauty product you selected, what makes it stand out for you? ",
+    "total_responses": 227,
+    "processing_time_seconds": 54.22,
+    "timestamp": "2025-09-09T16:42:07.124110",
+    "pipeline_version": "clean_structured_v1",
+    "services_used": {
+      "bedrock_embeddings": true,
+      "bedrock_llm": true,
+      "comprehend_sentiment": false,
+      "dbscan_clustering": true,
+      "intelligent_caching": true
+    }
+  },
+  "summary_stats": {
+    "total_topics": 8,
+    "avg_responses_per_topic": 28.4,
+    "overall_sentiment_score": 0.364,
+    "pii_detection_rate": 0.013,
+    "processing_rate": 4.2,
+    "cache_performance": {
+      "embedding_cache_size": 0,
+      "sentiment_cache_size": 226
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "topic_2",
+      "label": "Product Quality Issues",
+      "count": 50,
+      "percentage": 22.0,
+      "sentiment_mean": 0.415,
+      "sentiment_distribution": {
+        "positive": 12,
+        "negative": 1,
+        "neutral": 37,
+        "mixed": 0
+      },
+      "examples": [
+        "It works on my skin type",
+        "The brand of the product itself",
+        "it seems like it was made just for me"
+      ]
+    },
+    {
+      "topic_id": "topic_5",
+      "label": "User Experience Positive",
+      "count": 36,
+      "percentage": 15.9,
+      "sentiment_mean": 0.324,
+      "sentiment_distribution": {
+        "positive": 4,
+        "negative": 1,
+        "neutral": 31,
+        "mixed": 0
+      },
+      "examples": [
+        "the smell on me",
+        "Honestly nothing stands out, unless it can make ugly people less ugly \u2014 some of y\u2019all need a miracle, not makeup.",
+        "Not sure either"
+      ]
+    },
+    {
+      "topic_id": "topic_1",
+      "label": "Customer Service Response",
+      "count": 30,
+      "percentage": 13.2,
+      "sentiment_mean": 0.315,
+      "sentiment_distribution": {
+        "positive": 3,
+        "negative": 1,
+        "neutral": 26,
+        "mixed": 0
+      },
+      "examples": [
+        "They will be nuce",
+        "It shows the hospitality of sensitive skincare.",
+        "It\u2019s long lasting properties"
+      ]
+    },
+    {
+      "topic_id": "topic_4",
+      "label": "Primary Visual Design",
+      "count": 27,
+      "percentage": 11.9,
+      "sentiment_mean": 0.322,
+      "sentiment_distribution": {
+        "positive": 3,
+        "negative": 1,
+        "neutral": 23,
+        "mixed": 0
+      },
+      "examples": [
+        "It stands out to me because it goes on so smoothly",
+        "The color black is with everything dressed",
+        "It\u2019s my favorite product"
+      ]
+    },
+    {
+      "topic_id": "topic_7",
+      "label": "Visual Design",
+      "count": 25,
+      "percentage": 11.0,
+      "sentiment_mean": 0.3,
+      "sentiment_distribution": {
+        "positive": 2,
+        "negative": 1,
+        "neutral": 22,
+        "mixed": 0
+      },
+      "examples": [
+        "[NAME] sure.",
+        "These products stand out because they're high-quality and look prefect on my skin.",
+        "It\u2019s Beautiful"
+      ]
+    },
+    {
+      "topic_id": "topic_6",
+      "label": "Pricing Value",
+      "count": 25,
+      "percentage": 11.0,
+      "sentiment_mean": 0.39,
+      "sentiment_distribution": {
+        "positive": 5,
+        "negative": 0,
+        "neutral": 20,
+        "mixed": 0
+      },
+      "examples": [
+        "It provides perfect coverage",
+        "The price and design of container.",
+        "Their good quality products"
+      ]
+    },
+    {
+      "topic_id": "topic_3",
+      "label": "Advanced Visual Design",
+      "count": 19,
+      "percentage": 8.4,
+      "sentiment_mean": 0.455,
+      "sentiment_distribution": {
+        "positive": 6,
+        "negative": 2,
+        "neutral": 11,
+        "mixed": 0
+      },
+      "examples": [
+        "I buy what I can to make My girlfriend or wife smell good",
+        "All the different colors and shades there are!",
+        "The way it makes my eyes pop"
+      ]
+    },
+    {
+      "topic_id": "topic_0",
+      "label": "Core Visual Design",
+      "count": 15,
+      "percentage": 6.6,
+      "sentiment_mean": 0.39,
+      "sentiment_distribution": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 12,
+        "mixed": 0
+      },
+      "examples": [
+        "The look of effortless, clean beauty",
+        "It is cool to use",
+        "That I could worry less about my make up application."
+      ]
+    }
+  ],
+  "responses": [
+    {
+      "response_id": "resp_0001",
+      "original_text": "It works on my skin type",
+      "clean_text": "It works on my skin type",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0002",
+      "original_text": "I'm not sure.",
+      "clean_text": "[NAME] sure.",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0003",
+      "original_text": "I buy what I can to make My girlfriend or wife smell good",
+      "clean_text": "I buy what I can to make My girlfriend or wife smell good",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0004",
+      "original_text": "The brand of the product itself",
+      "clean_text": "The brand of the product itself",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0005",
+      "original_text": "These products stand out because they're high-quality and look prefect on my skin.",
+      "clean_text": "These products stand out because they're high-quality and look prefect on my skin.",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0006",
+      "original_text": "the smell on me",
+      "clean_text": "the smell on me",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0007",
+      "original_text": "it seems like it was made just for me",
+      "clean_text": "it seems like it was made just for me",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0008",
+      "original_text": "They will be nuce",
+      "clean_text": "They will be nuce",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0009",
+      "original_text": "All the different colors and shades there are!",
+      "clean_text": "All the different colors and shades there are!",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0010",
+      "original_text": "it's really great for my skin",
+      "clean_text": "it's really great for my skin",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0011",
+      "original_text": "It is very high quality and is long lasting",
+      "clean_text": "It is very high quality and is long lasting",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0012",
+      "original_text": "It\u2019s Beautiful",
+      "clean_text": "It\u2019s Beautiful",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0013",
+      "original_text": "it enhances my look",
+      "clean_text": "it enhances my look",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0015",
+      "original_text": "The have products for every shade of skin",
+      "clean_text": "The have products for every shade of skin",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0016",
+      "original_text": "I have to say the lashes n face mask for clear skin",
+      "clean_text": "I have to say the lashes n face mask for clear skin",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0017",
+      "original_text": "It\u2019s all the same other than quality and duration",
+      "clean_text": "It\u2019s all the same other than quality and duration",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0018",
+      "original_text": "It provides perfect coverage",
+      "clean_text": "It provides perfect coverage",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0019",
+      "original_text": "It shows the hospitality of sensitive skincare.",
+      "clean_text": "It shows the hospitality of sensitive skincare.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0020",
+      "original_text": "Honestly nothing stands out, unless it can make ugly people less ugly \u2014 some of y\u2019all need a miracle, not makeup.",
+      "clean_text": "Honestly nothing stands out, unless it can make ugly people less ugly \u2014 some of y\u2019all need a miracle, not makeup.",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0021",
+      "original_text": "It\u2019s long lasting properties",
+      "clean_text": "It\u2019s long lasting properties",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0022",
+      "original_text": "Great quality product",
+      "clean_text": "Great quality product",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0023",
+      "original_text": "the way it makes my lips feel",
+      "clean_text": "the way it makes my lips feel",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0024",
+      "original_text": "The look of effortless, clean beauty",
+      "clean_text": "The look of effortless, clean beauty",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0025",
+      "original_text": "It is cool to use",
+      "clean_text": "It is cool to use",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0026",
+      "original_text": "Nothing like i said before sorry",
+      "clean_text": "Nothing like i said before sorry",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0027",
+      "original_text": "It is very dependable and it always works the Dame when I need it to .",
+      "clean_text": "It is very dependable and it always works the Dame when I need it to .",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0030",
+      "original_text": "The way it makes my eyes pop",
+      "clean_text": "The way it makes my eyes pop",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0031",
+      "original_text": "all the variety",
+      "clean_text": "all the variety",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0032",
+      "original_text": "That I could worry less about my make up application.",
+      "clean_text": "That I could worry less about my make up application.",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0033",
+      "original_text": "It stands out to me because it goes on so smoothly",
+      "clean_text": "It stands out to me because it goes on so smoothly",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0034",
+      "original_text": "The brand in innovative and always out with some new products",
+      "clean_text": "The brand in innovative and always out with some new products",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0035",
+      "original_text": "Haven't used any",
+      "clean_text": "Haven't used any",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0037",
+      "original_text": "Not sure either",
+      "clean_text": "Not sure either",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0038",
+      "original_text": "I think it is an innovative product that you can mix with your moisturizer",
+      "clean_text": "I think it is an innovative product that you can mix with your moisturizer",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0039",
+      "original_text": "The price and design of container.",
+      "clean_text": "The price and design of container.",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0040",
+      "original_text": "I to be honest do not know what I am supposed to say",
+      "clean_text": "I to be honest do not know what I am supposed to say",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0041",
+      "original_text": "It stands out to me because unlike other foundations it has a really pretty glow and nice coverage, most foundations don\u2019t have applicators like the E.L.F halo glow product.",
+      "clean_text": "It stands out to me because unlike other foundations it has a really pretty glow and nice coverage, most foundations don\u2019t have applicators like the E.L.F halo glow product.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0042",
+      "original_text": "The color black is with everything dressed",
+      "clean_text": "The color black is with everything dressed",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0043",
+      "original_text": "You tell me what stand out",
+      "clean_text": "You tell me what stand out",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0044",
+      "original_text": "It's colors and and color volume",
+      "clean_text": "It's colors and and color volume",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0046",
+      "original_text": "It smells really nice",
+      "clean_text": "It smells really nice",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0047",
+      "original_text": "What makes it stand out is how inclusive it is, Fenty Beauty has made an impact on the beauty industry",
+      "clean_text": "What makes it stand out is how inclusive it is, Fenty Beauty has made an impact on the beauty industry",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0048",
+      "original_text": "What makes the timeless Tony storm foundation? Stand out to me is that it makes you always beautiful and timeless.",
+      "clean_text": "What makes the timeless Tony storm foundation? Stand out to me is that it makes you always beautiful and timeless.",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0049",
+      "original_text": "it smells great",
+      "clean_text": "it smells great",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0050",
+      "original_text": "It has 15 billion more in sales than second place",
+      "clean_text": "It has 15 billion more in sales than second place",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0051",
+      "original_text": "It works well",
+      "clean_text": "It works well",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0052",
+      "original_text": "Their good quality products",
+      "clean_text": "Their good quality products",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0053",
+      "original_text": "Any woman can use the machine to do curls without worrying about making a mistake since the curl machine is easy to use",
+      "clean_text": "Any woman can use the machine to do curls without worrying about making a mistake since the curl machine is easy to use",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0054",
+      "original_text": "Eye liner and more it helps me with interviews and many important things such as this",
+      "clean_text": "Eye liner and more it helps me with interviews and many important things such as this",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0055",
+      "original_text": "I think what makes it stand out is the \u00f1eudcut itself. It\u2019s very good and affordable. Good for combination skin.",
+      "clean_text": "I think what makes it stand out is the \u00f1eudcut itself. It\u2019s very good and affordable. Good for combination skin.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0056",
+      "original_text": "It\u2019s my favorite product",
+      "clean_text": "It\u2019s my favorite product",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0057",
+      "original_text": "It\u2019s very useful and convenient",
+      "clean_text": "It\u2019s very useful and convenient",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0058",
+      "original_text": "it makes my lips pop",
+      "clean_text": "it makes my lips pop",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0061",
+      "original_text": "It\u2019s big and lifting",
+      "clean_text": "It\u2019s big and lifting",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0062",
+      "original_text": "Simply the fact that they are convenient for those that are looking to streamline their skincare routine without  compromising on efficacy",
+      "clean_text": "Simply the fact that they are convenient for those that are looking to streamline their skincare routine without  compromising on efficacy",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0063",
+      "original_text": "The color makes my brown eyes pop",
+      "clean_text": "The color makes my brown eyes pop",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0064",
+      "original_text": "It's nothing",
+      "clean_text": "It's nothing",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0066",
+      "original_text": "I\u2019m just saying I don\u2019t know how you feel about",
+      "clean_text": "I\u2019m just saying I don\u2019t know how you feel about",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0067",
+      "original_text": "That it is long wear",
+      "clean_text": "That it is long wear",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0068",
+      "original_text": "Ease of application and removal.",
+      "clean_text": "Ease of application and removal.",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0069",
+      "original_text": "That they work for me",
+      "clean_text": "That they work for me",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0070",
+      "original_text": "How sparkly it is the and how good the formula is for its price.",
+      "clean_text": "How sparkly it is the and how good the formula is for its price.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0071",
+      "original_text": "The way it applies on my textured skin",
+      "clean_text": "The way it applies on my textured skin",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0072",
+      "original_text": "The way it blends to your skin",
+      "clean_text": "The way it blends to your skin",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0073",
+      "original_text": "How it makes you look",
+      "clean_text": "How it makes you look",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0074",
+      "original_text": "The changes was quick",
+      "clean_text": "The changes was quick",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0075",
+      "original_text": "I really can\u2019t think of any",
+      "clean_text": "I really can\u2019t think of any",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0076",
+      "original_text": "I\u2019ve never had plastic surgery but it seems stunningly effective",
+      "clean_text": "I\u2019ve never had plastic surgery but it seems stunningly effective",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0077",
+      "original_text": "the quality improvement",
+      "clean_text": "the quality improvement",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0078",
+      "original_text": "Nothing since I don\u2019t use makeup",
+      "clean_text": "Nothing since I don\u2019t use makeup",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0079",
+      "original_text": "Full coverage",
+      "clean_text": "Full coverage",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0080",
+      "original_text": "Rare beauty stand out just because the way their product is built and it\u2019s pretty different from the other products",
+      "clean_text": "Rare beauty stand out just because the way their product is built and it\u2019s pretty different from the other products",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0081",
+      "original_text": "Pigmentation, shade ranges",
+      "clean_text": "Pigmentation, shade ranges",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0082",
+      "original_text": "it lookslike you barely have make up on",
+      "clean_text": "it lookslike you barely have make up on",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0083",
+      "original_text": "Honestly the full coverage",
+      "clean_text": "Honestly the full coverage",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0084",
+      "original_text": "Not applicable on the new beauty product",
+      "clean_text": "Not applicable on the new beauty product",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0086",
+      "original_text": "There\u2019s so many different uses",
+      "clean_text": "There\u2019s so many different uses",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0087",
+      "original_text": "The fact that it can be used for more than one purpose in a makeup routine",
+      "clean_text": "The fact that it can be used for more than one purpose in a makeup routine",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0088",
+      "original_text": "I have no clue",
+      "clean_text": "I have no clue",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0089",
+      "original_text": "The price and the results most stand out to me and the reviews that have been left om the product",
+      "clean_text": "The price and the results most stand out to me and the reviews that have been left om the product",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0090",
+      "original_text": "Helps keep my lips moisturized",
+      "clean_text": "Helps keep my lips moisturized",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0091",
+      "original_text": "Giving me back my hair   , that many different facets of life it affects cannot even be comprehended by most men and by basically all women.   Almost ,99% of humanity cannot even grasp it's grasp",
+      "clean_text": "Giving me back my hair   , that many different facets of life it affects cannot even be comprehended by most men and by basically all women.   Almost ,99% of humanity cannot even grasp it's grasp",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0092",
+      "original_text": "it lasts all day and doesnt stink",
+      "clean_text": "it lasts all day and doesnt stink",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0093",
+      "original_text": "Good reviews",
+      "clean_text": "Good reviews",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0094",
+      "original_text": "It starts out white and blends into your natural skin color",
+      "clean_text": "It starts out white and blends into your natural skin color",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0095",
+      "original_text": "it looks affordable",
+      "clean_text": "it looks affordable",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0096",
+      "original_text": "The credits",
+      "clean_text": "The credits",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0097",
+      "original_text": "water makes my skin clear",
+      "clean_text": "water makes my skin clear",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0098",
+      "original_text": "The elf lip oil is amazing and it feels good on the lips",
+      "clean_text": "The elf lip oil is amazing and it feels good on the lips",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0099",
+      "original_text": "It makes my makeup matte",
+      "clean_text": "It makes my makeup matte",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0100",
+      "original_text": "it's new products are unique and catches the eye",
+      "clean_text": "it's new products are unique and catches the eye",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0101",
+      "original_text": "It's wonderful effects on your skin",
+      "clean_text": "It's wonderful effects on your skin",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0103",
+      "original_text": "It does not show",
+      "clean_text": "It does not show",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0105",
+      "original_text": "The ingredients used in making the product, their place of origin, and also their natural and organic ingredienta.",
+      "clean_text": "The ingredients used in making the product, their place of origin, and also their natural and organic ingredienta.",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0106",
+      "original_text": "They work really good on my skin",
+      "clean_text": "They work really good on my skin",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0107",
+      "original_text": "my eyelashes",
+      "clean_text": "my eyelashes",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0108",
+      "original_text": "The fact that it\u2019s for a lower price yet gives the same thing",
+      "clean_text": "The fact that it\u2019s for a lower price yet gives the same thing",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0109",
+      "original_text": "Not sure, but brands that are inclusive if darker skin tones always get my attention, even though I have light brown skin. I'm just more likely to support brands that are inclusive.",
+      "clean_text": "Not sure, but brands that are inclusive if darker skin tones always get my attention, even though I have light brown skin. [NAME] more likely to support brands that are inclusive.",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0110",
+      "original_text": "It being a reliable product",
+      "clean_text": "It being a reliable product",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0111",
+      "original_text": "It's become a sort of \"\"standard\"\" in women's makeup",
+      "clean_text": "It's become a sort of \"\"standard\"\" in women's makeup",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0112",
+      "original_text": "What makes it stamds out to me is that it does much to cleanse your makeup away , nourish the face and , give it the proper protiems",
+      "clean_text": "What makes it stamds out to me is that it does much to cleanse your makeup away , nourish the face and , give it the proper protiems",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0113",
+      "original_text": "The quality of the items",
+      "clean_text": "The quality of the items",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0114",
+      "original_text": "Because they are pretty packages",
+      "clean_text": "Because they are pretty packages",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0115",
+      "original_text": "I hate you, I wish you would die",
+      "clean_text": "I hate you, I wish you would die",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0116",
+      "original_text": "It\u2019s longevity. One small dot and it is so pigmented.",
+      "clean_text": "It\u2019s longevity. One small dot and it is so pigmented.",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0117",
+      "original_text": "The different aspect of it",
+      "clean_text": "The different aspect of it",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0118",
+      "original_text": "Definitely quality",
+      "clean_text": "Definitely quality",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0119",
+      "original_text": "Knowing myself",
+      "clean_text": "Knowing myself",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0120",
+      "original_text": "I like elf the most it doesn't dry out my skin",
+      "clean_text": "I like elf the most it doesn't dry out my skin",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0121",
+      "original_text": "Nothing i dont use or need makeup",
+      "clean_text": "Nothing i dont use or need makeup",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0122",
+      "original_text": "The price of the product",
+      "clean_text": "The price of the product",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0124",
+      "original_text": "I just love lip tints",
+      "clean_text": "I just love lip tints",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0125",
+      "original_text": "Really a lot of options you could do with it",
+      "clean_text": "Really a lot of options you could do with it",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0126",
+      "original_text": "What makes the Too Faced Born This Way concealer stand out to me is how good it covers up acne and my dark circles compared to other brands.",
+      "clean_text": "What makes the Too Faced Born This Way concealer stand out to me is how good it covers up acne and my dark circles compared to other brands.",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0127",
+      "original_text": "The affordability and the value",
+      "clean_text": "The affordability and the value",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0128",
+      "original_text": "Is basic and glam",
+      "clean_text": "Is basic and glam",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0129",
+      "original_text": "I can't think of any at the moment",
+      "clean_text": "I can't think of any at the moment",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0130",
+      "original_text": "it\u2019s effectiveness and attractive packaging",
+      "clean_text": "it\u2019s effectiveness and attractive packaging",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0131",
+      "original_text": "It\u2019s trendy",
+      "clean_text": "It\u2019s trendy",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0132",
+      "original_text": "the brand and quality",
+      "clean_text": "the brand and quality",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0133",
+      "original_text": "it comes in so many colors and a little goes along way it last forever",
+      "clean_text": "it comes in so many colors and a little goes along way it last forever",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0134",
+      "original_text": "Olay moisturizer",
+      "clean_text": "Olay moisturizer",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0135",
+      "original_text": "More than anything",
+      "clean_text": "More than anything",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0136",
+      "original_text": "I don\u2019t know what to do with myself I just want",
+      "clean_text": "I don\u2019t know what to do with myself I just want",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0137",
+      "original_text": "Because now we have better quality and choices",
+      "clean_text": "Because now we have better quality and choices",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0138",
+      "original_text": "My mom uses it a lot and thinks it\u2019s good",
+      "clean_text": "My mom uses it a lot and thinks it\u2019s good",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0139",
+      "original_text": "i dont know",
+      "clean_text": "i dont know",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0140",
+      "original_text": "Its marketing is done in a way that is authentic with their true vision as company wanting to help people",
+      "clean_text": "Its marketing is done in a way that is authentic with their true vision as company wanting to help people",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0141",
+      "original_text": "The packaging makes it stand out, it looks worth its money.",
+      "clean_text": "The packaging makes it stand out, it looks worth its money.",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0142",
+      "original_text": "The fact that it's great and affordable",
+      "clean_text": "The fact that it's great and affordable",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0143",
+      "original_text": "Blush is red and it got glitter too",
+      "clean_text": "Blush is red and it got glitter too",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0144",
+      "original_text": "idk uhm of how it looks",
+      "clean_text": "idk uhm of how it looks",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0145",
+      "original_text": "helps with acne",
+      "clean_text": "helps with acne",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0146",
+      "original_text": "It\u2019s not to heavy and I use for a natural look days.",
+      "clean_text": "It\u2019s not to heavy and I use for a natural look days.",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0148",
+      "original_text": "It stands out by how well it preps and blends into every other product you apply to your face. Also the smell is deliciously good compared to a lot of other brands I've used in the past.",
+      "clean_text": "It stands out by how well it preps and blends into every other product you apply to your face. Also the smell is deliciously good compared to a lot of other brands I've used in the past.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0149",
+      "original_text": "The hourglass foundation is very good, it is a creamy consistency in a stick foundation, it blends very well with a brush or a sponge. It is very pigmented and high coverage. It's sleek and easy to carry around. It's very buildable. It doesn't transfer.",
+      "clean_text": "The hourglass foundation is very good, it is a creamy consistency in a stick foundation, it blends very well with a brush or a sponge. It is very pigmented and high coverage. It's sleek and easy to carry around. It's very buildable. It doesn't transfer.",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0150",
+      "original_text": "The way it looks on my skin",
+      "clean_text": "The way it looks on my skin",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0153",
+      "original_text": "That it actually works",
+      "clean_text": "That it actually works",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0154",
+      "original_text": "Most influencers use it",
+      "clean_text": "Most influencers use it",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0155",
+      "original_text": "Idk not maybe will",
+      "clean_text": "Idk not maybe will",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0156",
+      "original_text": "The originality",
+      "clean_text": "The originality",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0157",
+      "original_text": "Rare beauty",
+      "clean_text": "Rare beauty",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0158",
+      "original_text": "it has basically never been used commonly before now",
+      "clean_text": "it has basically never been used commonly before now",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0159",
+      "original_text": "I like how it makes my cheeks pigmented",
+      "clean_text": "I like how it makes my cheeks pigmented",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0160",
+      "original_text": "Paula\u2019s choice cream, it\u2019s nice on skin and gives nice results",
+      "clean_text": "Paula\u2019s choice cream, it\u2019s nice on skin and gives nice results",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0161",
+      "original_text": "it makes my skin pop the way I want it to.",
+      "clean_text": "it makes my skin pop the way I want it to.",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0162",
+      "original_text": "I struggle with finding hair care products that work for me, even top of the line products, so when this sample product gave me the finish I haven\u2019t been able to achieve myself spending hundreds. It was the first that I thought of",
+      "clean_text": "I struggle with finding hair care products that work for me, even top of the line products, so when this sample product gave me the finish I haven\u2019t been able to achieve myself spending hundreds. It was the first that I thought of",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0164",
+      "original_text": "Made my skin shiny",
+      "clean_text": "Made my skin shiny",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0165",
+      "original_text": "Rare butey blush",
+      "clean_text": "Rare butey blush",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0166",
+      "original_text": "I don\u2019t use beauty products",
+      "clean_text": "I don\u2019t use beauty products",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0168",
+      "original_text": "Like the colors",
+      "clean_text": "Like the colors",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0169",
+      "original_text": "It has a good result on my makeup",
+      "clean_text": "It has a good result on my makeup",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0170",
+      "original_text": "It is long lasting and really works to extend lashes.",
+      "clean_text": "It is long lasting and really works to extend lashes.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0171",
+      "original_text": "I am a male and do not use beauty make up I apologize",
+      "clean_text": "I am a male and do not use beauty make up I apologize",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0172",
+      "original_text": "They last all day and their formulas are great",
+      "clean_text": "They last all day and their formulas are great",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0173",
+      "original_text": "I like how healthy sunscreen is for you and how it keeps your skin healthy. Moisturizers also make me feel fresh and relaxed.",
+      "clean_text": "I like how healthy sunscreen is for you and how it keeps your skin healthy. Moisturizers also make me feel fresh and relaxed.",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0174",
+      "original_text": "Great quality",
+      "clean_text": "Great quality",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0175",
+      "original_text": "They just pop out so much",
+      "clean_text": "They just pop out so much",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0176",
+      "original_text": "There is in the process",
+      "clean_text": "There is in the process",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0177",
+      "original_text": "The best of the best mostra",
+      "clean_text": "The best of the best mostra",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0178",
+      "original_text": "It's different",
+      "clean_text": "It's different",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0179",
+      "original_text": "How beautiful it looks on the skin",
+      "clean_text": "How beautiful it looks on the skin",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0180",
+      "original_text": "I enjoy soft brushes to blend my foundation",
+      "clean_text": "I enjoy soft brushes to blend my foundation",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0181",
+      "original_text": "The colors .",
+      "clean_text": "The colors .",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0182",
+      "original_text": "Thinking about Elf beauty products the thing that makes it stand out is the bright colors for lip products and how they are great dupes of products that are more expensive.",
+      "clean_text": "Thinking about Elf beauty products the thing that makes it stand out is the bright colors for lip products and how they are great dupes of products that are more expensive.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0183",
+      "original_text": "ability to cover up tired eyes and redness from pimples",
+      "clean_text": "ability to cover up tired eyes and redness from pimples",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0184",
+      "original_text": "The fact that they\u2019re re-usable, I\u2019m not out every week buying new ones.",
+      "clean_text": "The fact that they\u2019re re-usable, I\u2019m not out every week buying new ones.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0185",
+      "original_text": "love the matte and smooth effect",
+      "clean_text": "love the matte and smooth effect",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0186",
+      "original_text": "the way it turns out",
+      "clean_text": "the way it turns out",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0187",
+      "original_text": "Not feeling so heavy on my skin",
+      "clean_text": "Not feeling so heavy on my skin",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0188",
+      "original_text": "Kss. She shahs shahs haha",
+      "clean_text": "Kss. She shahs shahs haha",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0189",
+      "original_text": "It\u2019s hard to find a color looks decent",
+      "clean_text": "It\u2019s hard to find a color looks decent",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0190",
+      "original_text": "I really like eyeliner",
+      "clean_text": "I really like eyeliner",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0191",
+      "original_text": "Everything is that I stand for",
+      "clean_text": "Everything is that I stand for",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0192",
+      "original_text": "Omg it\u2019s a life saver!! No more squeezing my nose",
+      "clean_text": "Omg it\u2019s a life saver!! No more squeezing my nose",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0193",
+      "original_text": "It helps people learn how to apply make-up",
+      "clean_text": "It helps people learn how to apply make-up",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0194",
+      "original_text": "The plumbing",
+      "clean_text": "The plumbing",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0195",
+      "original_text": "It\u2019s long lasting and smudge proof",
+      "clean_text": "It\u2019s long lasting and smudge proof",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0196",
+      "original_text": "its not clumoy and its perfect",
+      "clean_text": "its not clumoy and its perfect",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0197",
+      "original_text": "there is none but to be honest i would have to try them my self to see if its a good or bad product so it will have to be a i dont know but there are some products that can maybe be there but i barely use any so i would not be good to say but maybe ultra.",
+      "clean_text": "there is none but to be honest i would have to try them my self to see if its a good or bad product so it will have to be a i dont know but there are some products that can maybe be there but i barely use any so i would not be good to say but maybe ultra.",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.65,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.25,
+          "Neutral": 0.5,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0198",
+      "original_text": "The improvement in product",
+      "clean_text": "The improvement in product",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0199",
+      "original_text": "Nothing I don\u2019t buy ut",
+      "clean_text": "Nothing I don\u2019t buy ut",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0200",
+      "original_text": "It\u2019s revolutionary and effective",
+      "clean_text": "It\u2019s revolutionary and effective",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0201",
+      "original_text": "Again, nothing.",
+      "clean_text": "Again, nothing.",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0202",
+      "original_text": "I love how it provides moisture while also giving you a tint of color that\u2019s not too much but not too dull either. The price is also highly affordable and it just looks so beautiful!",
+      "clean_text": "I love how it provides moisture while also giving you a tint of color that\u2019s not too much but not too dull either. The price is also highly affordable and it just looks so beautiful!",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0204",
+      "original_text": "It stays on for hours and looks nice",
+      "clean_text": "It stays on for hours and looks nice",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0205",
+      "original_text": "The way it makes my face shines in the sunlight like girl! So sparkly!!!!",
+      "clean_text": "The way it makes my face shines in the sunlight like girl! So sparkly!!!!",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0206",
+      "original_text": "What makes it stand out is that millions of women use the brand and it is a brand with a fantastic reputation.",
+      "clean_text": "What makes it stand out is that millions of women use the brand and it is a brand with a fantastic reputation.",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0207",
+      "original_text": "It feels great and makes me look great",
+      "clean_text": "It feels great and makes me look great",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0208",
+      "original_text": "I don\u2019t need beauty products, I just need women to stop lying with filters and clown paint.",
+      "clean_text": "I don\u2019t need beauty products, I just need women to stop lying with filters and clown paint.",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0209",
+      "original_text": "It\u2019s worked better than any products I\u2019ve used and it\u2019s undeniable the difference it has made to my skin.",
+      "clean_text": "It\u2019s worked better than any products I\u2019ve used and it\u2019s undeniable the difference it has made to my skin.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0210",
+      "original_text": "it\u2019s very pigmented & i don\u2019t think i\u2019ve seen any other brand release this product",
+      "clean_text": "it\u2019s very pigmented & i don\u2019t think i\u2019ve seen any other brand release this product",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0211",
+      "original_text": "I\u2019m not sure",
+      "clean_text": "I\u2019m not sure",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0212",
+      "original_text": "That I\u2019m able to wear it without worrying about it coming off or smudging it",
+      "clean_text": "That I\u2019m able to wear it without worrying about it coming off or smudging it",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0213",
+      "original_text": "Exfoliate i tried it once and it actually helped i never use a skin care products",
+      "clean_text": "Exfoliate i tried it once and it actually helped i never use a skin care products",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0214",
+      "original_text": "Nothing beside the beautify products I\u2019ve been always using.",
+      "clean_text": "Nothing beside the beautify products I\u2019ve been always using.",
+      "topic_assignment": {
+        "topic_id": "topic_3",
+        "topic_label": "Advanced Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0215",
+      "original_text": "I have no idea twice",
+      "clean_text": "I have no idea twice",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0217",
+      "original_text": "They deserve it",
+      "clean_text": "They deserve it",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0218",
+      "original_text": "I\u2019m not sure",
+      "clean_text": "I\u2019m not sure",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0219",
+      "original_text": "Because it\u2019s made by Kylie product.",
+      "clean_text": "Because it\u2019s made by Kylie product.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0220",
+      "original_text": "It's going greatv",
+      "clean_text": "It's going greatv",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0221",
+      "original_text": "Different colors nobody never got to see",
+      "clean_text": "Different colors nobody never got to see",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0222",
+      "original_text": "the best for my sensitive skin",
+      "clean_text": "the best for my sensitive skin",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0223",
+      "original_text": "It is effective at keep the skin hydrated",
+      "clean_text": "It is effective at keep the skin hydrated",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0224",
+      "original_text": "Don't use makeup",
+      "clean_text": "Don't use makeup",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0225",
+      "original_text": "The ingredients that they put in the curlsmith products",
+      "clean_text": "The ingredients that they put in the curlsmith products",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0226",
+      "original_text": "Just it\u2019s makes me feel better",
+      "clean_text": "Just it\u2019s makes me feel better",
+      "topic_assignment": {
+        "topic_id": "topic_0",
+        "topic_label": "Core Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0227",
+      "original_text": "it is so natural",
+      "clean_text": "it is so natural",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0228",
+      "original_text": "The ingredients",
+      "clean_text": "The ingredients",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0229",
+      "original_text": "I'm not sure, probably eyeliner pencils",
+      "clean_text": "[NAME] sure, probably eyeliner pencils",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": true
+    },
+    {
+      "response_id": "resp_0230",
+      "original_text": "It transforms your face",
+      "clean_text": "It transforms your face",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0231",
+      "original_text": "Branding and unique fragrance",
+      "clean_text": "Branding and unique fragrance",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0232",
+      "original_text": "It blends well.",
+      "clean_text": "It blends well.",
+      "topic_assignment": {
+        "topic_id": "topic_7",
+        "topic_label": "Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0234",
+      "original_text": "It suits my skin tone",
+      "clean_text": "It suits my skin tone",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0235",
+      "original_text": "Really makes it stand out is that it is Affordable and it is lightweight and that the product actually works for all skin types and all skin colors",
+      "clean_text": "Really makes it stand out is that it is Affordable and it is lightweight and that the product actually works for all skin types and all skin colors",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0237",
+      "original_text": "It gives a natural look to my very thin brows that's why I like the Urban Decay pencil",
+      "clean_text": "It gives a natural look to my very thin brows that's why I like the Urban Decay pencil",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0238",
+      "original_text": "The shine, the effect and the compliments",
+      "clean_text": "The shine, the effect and the compliments",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0239",
+      "original_text": "The way it moisturizers my skin like no other product.",
+      "clean_text": "The way it moisturizers my skin like no other product.",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.1,
+          "Negative": 0.95,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0241",
+      "original_text": "This question does not apply to me",
+      "clean_text": "This question does not apply to me",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0242",
+      "original_text": "It's lovely and fair and great to use and great",
+      "clean_text": "It's lovely and fair and great to use and great",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0243",
+      "original_text": "Its super awesome",
+      "clean_text": "Its super awesome",
+      "topic_assignment": {
+        "topic_id": "topic_1",
+        "topic_label": "Customer Service Response"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0244",
+      "original_text": "I think it enhances my eyes",
+      "clean_text": "I think it enhances my eyes",
+      "topic_assignment": {
+        "topic_id": "topic_4",
+        "topic_label": "Primary Visual Design"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0245",
+      "original_text": "The effects really work",
+      "clean_text": "The effects really work",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0246",
+      "original_text": "It makes your lips pop",
+      "clean_text": "It makes your lips pop",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0247",
+      "original_text": "I like how it\u2019s pink first of all and I like how it moisturizers my skin so much.",
+      "clean_text": "I like how it\u2019s pink first of all and I like how it moisturizers my skin so much.",
+      "topic_assignment": {
+        "topic_id": "topic_2",
+        "topic_label": "Product Quality Issues"
+      },
+      "sentiment": {
+        "sentiment": "POSITIVE",
+        "confidence": 0.95,
+        "scores": {
+          "Positive": 0.95,
+          "Negative": 0.1,
+          "Neutral": -0.04999999999999996,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0249",
+      "original_text": "IT LASTS ALL DAY",
+      "clean_text": "IT LASTS ALL DAY",
+      "topic_assignment": {
+        "topic_id": "topic_6",
+        "topic_label": "Pricing Value"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    },
+    {
+      "response_id": "resp_0250",
+      "original_text": "It just does.",
+      "clean_text": "It just does.",
+      "topic_assignment": {
+        "topic_id": "topic_5",
+        "topic_label": "User Experience Positive"
+      },
+      "sentiment": {
+        "sentiment": "NEUTRAL",
+        "confidence": 0.6,
+        "scores": {
+          "Positive": 0.25,
+          "Negative": 0.15,
+          "Neutral": 0.6,
+          "Mixed": 0.0
+        },
+        "method": "advanced_keyword"
+      },
+      "pii_detected": false
+    }
+  ]
+}
