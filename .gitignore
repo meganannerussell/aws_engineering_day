@@ -10,7 +10,9 @@ dist/
 downloads/
 eggs/
 .eggs/
+# Python lib directories (but not React src/lib)
 lib/
+!smart-analytics-dashboard/src/lib/
 lib64/
 parts/
 sdist/

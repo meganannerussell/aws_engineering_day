@@ -16,10 +16,9 @@ const ExportButton: React.FC = () => {
 
       // Create canvas from the element
       const canvas = await html2canvas(element as HTMLElement, {
-        scale: 2, // Higher quality
         useCORS: true,
         allowTaint: true,
-        backgroundColor: "#ffffff",
+        background: "#ffffff",
         width: element.scrollWidth,
         height: element.scrollHeight,
       });

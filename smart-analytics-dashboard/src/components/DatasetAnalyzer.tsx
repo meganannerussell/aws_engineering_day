@@ -24,6 +24,101 @@ const DatasetAnalyzer: React.FC<DatasetAnalyzerProps> = ({
   const [hasCachedData, setHasCachedData] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  // Mock data generation function
+  const generateMockData = (_dataset: string) => {
+    const mockTopics = [
+      {
+        topic_id: "topic_1",
+        label: "Product effectiveness",
+        count: 45,
+        percentage: 32.1,
+        sentiment_mean: 0.75,
+        sentiment_distribution: {
+          positive: 25,
+          negative: 3,
+          neutral: 17,
+          mixed: 0,
+        },
+        examples: [
+          "Works really well on my skin",
+          "Amazing results after just one week",
+          "Completely transformed my complexion",
+        ],
+      },
+      {
+        topic_id: "topic_2",
+        label: "Skin compatibility",
+        count: 38,
+        percentage: 27.1,
+        sentiment_mean: 0.68,
+        sentiment_distribution: {
+          positive: 20,
+          negative: 5,
+          neutral: 13,
+          mixed: 0,
+        },
+        examples: [
+          "Perfect for sensitive skin",
+          "No allergic reactions at all",
+          "Works great with my skin type",
+        ],
+      },
+      {
+        topic_id: "topic_3",
+        label: "Packaging design",
+        count: 28,
+        percentage: 20.0,
+        sentiment_mean: 0.82,
+        sentiment_distribution: {
+          positive: 22,
+          negative: 1,
+          neutral: 5,
+          mixed: 0,
+        },
+        examples: [
+          "Beautiful packaging design",
+          "Love the elegant bottle",
+          "Looks great on my vanity",
+        ],
+      },
+      {
+        topic_id: "topic_4",
+        label: "Pricing concerns",
+        count: 29,
+        percentage: 20.7,
+        sentiment_mean: 0.25,
+        sentiment_distribution: {
+          positive: 2,
+          negative: 18,
+          neutral: 9,
+          mixed: 0,
+        },
+        examples: [
+          "Too expensive for what it does",
+          "Not worth the high price",
+          "Overpriced compared to alternatives",
+        ],
+      },
+    ];
+
+    return {
+      project_metadata: {
+        project_title: "Beauty Product Analysis",
+        question_text: "What makes this beauty product stand out for you?",
+        total_responses: 140,
+        processing_time_seconds: 2.5,
+        timestamp: new Date().toISOString(),
+        services_used: {
+          comprehend_pii: false,
+          comprehend_sentiment: false,
+          bedrock_embeddings: true,
+          bedrock_llm: true,
+        },
+      },
+      topics: mockTopics,
+    };
+  };
+
   const sampleDatasets = [
     { value: "data_set_1.csv", label: "Beauty Products Survey" },
     { value: "data_set_2.csv", label: "Customer Service Experience" },
@@ -34,7 +129,7 @@ const DatasetAnalyzer: React.FC<DatasetAnalyzerProps> = ({
     { value: "blind_data.csv", label: "Blind Data Analysis" },
   ];
 
-  const datasets = [...sampleDatasets, ...uploadedDatasets];
+  // Note: sampleDatasets and uploadedDatasets are used directly in JSX
 
   const handleDatasetChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDataset(event.target.value);
